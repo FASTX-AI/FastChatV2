@@ -1,8 +1,8 @@
 {
   "button": {
     "import": "导入配置",
-    "market": "逛逛市场",
-    "start": "立即开始"
+    "market": "立即购买",
+    "start": "已购买？去聊天"
   },
   "guide": {
     "agents": {

@@ -1,8 +1,8 @@
 export default {
   button: {
     import: '导入配置',
-    market: '逛逛市场',
-    start: '立即开始',
+    market: '立即购买',
+    start: '已购买？去聊天',
   },
   guide: {
     agents: {
@@ -12,7 +12,7 @@ export default {
     defaultMessage:
       '我是您的私人智能助理 FastChat ，请问现在能帮您做什么？\n如果需要获得更加专业或定制的助手，可以点击 `+` 创建自定义助手',
     qa: {
-      q01: 'LobeHub 是什么？',
+      q01: 'FastChat 是什么？',
       q02: 'LobeChat 是什么？',
       q03: 'LobeChat 是否有社区支持？',
       q04: 'LobeChat 支持哪些功能？',
