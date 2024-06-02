@@ -1,5 +1,7 @@
 FROM node:20-slim AS base
 
+RUN apt update && apt install -y python3 python3-dev python3-pip
+
 ## Sharp dependencies, copy all the files for production
 FROM base AS sharp
 ENV PNPM_HOME="/pnpm"
@@ -131,5 +133,8 @@ ENV MINIMAX_API_KEY ""
 
 # DeepSeek
 ENV DEEPSEEK_API_KEY ""
+
+ENV FEATURE_FLAGS ""
+ENV ENABLED_OLLAMA ""
 
 CMD ["node", "server.js"]
