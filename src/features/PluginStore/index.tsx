@@ -18,7 +18,6 @@ export const PluginStore = memo<PluginStoreProps>(({ setOpen, open }) => {
   const { t } = useTranslation('plugin');
   const mobile = useServerConfigStore((s) => s.isMobile);
   const [listType] = useToolStore((s) => [s.listType]);
-
   return (
     <Modal
       allowFullscreen
@@ -31,11 +30,14 @@ export const PluginStore = memo<PluginStoreProps>(({ setOpen, open }) => {
       title={t('store.title')}
       width={800}
     >
-      <Flexbox 
-        gap={ mobile ? 8 : 16 } 
+      <Flexbox
+        gap={mobile ? 8 : 16}
         style={{ maxHeight: mobile ? '-webkit-fill-available' : 'inherit' }}
         width={'100%'}
       >
+        <Flexbox align="center" justify="center" width="100%">
+          <p>{t('store.guide')}</p>
+        </Flexbox>
         <Segmented
           block
           onChange={(v) => {

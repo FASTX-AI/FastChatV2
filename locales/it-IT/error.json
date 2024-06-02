@@ -128,12 +128,14 @@
       "title": "Scarica il modello Ollama specificato"
     },
     "password": {
+      "buy": "Acquista per sbloccare l'applicazione",
       "description": "L'amministratore ha attivato la crittografia dell'applicazione. Inserisci la password dell'applicazione per sbloccarla. La password va inserita solo una volta.",
       "placeholder": "Inserisci la password",
       "title": "Inserisci la password per sbloccare l'applicazione"
     },
     "tabs": {
       "apiKey": "Chiave API personalizzata",
+      "buy": "Acquista",
       "password": "Password"
     }
   },

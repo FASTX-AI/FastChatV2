@@ -151,6 +151,7 @@
     "communityPlugin": "Comunidad",
     "customPlugin": "Personalizado",
     "empty": "No hay complementos instalados",
+    "guide": "Debido a problemas de red y geográficos, es posible que el complemento no esté disponible. Algunos complementos requieren el uso de una clave individual. Si necesita comprar una clave, póngase en contacto con el servicio de atención al cliente",
     "installAllPlugins": "Instalar todos",
     "networkError": "Error al obtener la tienda de complementos. Verifique la conexión a internet e inténtelo de nuevo.",
     "placeholder": "Buscar por nombre, descripción o palabra clave del complemento...",

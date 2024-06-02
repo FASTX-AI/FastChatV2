@@ -151,6 +151,7 @@
     "communityPlugin": "社群外掛",
     "customPlugin": "自訂插件",
     "empty": "暫無已安裝插件",
+    "guide": "由於網路和您所在地區的問題，插件可能無法使用，某些插件需要使用單獨的金鑰，如需代購買請聯繫客服",
     "installAllPlugins": "安裝全部",
     "networkError": "獲取插件商店失敗，請檢查網路連線後重試",
     "placeholder": "搜尋插件名稱介紹或關鍵字...",

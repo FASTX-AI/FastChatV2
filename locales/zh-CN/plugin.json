@@ -151,6 +151,7 @@
     "communityPlugin": "三方社区",
     "customPlugin": "自定义",
     "empty": "暂无已安装插件",
+    "guide": "由于网络以及您的地域问题，插件可能不可用，部分插件需要使用单独的 KEY，如需代购买请联系客服",
     "installAllPlugins": "安装全部",
     "networkError": "获取插件商店失败，请检测网络连接后重试",
     "placeholder": "搜索插件名称介绍或关键词...",

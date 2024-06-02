@@ -151,6 +151,7 @@
     "communityPlugin": "Plugin communautaire",
     "customPlugin": "Plugin personnalisé",
     "empty": "Aucun plugin installé pour le moment",
+    "guide": "En raison de problèmes de réseau et de localisation, les plugins peuvent ne pas être disponibles. Certains plugins nécessitent l'utilisation d'une clé distincte. Pour tout achat par procuration, veuillez contacter le service client.",
     "installAllPlugins": "Installer tous les plugins",
     "networkError": "Échec de la récupération de la boutique de plugins. Veuillez vérifier votre connexion réseau et réessayer.",
     "placeholder": "Rechercher le nom ou les mots-clés de l'extension...",

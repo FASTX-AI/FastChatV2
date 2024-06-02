@@ -128,12 +128,14 @@
       "title": "Belirtilen Ollama modelini indir"
     },
     "password": {
+      "buy": "Uygulamayı satın alın, kilidi açın",
       "description": "Uygulama şifrelemesi yönetici tarafından etkinleştirilmiştir. Uygulamayı açmak için uygulama şifresini girin. Şifre sadece bir kez doldurulmalıdır.",
       "placeholder": "Lütfen şifre girin",
       "title": "Uygulamayı Açmak için Şifre Girin"
     },
     "tabs": {
       "apiKey": "Özel API Anahtarı",
+      "buy": "Satın Al",
       "password": "Şifre"
     }
   },

@@ -22,10 +22,11 @@ enum Tab {
 
 interface InvalidAccessCodeProps {
   id: string;
+  onBuyClick: () => void;
   provider?: string;
 }
 
-const InvalidAccessCode = memo<InvalidAccessCodeProps>(({ id, provider }) => {
+const InvalidAccessCode = memo<InvalidAccessCodeProps>(({ id, provider, onBuyClick }) => {
   const { t } = useTranslation('error');
   const isEnabledOAuth = useServerConfigStore(serverConfigSelectors.enabledOAuthSSO);
   const defaultTab = isEnabledOAuth ? Tab.Oauth : Tab.Password;
@@ -57,7 +58,7 @@ const InvalidAccessCode = memo<InvalidAccessCodeProps>(({ id, provider }) => {
         value={mode}
       />
       <Flexbox gap={24}>
-        {mode === Tab.Password && <AccessCodeForm id={id} />}
+        {mode === Tab.Password && <AccessCodeForm onClick={onBuyClick} />}
         {mode === Tab.Api && <APIKeyForm id={id} provider={provider} />}
         {isEnabledOAuth && mode === Tab.Oauth && <OAuthForm id={id} />}
       </Flexbox>

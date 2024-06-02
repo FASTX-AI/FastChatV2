@@ -151,6 +151,7 @@
     "communityPlugin": "Third-party",
     "customPlugin": "Custom Plugin",
     "empty": "No installed plugins yet",
+    "guide": "Due to network and regional issues, plugins may be unavailable. Some plugins require a separate KEY. Please contact customer service for purchasing assistance.",
     "installAllPlugins": "Install All",
     "networkError": "Failed to fetch plugin store. Please check your network connection and try again",
     "placeholder": "Search for plugin name, description, or keyword...",

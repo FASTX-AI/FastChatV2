@@ -128,12 +128,14 @@
       "title": "Bestimmtes Ollama-Modell herunterladen"
     },
     "password": {
+      "buy": "Kaufen Sie, um die App zu entsperren",
       "description": "Der Administrator hat die App-Verschlüsselung aktiviert. Gib das App-Passwort ein, um die App zu entsperren. Das Passwort muss nur einmal eingegeben werden.",
       "placeholder": "Passwort eingeben",
       "title": "App entsperren durch Passworteingabe"
     },
     "tabs": {
       "apiKey": "Benutzerdefinierter API-Schlüssel",
+      "buy": "Kaufen",
       "password": "Passwort"
     }
   },

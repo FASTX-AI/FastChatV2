@@ -128,12 +128,14 @@
       "title": "Télécharger le modèle Ollama spécifié"
     },
     "password": {
+      "buy": "Acheter pour débloquer l'application",
       "description": "L'administrateur a activé le cryptage de l'application. Entrez le mot de passe de l'application pour déverrouiller. Le mot de passe ne doit être saisi qu'une seule fois.",
       "placeholder": "Entrez le mot de passe",
       "title": "Entrez le mot de passe pour déverrouiller l'application"
     },
     "tabs": {
       "apiKey": "Clé API personnalisée",
+      "buy": "Acheter",
       "password": "Mot de passe"
     }
   },

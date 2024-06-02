@@ -128,12 +128,14 @@
       "title": "Download Specific Ollama Model"
     },
     "password": {
+      "buy": "Go purchase to unlock the app",
       "description": "The application encryption has been enabled by the administrator. Enter the application password to unlock the application. The password only needs to be filled in once.",
       "placeholder": "Please enter password",
       "title": "Enter Password to Unlock Application"
     },
     "tabs": {
       "apiKey": "Custom API Key",
+      "buy": "Buy",
       "password": "Password"
     }
   },

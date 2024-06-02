@@ -128,12 +128,14 @@
       "title": "Tải xuống mô hình Ollama cụ thể"
     },
     "password": {
+      "buy": "Đi mua để mở khóa ứng dụng",
       "description": "Quản trị viên đã kích hoạt mã hóa ứng dụng. Nhập mật khẩu ứng dụng để mở khóa. Chỉ cần nhập mật khẩu một lần",
       "placeholder": "Nhập mật khẩu",
       "title": "Nhập mật khẩu để mở khóa ứng dụng"
     },
     "tabs": {
       "apiKey": "Khóa API tùy chỉnh",
+      "buy": "Mua",
       "password": "Mật khẩu"
     }
   },

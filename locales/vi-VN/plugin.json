@@ -151,6 +151,7 @@
     "communityPlugin": "Cộng đồng bên thứ ba",
     "customPlugin": "Tùy chỉnh",
     "empty": "Hiện chưa có plugin được cài đặt",
+    "guide": "Do vấn đề liên quan đến mạng và vùng lãnh thổ của bạn, có thể plugin không hoạt động, và một số plugin có thể cần sử dụng KEY riêng. Nếu cần hỗ trợ mua hàng, vui lòng liên hệ với bộ phận dịch vụ khách hàng",
     "installAllPlugins": "Cài đặt tất cả",
     "networkError": "Lấy cửa hàng plugin thất bại, vui lòng kiểm tra kết nối mạng và thử lại",
     "placeholder": "Tìm kiếm tên hoặc mô tả plugin...",

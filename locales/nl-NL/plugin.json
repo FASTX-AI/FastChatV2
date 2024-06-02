@@ -151,6 +151,7 @@
     "communityPlugin": "Community",
     "customPlugin": "Aangepast",
     "empty": "Geen geïnstalleerde plugins beschikbaar",
+    "guide": "Vanwege netwerk- en regioproblemen werkt de plug-in mogelijk niet. Sommige plug-ins hebben een afzonderlijke sleutel nodig. Neem contact op met de klantenservice als u er een wilt kopen.",
     "installAllPlugins": "Allemaal installeren",
     "networkError": "Kan de pluginwinkel niet laden. Controleer de netwerkverbinding en probeer het opnieuw.",
     "placeholder": "Zoek plugin op naam, beschrijving of trefwoord...",

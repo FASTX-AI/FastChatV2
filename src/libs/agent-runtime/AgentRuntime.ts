@@ -175,7 +175,7 @@ class AgentRuntime {
         runtimeModel = new LobeDeepSeekAI(params.deepseek ?? {});
         break;
       }
-      
+
       case ModelProvider.Minimax: {
         runtimeModel = new LobeMinimaxAI(params.minimax ?? {});
         break;

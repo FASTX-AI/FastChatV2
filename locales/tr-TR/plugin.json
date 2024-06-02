@@ -151,6 +151,7 @@
     "communityPlugin": "Topluluk Eklentisi",
     "customPlugin": "Özel",
     "empty": "Henüz yüklenmiş eklenti yok",
+    "guide": "Pluginlerin bazıları, ağ veya bölgesel kısıtlamalar nedeniyle kullanılamayabilir. Bazı pluginlerin kullanımı için ayrı bir ANAHTAR gerekebilir. Satın almak için lütfen müşteri hizmetleriyle iletişime geçin.",
     "installAllPlugins": "Tümünü Yükle",
     "networkError": "Eklenti mağazası alınamadı. Lütfen ağ bağlantınızı kontrol edin ve tekrar deneyin.",
     "placeholder": "Eklenti adını, açıklamasını veya anahtar kelimeleri ara...",

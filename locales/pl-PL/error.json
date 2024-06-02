@@ -128,12 +128,14 @@
       "title": "Pobierz określony model Ollama"
     },
     "password": {
+      "buy": "Idź i kup, aby odblokować aplikację",
       "description": "Administrator włączył szyfrowanie aplikacji. Po wprowadzeniu hasła aplikacja zostanie odblokowana. Hasło należy wprowadzić tylko raz.",
       "placeholder": "Wprowadź hasło",
       "title": "Wprowadź hasło, aby odblokować aplikację"
     },
     "tabs": {
       "apiKey": "Niestandardowy klucz API",
+      "buy": "Kup",
       "password": "Hasło"
     }
   },

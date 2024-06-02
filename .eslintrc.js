@@ -18,6 +18,8 @@ config.rules['unicorn/catch-error-name'] = 0;
 config.rules['unicorn/no-array-for-each'] = 0;
 config.rules['unicorn/prefer-number-properties'] = 0;
 config.rules['unicorn/consistent-function-scoping'] = 0;
+config.rules['react-hooks/rules-of-hooks'] = 0;
+config.rules['react/jsx-no-useless-fragment'] = 0;
 
 config.overrides = [
   {

@@ -151,6 +151,7 @@
     "communityPlugin": "Plugin della community",
     "customPlugin": "Personalizzato",
     "empty": "Nessun plugin installato al momento",
+    "guide": "A causa di problemi di rete e di zona, potrebbero esserci problemi di accesso ai plugin e alcuni potrebbero richiedere una chiave separata. Per l'acquisto assistito, ti preghiamo di contattare il servizio clienti",
     "installAllPlugins": "Installa tutti",
     "networkError": "Impossibile recuperare il negozio dei plugin. Controlla la connessione di rete e riprova",
     "placeholder": "Cerca per nome, descrizione o parola chiave del plugin...",

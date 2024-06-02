@@ -128,12 +128,14 @@
       "title": "Descargar modelo Ollama específico"
     },
     "password": {
+      "buy": "Compra para desbloquear la aplicación",
       "description": "El administrador ha activado el cifrado de la aplicación. Ingresa la contraseña de la aplicación para desbloquearla. La contraseña solo se necesita ingresar una vez",
       "placeholder": "Ingresa la contraseña",
       "title": "Ingresar contraseña para desbloquear la aplicación"
     },
     "tabs": {
       "apiKey": "Clave de API personalizada",
+      "buy": "Comprar",
       "password": "Contraseña"
     }
   },

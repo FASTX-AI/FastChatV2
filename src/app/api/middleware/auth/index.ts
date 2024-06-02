@@ -36,6 +36,24 @@ export const checkAuth =
 
       jwtPayload = await getJWTPayload(authorization);
 
+      // 这里换成设备信息
+      // 如果当前的 IP 和 redis 的 IP 不匹配，直接返回一个提示，行号在其他地方登录，已切换到当前 IP；
+      // TODO: REDIS 的逻辑就是用当前的 SK 和 IP 覆盖之前的老数据就行；
+      // const response = await fetch('/');
+      // 如果异常；服务端返回一个 1 即可；如果和当前 IP 匹配，返回 0 即可
+      // {
+      //   code: 200,
+      //   message: 'same device',
+      //   data: 0
+      // }
+      // {
+      //   code: 200,
+      //   message: '设置地址已更换为当前设备，设备切换过多可能导致封号处理，请不要分享 KEY 给他人使用。',
+      //   data: 1
+      // }
+      console.log(jwtPayload.apiKey, req.headers.get('user-agent'));
+      // const response = await fetch(jwtPayload.apiKey, req.headers.get('user-agent'));
+
       checkAuthMethod({
         accessCode: jwtPayload.accessCode,
         apiKey: jwtPayload.apiKey,

@@ -128,12 +128,14 @@
       "title": "Baixar modelo Ollama específico"
     },
     "password": {
+      "buy": "Compre para desbloquear o aplicativo",
       "description": "O administrador ativou a criptografia do aplicativo. Insira a senha do aplicativo para desbloqueá-lo. A senha só precisa ser inserida uma vez.",
       "placeholder": "Insira a senha",
       "title": "Insira a senha para desbloquear o aplicativo"
     },
     "tabs": {
       "apiKey": "Chave de API personalizada",
+      "buy": "Comprar",
       "password": "Senha"
     }
   },

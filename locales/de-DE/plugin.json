@@ -151,6 +151,7 @@
     "communityPlugin": "Community",
     "customPlugin": "Benutzerdefiniert",
     "empty": "Keine installierten Plugins vorhanden",
+    "guide": "Aufgrund von Netzwerk- und regionalen Problemen kann es sein, dass das Plugin nicht verfügbar ist. Einige Plugins erfordern einen separaten Schlüssel. Wenn Sie diese erwerben möchten, wenden Sie sich bitte an den Kundenservice.",
     "installAllPlugins": "Alle installieren",
     "networkError": "Fehler beim Abrufen des Plugin-Shops. Bitte überprüfen Sie die Netzwerkverbindung und versuchen Sie es erneut.",
     "placeholder": "Suche nach Plugin-Namen, Beschreibung oder Stichwort...",

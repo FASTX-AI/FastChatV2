@@ -151,6 +151,7 @@
     "communityPlugin": "Wtyczka społecznościowa",
     "customPlugin": "Niestandardowa wtyczka",
     "empty": "Brak zainstalowanych wtyczek",
+    "guide": "Due to network and regional issues, some plugins may not be available. Some plugins require a separate KEY. If you need to purchase on behalf, please contact customer service",
     "installAllPlugins": "Zainstaluj wszystkie",
     "networkError": "Nie udało się pobrać sklepu wtyczek. Sprawdź swoje połączenie sieciowe i spróbuj ponownie",
     "placeholder": "Szukaj nazwy wtyczki, opisu lub słowa kluczowego...",

@@ -128,13 +128,15 @@
       "title": "下载指定的 Ollama 模型"
     },
     "password": {
-      "description": "管理员已开启应用加密，输入应用密码后即可解锁应用。密码只需填写一次",
+      "buy": "去购买，解锁应用",
+      "description": "密码只需填写一次，密码仅供您个人使用，后台实时监控，如果发现您分享 KEY 给其他用户或多次异地登录，将会封号处理",
       "placeholder": "请输入密码",
       "title": "输入密码解锁应用"
     },
     "tabs": {
       "apiKey": "自定义 API Key",
-      "password": "密码"
+      "password": "密码",
+      "buy": "购买"
     }
   },
   "upload": {

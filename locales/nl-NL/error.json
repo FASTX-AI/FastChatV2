@@ -128,12 +128,14 @@
       "title": "Specifiek Ollama-model downloaden"
     },
     "password": {
+      "buy": "Ga naar de winkel om de app te kopen en te ontgrendelen",
       "description": "De beheerder heeft app-encryptie ingeschakeld. Voer het app-wachtwoord in om de app te ontgrendelen. Het wachtwoord hoeft slechts één keer te worden ingevoerd.",
       "placeholder": "Voer het wachtwoord in",
       "title": "Voer het wachtwoord in om de app te ontgrendelen"
     },
     "tabs": {
       "apiKey": "Custom API Key",
+      "buy": "Kopen",
       "password": "Password"
     }
   },

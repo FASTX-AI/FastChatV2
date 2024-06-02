@@ -151,6 +151,7 @@
     "communityPlugin": "Plugin da Comunidade",
     "customPlugin": "Personalizado",
     "empty": "Nenhum plugin instalado",
+    "guide": "Devido a problemas de rede e de região, o plug-in pode não estar disponível. Alguns plug-ins exigem chaves separadas. Se precisar de ajuda para adquirir, entre em contato com o suporte.",
     "installAllPlugins": "Instalar todos os plugins",
     "networkError": "Falha ao obter a loja de plugins. Verifique a conexão de rede e tente novamente.",
     "placeholder": "Pesquisar por nome, descrição ou palavra-chave do plugin...",

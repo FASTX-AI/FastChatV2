@@ -2,6 +2,7 @@ import { IPluginErrorType, PluginErrorType } from '@lobehub/chat-plugin-sdk';
 import type { AlertProps } from '@lobehub/ui';
 import { Skeleton } from 'antd';
 import dynamic from 'next/dynamic';
+import { useRouter } from 'next/navigation';
 import { Suspense, memo } from 'react';
 
 import { AgentRuntimeErrorType, ILobeAgentRuntimeErrorType } from '@/libs/agent-runtime';
@@ -74,7 +75,16 @@ const ErrorMessageExtra = memo<{ data: ChatMessage }>(({ data }) => {
     }
 
     case ChatErrorType.InvalidAccessCode: {
-      return <InvalidAccessCode id={data.id} provider={data.error?.body?.provider} />;
+      const router = useRouter();
+      return (
+        <InvalidAccessCode
+          id={data.id}
+          onBuyClick={() => {
+            router.push('/buy');
+          }}
+          provider={data.error?.body?.provider}
+        />
+      );
     }
 
     case AgentRuntimeErrorType.InvalidBedrockCredentials:
