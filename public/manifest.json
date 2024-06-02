@@ -38,7 +38,7 @@
   "launch_handler": {
     "client_mode": ["navigate-existing", "auto"]
   },
-  "name": "LobeChat",
+  "name": "FastChat",
   "orientation": "portrait",
   "related_applications": [
     {
@@ -109,7 +109,7 @@
       "form_factor": "wide"
     }
   ],
-  "short_name": "LobeChat",
+  "short_name": "FastChat",
   "splash_pages": null,
   "start_url": ".",
   "tab_strip": {

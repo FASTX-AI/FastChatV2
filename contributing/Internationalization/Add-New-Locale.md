@@ -12,7 +12,7 @@ LobeChat uses [lobe-i18n](https://github.com/lobehub/lobe-cli-toolbox/tree/maste
 
 ## Adding New Language Support
 
-To add new language internationalization support in LobeChat (for example, adding Vietnamese `vi-VN`), please follow the steps below:
+To add new language internationalization support in FastChat (for example, adding Vietnamese `vi-VN`), please follow the steps below:
 
 ### Step 1: Update the Internationalization Configuration File
 
@@ -56,7 +56,7 @@ Ensure that you follow LobeChat's contribution guidelines and provide a necessar
 ### Additional Information
 
 - After submitting your Pull Request, please patiently wait for the project maintainers to review it.
-- If you encounter any issues, you can reach out to the LobeChat community for assistance.
+- If you encounter any issues, you can reach out to the FastChat community for assistance.
 - For more accurate results, ensure that your Pull Request is based on the latest main branch and stays in sync with the main branch.
 
-By following the above steps, you can successfully add new language support to LobeChat and ensure that the application provides a localized experience for more users.
+By following the above steps, you can successfully add new language support to FastChat and ensure that the application provides a localized experience for more users.

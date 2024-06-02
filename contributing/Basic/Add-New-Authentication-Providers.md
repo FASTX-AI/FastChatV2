@@ -14,7 +14,7 @@ LobeChat uses [Auth.js v5](https://authjs.dev/) as the external authentication s
 
 ## Add New Authentication Provider
 
-To add a new authentication provider in LobeChat (for example, adding Okta), you need to follow the steps below:
+To add a new authentication provider in FastChat (for example, adding Okta), you need to follow the steps below:
 
 ### Pre-requisites: Check the Official Provider List
 

@@ -1,6 +1,6 @@
 # 技术开发上手指南
 
-欢迎来到 LobeChat 技术开发上手指南。LobeChat 是一款基于 Next.js 框架构建的 AI 会话应用，它汇集了一系列的技术栈，以实现多样化的功能和特性。本指南将详细介绍 LobeChat 的主要技术组成，以及如何在你的开发环境中配置和使用这些技术。
+欢迎来到 FastChat 技术开发上手指南。LobeChat 是一款基于 Next.js 框架构建的 AI 会话应用，它汇集了一系列的技术栈，以实现多样化的功能和特性。本指南将详细介绍 FastChat 的主要技术组成，以及如何在你的开发环境中配置和使用这些技术。
 
 #### TOC
 
@@ -52,7 +52,7 @@ src
 
 我们推荐使用 WebStorm 作为你的集成开发环境（IDE）。
 
-1. **获取代码**：克隆 LobeChat 的代码库到本地：
+1. **获取代码**：克隆 FastChat 的代码库到本地：
 
 ```bash
 git clone https://github.com/lobehub/lobe-chat.git
@@ -79,11 +79,11 @@ bun run dev
 > \[!IMPORTANT]\
 > 如果使用`npm`安装依赖出现`Could not find "stylelint-config-recommended"`错误，请使用 `pnpm` 或者 `bun` 重新安装依赖。
 
-现在，你应该可以在浏览器中看到 LobeChat 的欢迎页面。详细的环境配置指南，请参考 [开发环境设置指南](Setup-Development.zh-CN.md)。
+现在，你应该可以在浏览器中看到 FastChat 的欢迎页面。详细的环境配置指南，请参考 [开发环境设置指南](Setup-Development.zh-CN.md)。
 
 ## 代码风格与贡献指南
 
-在 LobeChat 项目中，我们十分重视代码的质量和一致性。为此，我们制定了一系列的代码风格规范和贡献流程，以确保每位开发者都能顺利地参与到项目中。以下是你作为开发者需要遵守的代码风格和贡献准则。
+在 FastChat 项目中，我们十分重视代码的质量和一致性。为此，我们制定了一系列的代码风格规范和贡献流程，以确保每位开发者都能顺利地参与到项目中。以下是你作为开发者需要遵守的代码风格和贡献准则。
 
 - **代码风格**：我们使用 `@lobehub/lint` 统一代码风格，包括 ESLint、Prettier、remarklint 和 stylelint 配置。请遵守我们的代码规范，以保持代码的一致性和可读性。
 - **贡献流程**：我们采用 gitmoji 和 semantic release 作为代码提交和发布流程。请使用 gitmoji 标注您的提交信息，并确保遵循 semantic release 的规范，以便我们的自动化系统能够正确处理版本控制和发布。
@@ -104,7 +104,7 @@ LobeChat 采用 `i18next` 和 `lobe-i18n` 实现多语言支持，确保用户�
 
 ## 附录：资源与参考
 
-为了支持开发者更好地理解和使用 LobeChat 的技术栈，我们提供了一份详尽的资源与参考列表 —— [LobeChat 资源与参考](https://github.com/lobehub/lobe-chat/wiki/Resources.zh-CN) - 访问我们维护的资源列表，包括教程、文章和其他有用的链接。
+为了支持开发者更好地理解和使用 FastChat 的技术栈，我们提供了一份详尽的资源与参考列表 —— [LobeChat 资源与参考](https://github.com/lobehub/lobe-chat/wiki/Resources.zh-CN) - 访问我们维护的资源列表，包括教程、文章和其他有用的链接。
 
 我们鼓励开发者利用这些资源深入学习和提升技能，通过 [LobeChat GitHub Discussions](https://github.com/lobehub/lobe-chat/discussions) 或者 [Discord](https://discord.com/invite/AYFPHvv2jT) 加入社区讨论，提出问题或分享你的经验。
 

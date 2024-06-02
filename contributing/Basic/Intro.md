@@ -1,6 +1,6 @@
 # Technical Development Getting Started Guide
 
-Welcome to the LobeChat Technical Development Getting Started Guide. LobeChat is an AI conversation application built on the Next.js framework, incorporating a range of technology stacks to achieve diverse functionalities and features. This guide will detail the main technical components of LobeChat and how to configure and use these technologies in your development environment.
+Welcome to the FastChat Technical Development Getting Started Guide. FastChat is an AI conversation application built on the Next.js framework, incorporating a range of technology stacks to achieve diverse functionalities and features. This guide will detail the main technical components of FastChat and how to configure and use these technologies in your development environment.
 
 #### TOC
 
@@ -13,7 +13,7 @@ Welcome to the LobeChat Technical Development Getting Started Guide. LobeChat is
 
 ## Basic Technology Stack
 
-The core technology stack of LobeChat is as follows:
+The core technology stack of FastChat is as follows:
 
 - **Framework**: We chose [Next.js](https://nextjs.org/), a powerful React framework that provides key features such as server-side rendering, routing framework, and Router Handler.
 - **Component Library**: We use [Ant Design (antd)](https://ant.design/) as the basic component library, along with [lobe-ui](https://github.com/lobehub/lobe-ui) as our business component library.
@@ -26,7 +26,7 @@ The core technology stack of LobeChat is as follows:
 
 ## Folder Directory Structure
 
-The folder directory structure of LobeChat is as follows:
+The folder directory structure of FastChat is as follows:
 
 ```bash
 src
@@ -52,7 +52,7 @@ This section outlines setting up the development environment and local developme
 
 We recommend using WebStorm as your integrated development environment (IDE).
 
-1. **Get the code**: Clone the LobeChat code repository locally:
+1. **Get the code**: Clone the FastChat code repository locally:
 
 ```bash
 git clone https://github.com/lobehub/lobe-chat.git
@@ -79,11 +79,11 @@ bun run dev
 > \[!IMPORTANT]\
 > If you encounter the error "Could not find 'stylelint-config-recommended'" when installing dependencies with `npm`, please reinstall the dependencies using `pnpm` or `bun`.
 
-Now, you should be able to see the welcome page of LobeChat in your browser. For a detailed environment setup guide, please refer to [Development Environment Setup Guide](Setup-Development.zh-CN.md).
+Now, you should be able to see the welcome page of FastChat in your browser. For a detailed environment setup guide, please refer to [Development Environment Setup Guide](Setup-Development.zh-CN.md).
 
 ## Code Style and Contribution Guide
 
-In the LobeChat project, we place great emphasis on the quality and consistency of the code. For this reason, we have established a series of code style standards and contribution processes to ensure that every developer can smoothly participate in the project. Here are the code style and contribution guidelines you need to follow as a developer.
+In the FastChat project, we place great emphasis on the quality and consistency of the code. For this reason, we have established a series of code style standards and contribution processes to ensure that every developer can smoothly participate in the project. Here are the code style and contribution guidelines you need to follow as a developer.
 
 - **Code Style**: We use `@lobehub/lint` to unify the code style, including ESLint, Prettier, remarklint, and stylelint configurations. Please adhere to our code standards to maintain code consistency and readability.
 - **Contribution Process**: We use gitmoji and semantic release for code submission and release processes. Please use gitmoji to annotate your commit messages and ensure compliance with the semantic release standards so that our automation systems can correctly handle version control and releases.

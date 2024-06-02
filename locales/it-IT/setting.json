@@ -64,7 +64,7 @@
           "title": "Nome di visualizzazione del modello"
         },
         "files": {
-          "extra": "L'attuale implementazione del caricamento dei file in LobeChat è solo un hack temporaneo, da utilizzare a proprio rischio. Per un'implementazione completa del caricamento dei file, attendere futuri aggiornamenti.",
+          "extra": "L'attuale implementazione del caricamento dei file in FastChat è solo un hack temporaneo, da utilizzare a proprio rischio. Per un'implementazione completa del caricamento dei file, attendere futuri aggiornamenti.",
           "title": "Supporto per il caricamento dei file"
         },
         "functionCall": {

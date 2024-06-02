@@ -12,7 +12,7 @@ LobeChat 使用 [lobe-i18n](https://github.com/lobehub/lobe-cli-toolbox/tree/mas
 
 ## 添加新的语言支持
 
-为了在 LobeChat 中添加新的语言国际化支持，（例如添加越南语 `vi-VN`)，请按照以下步骤操作：
+为了在 FastChat 中添加新的语言国际化支持，（例如添加越南语 `vi-VN`)，请按照以下步骤操作：
 
 ### 步骤 1: 更新国际化配置文件
 
@@ -51,12 +51,12 @@ npm run i18n
 
 一旦你完成了上述步骤，你需要提交你的更改并创建一个 Pull Request。
 
-请确保你遵循了 LobeChat 的贡献指南，并提供必要的描述来说明你的更改。例如，参考之前的类似 Pull Request [#759](https://github.com/lobehub/lobe-chat/pull/759)。
+请确保你遵循了 FastChat 的贡献指南，并提供必要的描述来说明你的更改。例如，参考之前的类似 Pull Request [#759](https://github.com/lobehub/lobe-chat/pull/759)。
 
 ### 附加信息
 
 - 提交你的 Pull Request 后，请耐心等待项目维护人员的审查。
-- 如果遇到任何问题，可以联系 LobeChat 社区寻求帮助。
+- 如果遇到任何问题，可以联系 FastChat 社区寻求帮助。
 - 为了更精确的结果，确保你的 Pull Request 是基于最新的主分支，并且与主分支保持同步。
 
-通过遵循上述步骤，你可以成功为 LobeChat 添加新的语言支持，并且确保应用能够为更多用户提供本地化的体验。
+通过遵循上述步骤，你可以成功为 FastChat 添加新的语言支持，并且确保应用能够为更多用户提供本地化的体验。

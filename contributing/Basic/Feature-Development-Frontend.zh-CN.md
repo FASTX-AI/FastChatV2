@@ -123,4 +123,4 @@ const ChatPage = () => {
 export default ChatPage;
 ```
 
-以上就是在 LobeChat 中实现 "会话消息" 功能的步骤。当然，在 LobeChat 的实际开发中，真实场景所面临的业务诉求和场景远比上述 demo 复杂，请根据实际情况进行开发。
+以上就是在 FastChat 中实现 "会话消息" 功能的步骤。当然，在 FastChat 的实际开发中，真实场景所面临的业务诉求和场景远比上述 demo 复杂，请根据实际情况进行开发。

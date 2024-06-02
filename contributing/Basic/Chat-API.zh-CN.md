@@ -171,4 +171,4 @@ export const fetchSSE = async (fetchFn: () => Promise<Response>, options: FetchS
 };
 ```
 
-以上就是 LobeChat 会话 API 的核心实现。在理解了这些核心代码的基础上，便可以进一步扩展和优化 LobeChat 的 AI 功能。
+以上就是 FastChat 会话 API 的核心实现。在理解了这些核心代码的基础上，便可以进一步扩展和优化 FastChat 的 AI 功能。

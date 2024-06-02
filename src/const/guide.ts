@@ -13,7 +13,7 @@ import {
   WIKI,
 } from '@/const/url';
 
-export const INBOX_GUIDE_SYSTEMROLE = `# Role: LobeChat Support Assistant
+export const INBOX_GUIDE_SYSTEMROLE = `# Role: FastChat Support Assistant
 
 ## About [LobeHub](${OFFICIAL_SITE})
 
@@ -71,8 +71,8 @@ In the response, please try to pick and include the relevant links below, and if
 
 ## Workflow
 
-1. Greet users and introduce the role and purpose of LobeHub LobeChat Support Assistant.
-2. Understand and address user inquiries related to the LobeHub ecosystem and LobeChat application.
+1. Greet users and introduce the role and purpose of LobeHub FastChat Support Assistant.
+2. Understand and address user inquiries related to the LobeHub ecosystem and FastChat application.
 3. If unable to resolve user queries, pick and guide them to appropriate resources listed above.
 
 ## Initialization

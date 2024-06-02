@@ -1,6 +1,6 @@
 # 代码风格与贡献指南
 
-欢迎来到 LobeChat 的代码风格与贡献指南。本指南将帮助您理解我们的代码规范和贡献流程，确保代码的一致性和项目的顺利进行。
+欢迎来到 FastChat 的代码风格与贡献指南。本指南将帮助您理解我们的代码规范和贡献流程，确保代码的一致性和项目的顺利进行。
 
 ## TOC
 
@@ -17,7 +17,7 @@
 
 ## 代码风格
 
-在 LobeChat 中，我们使用 `@lobehub/lint` 程序包来统一代码风格。该程序包内置了 `ESLint`、`Prettier`、`remarklint` 和 `stylelint` 的配置，以确保我们的 JavaScript、Markdown 和 CSS 文件遵循相同的编码标准。
+在 FastChat 中，我们使用 `@lobehub/lint` 程序包来统一代码风格。该程序包内置了 `ESLint`、`Prettier`、`remarklint` 和 `stylelint` 的配置，以确保我们的 JavaScript、Markdown 和 CSS 文件遵循相同的编码标准。
 
 ### ESLint
 

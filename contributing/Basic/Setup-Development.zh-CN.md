@@ -1,6 +1,6 @@
 # 环境设置指南
 
-欢迎阅读 LobeChat 的开发环境设置指南。
+欢迎阅读 FastChat 的开发环境设置指南。
 
 #### TOC
 
@@ -17,7 +17,7 @@
 
 ## 本地开发
 
-在开始开发 LobeChat 之前，你需要在本地环境中安装和配置一些必要的软件和工具。本文档将指导你完成这些步骤。
+在开始开发 FastChat 之前，你需要在本地环境中安装和配置一些必要的软件和工具。本文档将指导你完成这些步骤。
 
 ### 开发环境需求
 
@@ -31,9 +31,9 @@
 
 ### 项目设置
 
-完成上述软件的安装后，你可以开始设置 LobeChat 项目了。
+完成上述软件的安装后，你可以开始设置 FastChat 项目了。
 
-1. **获取代码**：首先，你需要从 GitHub 上克隆 LobeChat 的代码库。在终端中运行以下命令：
+1. **获取代码**：首先，你需要从 GitHub 上克隆 FastChat 的代码库。在终端中运行以下命令：
 
 ```bash
 git clone https://github.com/lobehub/lobe-chat.git
@@ -59,11 +59,11 @@ pnpm i
 bun run dev
 ```
 
-现在，你可以在浏览器中打开 `http://localhost:3010`，你应该能看到 LobeChat 的欢迎页面。这表明你已经成功地设置了开发环境。
+现在，你可以在浏览器中打开 `http://localhost:3010`，你应该能看到 FastChat 的欢迎页面。这表明你已经成功地设置了开发环境。
 
 ![](https://github-production-user-asset-6210df.s3.amazonaws.com/28616219/274655364-414bc31e-8511-47a3-af17-209b530effc7.png)
 
-在开发过程中，如果你在环境设置上遇到任何问题，或者有任何关于 LobeChat 开发的问题，欢迎随时向我们提问。我们期待看到你的贡献！
+在开发过程中，如果你在环境设置上遇到任何问题，或者有任何关于 FastChat 开发的问题，欢迎随时向我们提问。我们期待看到你的贡献！
 
 [codespaces-link]: https://codespaces.new/lobehub/lobe-chat
 [codespaces-shield]: https://github.com/codespaces/badge.svg

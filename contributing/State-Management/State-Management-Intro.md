@@ -6,7 +6,7 @@ LobeChat differs from traditional CRUD web applications in that it involves a la
 
 - [Key Concepts](#key-concepts)
 - [Hierarchical Structure](#hierarchical-structure)
-  - [Best Practices for LobeChat SessionStore Directory Structure](#best-practices-for-lobechat-sessionstore-directory-structure)
+  - [Best Practices for FastChat SessionStore Directory Structure](#best-practices-for-fastchat-sessionstore-directory-structure)
 - [Implementation of SessionStore](#implementation-of-sessionstore)
 
 ## Key Concepts
@@ -110,11 +110,11 @@ LobeChat SessionStore
 └── store.ts
 ```
 
-Based on the provided directory structure of LobeChat SessionStore, we can update the previous document and convert the examples to the implementation of LobeChat's SessionStore. The following is a portion of the updated document:
+Based on the provided directory structure of FastChat SessionStore, we can update the previous document and convert the examples to the implementation of LobeChat's SessionStore. The following is a portion of the updated document:
 
-### Best Practices for LobeChat SessionStore Directory Structure
+### Best Practices for FastChat SessionStore Directory Structure
 
-In the LobeChat application, session management is a complex functional module, so we use the Slice pattern to organize the data flow. Below is the directory structure of LobeChat SessionStore, where each directory and file has its specific purpose:
+In the FastChat application, session management is a complex functional module, so we use the Slice pattern to organize the data flow. Below is the directory structure of FastChat SessionStore, where each directory and file has its specific purpose:
 
 ```bash
 src/store/session
