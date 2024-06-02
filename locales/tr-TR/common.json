@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Auto-generate agent description based on prompts",
   "autoGenerateTooltipDisabled": "Otomatik tamamlama işlevini kullanmadan önce ipucu kelimesini girin",
   "blog": "Ürün Blogu",
+  "buy": {
+    "desc": "Özel bir üye olun"
+  },
   "cancel": "İptal",
   "changelog": "Changelog",
   "close": "Kapat",
@@ -193,6 +196,7 @@
     "preview": "Önizleme",
     "profile": "Hesap Yönetimi",
     "setting": "Uygulama Ayarları",
+    "stable": "kararlı",
     "usages": "Kullanım İstatistikleri"
   }
 }

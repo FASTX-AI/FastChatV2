@@ -8,7 +8,7 @@ import { useQuery } from '@/hooks/useQuery';
 
 import { LayoutProps } from './type';
 
-const MOBILE_NAV_ROUTES = new Set(['/chat', '/market', '/me']);
+const MOBILE_NAV_ROUTES = new Set(['/chat', '/market', '/buy', '/me']);
 
 const Layout = memo(({ children, nav }: LayoutProps) => {
   const { showMobileWorkspace } = useQuery();

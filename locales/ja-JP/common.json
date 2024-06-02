@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "ヒントに基づいてエージェントの説明を自動生成します",
   "autoGenerateTooltipDisabled": "ツールチップを入力してから自動生成機能を使用してください",
   "blog": "製品ブログ",
+  "buy": {
+    "desc": "プレミアム会員になる"
+  },
   "cancel": "キャンセル",
   "changelog": "変更履歴",
   "close": "閉じる",
@@ -193,6 +196,7 @@
     "preview": "プレビュー",
     "profile": "アカウント管理",
     "setting": "アプリ設定",
+    "stable": "安定版",
     "usages": "利用量統計"
   }
 }

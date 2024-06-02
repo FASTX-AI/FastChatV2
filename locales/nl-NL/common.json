@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Automatisch assistentbeschrijving genereren op basis van suggesties",
   "autoGenerateTooltipDisabled": "Schakel de automatische aanvulling in nadat u een suggestiewoord heeft ingevoerd",
   "blog": "Product Blog",
+  "buy": {
+    "desc": "Word een gerespecteerd lid"
+  },
   "cancel": "Annuleren",
   "changelog": "Wijzigingslogboek",
   "close": "Sluiten",
@@ -193,6 +196,7 @@
     "preview": "voorbeeldversie",
     "profile": "accountbeheer",
     "setting": "app-instellingen",
+    "stable": "Stabiel",
     "usages": "gebruiksstatistieken"
   }
 }

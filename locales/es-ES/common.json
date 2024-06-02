@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Completar automáticamente la descripción del asistente basándose en las sugerencias",
   "autoGenerateTooltipDisabled": "Por favor, complete la palabra clave antes de usar la función de autocompletar",
   "blog": "Blog de productos",
+  "buy": {
+    "desc": "Convertirse en miembro VIP"
+  },
   "cancel": "Cancelar",
   "changelog": "Registro de cambios",
   "close": "Cerrar",
@@ -193,6 +196,7 @@
     "preview": "Vista previa",
     "profile": "Gestión de cuenta",
     "setting": "Configuración de la aplicación",
+    "stable": "versión estable",
     "usages": "Estadísticas de uso"
   }
 }

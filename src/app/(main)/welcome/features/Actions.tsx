@@ -16,7 +16,7 @@ const Actions = memo<{ mobile?: boolean }>(({ mobile }) => {
   return (
     <Flexbox gap={16} horizontal={!mobile} justify={'center'} width={'100%'} wrap={'wrap'}>
       {/* TODO: 切换到购买页面 */}
-      <Link href={'/market'}>
+      <Link href={'/buy'}>
         <Button block={mobile} size={'large'} style={{ minWidth: 160 }} type={'default'}>
           {t('button.market')}
         </Button>

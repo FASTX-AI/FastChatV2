@@ -17,16 +17,17 @@ config.rules['unicorn/prefer-spread'] = 0;
 config.rules['unicorn/catch-error-name'] = 0;
 config.rules['unicorn/no-array-for-each'] = 0;
 config.rules['unicorn/prefer-number-properties'] = 0;
+config.rules['unicorn/consistent-function-scoping'] = 0;
 
 config.overrides = [
   {
     extends: ['plugin:mdx/recommended'],
     files: ['*.mdx'],
     rules: {
-      '@typescript-eslint/no-unused-vars': 1,
-      'no-undef': 0,
-      'react/jsx-no-undef': 0,
-      'react/no-unescaped-entities': 0,
+      // '@typescript-eslint/no-unused-vars': 1,
+      // 'no-undef': 0,
+      // 'react/jsx-no-undef': 0,
+      // 'react/no-unescaped-entities': 0,
     },
     settings: {
       'mdx/code-blocks': false,

@@ -2,32 +2,13 @@
 
 import { Grid, Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
-import {
-  Book,
-  Feather,
-  FileClock,
-  Github,
-  Heart,
-  HeartHandshake,
-  Home,
-  Lock,
-  Rss,
-} from 'lucide-react';
+import { Heart } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import {
-  ABOUT,
-  BLOG,
-  CHANGELOG,
-  FEEDBACK,
-  GITHUB,
-  OFFICIAL_SITE,
-  PRIVACY_URL,
-  TERMS_URL,
-} from '@/const/url';
+import { ABOUT } from '@/const/url';
 
 const useStyles = createStyles(({ css, token, responsive, isDarkMode }) => ({
   card: css`
@@ -59,56 +40,8 @@ const AboutList = memo(() => {
   const { styles } = useStyles();
   const { t } = useTranslation('common');
 
+  // TODO: 修改为自己的地址
   const items = [
-    {
-      href: OFFICIAL_SITE,
-      icon: Home,
-      label: t('officialSite'),
-      value: 'officialSite',
-    },
-
-    {
-      href: FEEDBACK,
-      icon: Book,
-      label: t('document'),
-      value: 'feedback',
-    },
-    {
-      href: BLOG,
-      icon: Rss,
-      label: t('blog'),
-      value: 'blog',
-    },
-    {
-      href: GITHUB,
-      icon: Github,
-      label: 'GitHub',
-      value: 'feedback',
-    },
-    {
-      href: FEEDBACK,
-      icon: Feather,
-      label: t('feedback'),
-      value: 'feedback',
-    },
-    {
-      href: CHANGELOG,
-      icon: FileClock,
-      label: t('changelog'),
-      value: 'changelog',
-    },
-    {
-      href: TERMS_URL,
-      icon: HeartHandshake,
-      label: t('terms'),
-      value: 'terms',
-    },
-    {
-      href: PRIVACY_URL,
-      icon: Lock,
-      label: t('privacy'),
-      value: 'privacy',
-    },
     {
       href: ABOUT,
       icon: Heart,

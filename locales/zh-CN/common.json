@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "基于提示词自动补全助手描述",
   "autoGenerateTooltipDisabled": "请填写提示词后使用自动补全功能",
   "blog": "产品博客",
+  "buy": {
+    "desc": "成为尊贵会员"
+  },
   "cancel": "取消",
   "changelog": "更新日志",
   "close": "关闭",
@@ -191,6 +194,7 @@
     "moveGuide": "设置按钮搬到这里啦",
     "plans": "订阅方案",
     "preview": "预览版",
+    "stable": "稳定版",
     "profile": "账户管理",
     "setting": "应用设置",
     "usages": "用量统计"

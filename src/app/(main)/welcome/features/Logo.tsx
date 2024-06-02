@@ -19,7 +19,14 @@ const Logo = memo<{ mobile?: boolean }>(({ mobile }) => {
   return mobile ? (
     <Center height={240} width={240}>
       {/* <LogoThree size={240} /> */}
-      <Image alt="fast-chat" borderless preview={false} src="icons/icon-192x192.png" width={240} />
+      <Image
+        alt="fast-chat"
+        borderless
+        preview={false}
+        src="icons/icon-192x192.png"
+        style={imageStyle}
+        width={240}
+      />
     </Center>
   ) : (
     <Center

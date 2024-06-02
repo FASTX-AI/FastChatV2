@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "基於提示詞自動生成助手描述",
   "autoGenerateTooltipDisabled": "請填寫提示詞後使用自動補全功能",
   "blog": "產品部落格",
+  "buy": {
+    "desc": "成為尊貴會員"
+  },
   "cancel": "取消",
   "changelog": "變更日誌",
   "close": "關閉",
@@ -193,6 +196,7 @@
     "preview": "預覽",
     "profile": "帳戶管理",
     "setting": "應用設定",
+    "stable": "穩定版",
     "usages": "用量統計"
   }
 }

@@ -1,5 +1,5 @@
 import { Tag } from '@lobehub/ui';
-import { App, Button, Typography } from 'antd';
+import { App, Button } from 'antd';
 import isEqual from 'fast-deep-equal';
 import { startCase } from 'lodash-es';
 import { useRouter } from 'next/navigation';
@@ -14,8 +14,6 @@ import { useSessionStore } from '@/store/session';
 
 import { useStyles } from './style';
 
-const { Link } = Typography;
-
 const Header = memo(() => {
   const setSearchKeywords = useMarketStore((s) => s.setSearchKeywords);
   const router = useRouter();
@@ -26,7 +24,7 @@ const Header = memo(() => {
   const [isLoading, setIsLoading] = useState(false);
   const { message } = App.useApp();
 
-  const { meta, createAt, author, homepage, config } = agentItem;
+  const { meta, createAt, config } = agentItem;
   const { title, description, tags } = meta;
 
   const isMobile = useServerConfigStore((s) => s.isMobile);
@@ -67,9 +65,6 @@ const Header = memo(() => {
         {t('addAgent')}
       </Button>
       <Flexbox align={'center'} gap={12} horizontal>
-        <Link aria-label={author} className={styles.author} href={homepage} target={'_blank'}>
-          @{author}
-        </Link>
         <time className={styles.time} dateTime={new Date(createAt).toISOString()}>
           {createAt}
         </time>

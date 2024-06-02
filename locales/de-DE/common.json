@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Assistentenbeschreibung automatisch auf Basis von Vorschlägen vervollständigen",
   "autoGenerateTooltipDisabled": "Bitte geben Sie einen Hinweis ein, um die automatische Vervollständigung zu aktivieren",
   "blog": "Produkt-Blog",
+  "buy": {
+    "desc": "Werden Sie ein angesehenes Mitglied"
+  },
   "cancel": "Abbrechen",
   "changelog": "Änderungsprotokoll",
   "close": "Schließen",
@@ -193,6 +196,7 @@
     "preview": "Vorschau",
     "profile": "Kontoverwaltung",
     "setting": "App-Einstellungen",
+    "stable": "Stabile Version",
     "usages": "Nutzungsstatistiken"
   }
 }

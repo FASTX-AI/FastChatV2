@@ -1,10 +1,9 @@
-import { ActionIcon, DiscordIcon, Icon } from '@lobehub/ui';
+import { ActionIcon, Icon } from '@lobehub/ui';
 import { Badge } from 'antd';
 import {
   Book,
   CircleUserRound,
   Download,
-  Feather,
   HardDriveDownload,
   HardDriveUpload,
   LifeBuoy,
@@ -20,7 +19,7 @@ import { Flexbox } from 'react-layout-kit';
 import urlJoin from 'url-join';
 
 import type { MenuProps } from '@/components/Menu';
-import { DISCORD, DOCUMENTS, EMAIL_SUPPORT, GITHUB_ISSUES } from '@/const/url';
+import { DOCUMENTS, EMAIL_SUPPORT } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { useOpenSettings } from '@/hooks/useInterceptingRoutes';
 import { usePWAInstall } from '@/hooks/usePWAInstall';
@@ -152,16 +151,8 @@ export const useMenu = () => {
     },
   ];
 
+  // TODO: 更换为自己的email和文档地址
   const helps: MenuProps['items'] = [
-    {
-      icon: <Icon icon={DiscordIcon} />,
-      key: 'discord',
-      label: (
-        <Link href={DISCORD} target={'_blank'}>
-          {t('userPanel.discord')}
-        </Link>
-      ),
-    },
     {
       children: [
         {
@@ -170,15 +161,6 @@ export const useMenu = () => {
           label: (
             <Link href={DOCUMENTS} target={'_blank'}>
               {t('userPanel.docs')}
-            </Link>
-          ),
-        },
-        {
-          icon: <Icon icon={Feather} />,
-          key: 'feedback',
-          label: (
-            <Link href={GITHUB_ISSUES} target={'_blank'}>
-              {t('userPanel.feedback')}
             </Link>
           ),
         },

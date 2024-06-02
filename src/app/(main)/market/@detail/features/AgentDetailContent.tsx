@@ -8,7 +8,6 @@ import { Flexbox } from 'react-layout-kit';
 import Banner from '@/app/(main)/market/@detail/features/Banner';
 import { useMarketStore } from '@/store/market';
 
-import Comment from './Comment';
 import Header from './Header';
 import Loading from './Loading';
 import TokenTag from './TokenTag';
@@ -29,7 +28,7 @@ const AgentDetailContent = memo<{ mobile?: boolean }>(({ mobile }) => {
 
   if (isLoading || !data?.meta) return <Loading />;
 
-  const { config, meta, identifier } = data;
+  const { config, meta } = data;
   const { systemRole } = config;
 
   return (
@@ -48,10 +47,6 @@ const AgentDetailContent = memo<{ mobile?: boolean }>(({ mobile }) => {
                 </Flexbox>
               ),
             },
-            {
-              key: InfoTabs.comment,
-              label: t('sidebar.comment'),
-            },
           ]}
           onChange={setTab}
           style={{ paddingTop: 8 }}
@@ -59,12 +54,9 @@ const AgentDetailContent = memo<{ mobile?: boolean }>(({ mobile }) => {
         />
       </Flexbox>
       <Flexbox style={{ padding: 16 }}>
-        {tab === InfoTabs.prompt && (
-          <Markdown fullFeaturedCodeBlock variant={'chat'}>
-            {systemRole}
-          </Markdown>
-        )}
-        {tab === InfoTabs.comment && <Comment identifier={identifier} />}
+        <Markdown fullFeaturedCodeBlock variant={'chat'}>
+          {systemRole}
+        </Markdown>
       </Flexbox>
     </>
   );

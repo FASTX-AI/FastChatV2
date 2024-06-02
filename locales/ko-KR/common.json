@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "힌트 단어를 기반으로 에이전트 설명을 자동으로 완성합니다",
   "autoGenerateTooltipDisabled": "자동 완성 기능을 사용하려면 툴팁을 입력하십시오",
   "blog": "제품 블로그",
+  "buy": {
+    "desc": "고객님 사항"
+  },
   "cancel": "취소",
   "changelog": "변경 로그",
   "close": "닫기",
@@ -193,6 +196,7 @@
     "preview": "미리보기",
     "profile": "계정 관리",
     "setting": "앱 설정",
+    "stable": "안정 버전",
     "usages": "사용량 통계"
   }
 }

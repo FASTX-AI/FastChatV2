@@ -1,11 +1,9 @@
-import { DiscordIcon } from '@lobehub/ui';
-import { Book, CircleUserRound, Database, Download, Feather, Settings2 } from 'lucide-react';
+import { CircleUserRound, Database, Download, Settings2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 
 import { CellProps } from '@/components/Cell';
 import { enableAuth } from '@/const/auth';
-import { DISCORD, DOCUMENTS, FEEDBACK } from '@/const/url';
 import { usePWAInstall } from '@/hooks/usePWAInstall';
 import { useUserStore } from '@/store/user';
 import { authSelectors } from '@/store/user/slices/auth/selectors';
@@ -69,30 +67,6 @@ export const useCategory = () => {
       label: t('userPanel.data'),
       onClick: () => router.push('/me/data'),
     },
-    {
-      type: 'divider',
-    },
-  ];
-
-  const helps: CellProps[] = [
-    {
-      icon: Book,
-      key: 'docs',
-      label: t('document'),
-      onClick: () => window.open(DOCUMENTS, '__blank'),
-    },
-    {
-      icon: Feather,
-      key: 'feedback',
-      label: t('feedback'),
-      onClick: () => window.open(FEEDBACK, '__blank'),
-    },
-    {
-      icon: DiscordIcon,
-      key: 'discord',
-      label: 'Discord',
-      onClick: () => window.open(DISCORD, '__blank'),
-    },
   ];
 
   const mainItems = [
@@ -103,7 +77,6 @@ export const useCategory = () => {
     ...(enableAuth ? (isLoginWithAuth ? settings : []) : settingsWithoutAuth),
     ...(canInstall ? pwa : []),
     ...(isLogin ? data : []),
-    ...helps,
   ].filter(Boolean) as CellProps[];
 
   return mainItems;

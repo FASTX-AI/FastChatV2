@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Automatyczne uzupełnianie opisu asystenta na podstawie sugestii",
   "autoGenerateTooltipDisabled": "Proszę wprowadzić słowo kluczowe przed użyciem funkcji automatycznego uzupełniania",
   "blog": "Blog produktowy",
+  "buy": {
+    "desc": "Stań się szlachetnym członkiem"
+  },
   "cancel": "Anuluj",
   "changelog": "Dziennik zmian",
   "close": "Zamknij",
@@ -193,6 +196,7 @@
     "preview": "Podgląd",
     "profile": "Zarządzanie kontem",
     "setting": "Ustawienia aplikacji",
+    "stable": "stabilna wersja",
     "usages": "Statystyki użycia"
   }
 }

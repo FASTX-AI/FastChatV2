@@ -1,6 +1,6 @@
 import { Icon, MobileTabBar, type MobileTabBarProps } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
-import { Bot, MessageSquare, User } from 'lucide-react';
+import { Bot, Gem, MessageSquare, User } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { rgba } from 'polished';
 import { memo, useMemo } from 'react';
@@ -46,6 +46,14 @@ export default memo<Props>(({ className, tabBarKey }) => {
           router.push('/market');
         },
         title: t('tab.market'),
+      },
+      {
+        icon: (active) => <Icon className={active ? styles.active : undefined} icon={Gem} />,
+        key: SidebarTabKey.Buy,
+        onClick: () => {
+          router.push('/buy');
+        },
+        title: t('tab.buy'),
       },
       {
         icon: (active) => <Icon className={active ? styles.active : undefined} icon={User} />,

@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Completamento automatico basato su suggerimenti",
   "autoGenerateTooltipDisabled": "Si prega di compilare il campo suggerimento per abilitare la funzione di completamento automatico",
   "blog": "Blog sui prodotti",
+  "buy": {
+    "desc": "Diventa un membro VIP"
+  },
   "cancel": "Annulla",
   "changelog": "Registro modifiche",
   "close": "Chiudi",
@@ -193,6 +196,7 @@
     "preview": "Anteprima",
     "profile": "Gestione account",
     "setting": "Impostazioni app",
+    "stable": "versione stabile",
     "usages": "Statistiche di utilizzo"
   }
 }

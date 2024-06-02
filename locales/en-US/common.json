@@ -6,6 +6,9 @@
   "autoGenerateTooltip": "Auto-generate agent description based on prompts",
   "autoGenerateTooltipDisabled": "Please enter a tooltip before using the autocomplete feature",
   "blog": "Product Blog",
+  "buy": {
+    "desc": "Become a premium member"
+  },
   "cancel": "Cancel",
   "changelog": "Changelog",
   "close": "Close",
@@ -193,6 +196,7 @@
     "preview": "Preview",
     "profile": "Account Management",
     "setting": "App Settings",
+    "stable": "Stable Version",
     "usages": "Usage Statistics"
   }
 }

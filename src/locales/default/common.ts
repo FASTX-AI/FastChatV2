@@ -6,6 +6,9 @@ export default {
   autoGenerateTooltip: '基于提示词自动补全助手描述',
   autoGenerateTooltipDisabled: '请填写提示词后使用自动补全功能',
   blog: '产品博客',
+  buy: {
+    desc: '成为尊贵会员',
+  },
   cancel: '取消',
   changelog: '更新日志',
   close: '关闭',
@@ -149,7 +152,6 @@ export default {
     title: '同步状态',
     unconnected: { tip: '信令服务器连接失败，将无法建立点对点通信频道，请检查网络后重试' },
   },
-
   tab: {
     buy: '会员',
     chat: '会话',
@@ -187,6 +189,7 @@ export default {
     preview: '预览版',
     profile: '账户管理',
     setting: '应用设置',
+    stable: '稳定版',
     usages: '用量统计',
   },
 };
