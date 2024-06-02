@@ -9,14 +9,14 @@
       "replaceBtn": "Replace Batch",
       "title": "New Assistant Recommendations:"
     },
-    "defaultMessage": "I am your personal intelligent assistant LobeChat, how can I help you now?\nIf you need a more professional or customized assistant, you can click on `+` to create a custom assistant",
+    "defaultMessage": "I am your personal intelligent assistant FastChat, how can I help you now?\nIf you need a more professional or customized assistant, you can click on `+` to create a custom assistant",
     "qa": {
       "q01": "What is LobeHub?",
-      "q02": "What is LobeChat?",
+      "q02": "What is FastChat?",
       "q03": "Does FastChat have community support?",
       "q04": "What functions does FastChat support?",
-      "q05": "How to deploy and use LobeChat?",
-      "q06": "What is the pricing of LobeChat?",
+      "q05": "How to deploy and use FastChat?",
+      "q06": "What is the pricing of FastChat?",
       "q07": "Is FastChat free?",
       "q08": "Is there a cloud service version?",
       "q09": "Does FastChat support local language models?",

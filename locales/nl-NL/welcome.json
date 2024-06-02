@@ -9,14 +9,14 @@
       "replaceBtn": "Vervang een groep",
       "title": "Nieuwe aanbeveling assistent: "
     },
-    "defaultMessage": "Ik ben uw persoonlijke slimme assistent LobeChat, waarmee kan ik u helpen?\nAls u een meer professionele of op maat gemaakte assistent nodig heeft, kunt u op `+` klikken om een aangepaste assistent te maken",
+    "defaultMessage": "Ik ben uw persoonlijke slimme assistent FastChat, waarmee kan ik u helpen?\nAls u een meer professionele of op maat gemaakte assistent nodig heeft, kunt u op `+` klikken om een aangepaste assistent te maken",
     "qa": {
       "q01": "Wat is LobeHub?",
-      "q02": "Wat is LobeChat?",
+      "q02": "Wat is FastChat?",
       "q03": "Heeft FastChat community-ondersteuning?",
-      "q04": "Welke functies ondersteunt LobeChat?",
+      "q04": "Welke functies ondersteunt FastChat?",
       "q05": "Hoe kan ik FastChat implementeren en gebruiken?",
-      "q06": "Hoe is de prijsstelling van LobeChat?",
+      "q06": "Hoe is de prijsstelling van FastChat?",
       "q07": "Is FastChat gratis?",
       "q08": "Is er een cloudserviceversie beschikbaar?",
       "q09": "Ondersteunt FastChat lokale taalmodellen?",
