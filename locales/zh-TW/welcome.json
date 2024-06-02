@@ -11,7 +11,7 @@
     },
     "defaultMessage": "我是您的私人智能助理 FastChat ，請問現在能幫您做什麼？\n如果需要獲得更加專業或定制的助手，可以點擊 `+` 創建自定義助手",
     "qa": {
-      "q01": "LobeHub 是什麼？",
+      "q01": "FastChat是什麼？",
       "q02": "FastChat 是什麼？",
       "q03": "FastChat 是否有社區支持？",
       "q04": "FastChat 支持哪些功能？",
