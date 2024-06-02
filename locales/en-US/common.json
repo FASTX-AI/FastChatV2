@@ -157,6 +157,7 @@
     }
   },
   "tab": {
+    "buy": "Member",
     "chat": "Chat",
     "market": "Discover",
     "me": "Me",

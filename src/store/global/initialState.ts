@@ -4,10 +4,11 @@ import { SessionDefaultGroup } from '@/types/session';
 import { AsyncLocalStorage } from '@/utils/localStorage';
 
 export enum SidebarTabKey {
+  Buy = 'buy',
   Chat = 'chat',
   Market = 'market',
   Me = 'me',
-  Setting = 'settings',
+  Setting = 'settings'
 }
 
 export enum ChatSettingsTabs {

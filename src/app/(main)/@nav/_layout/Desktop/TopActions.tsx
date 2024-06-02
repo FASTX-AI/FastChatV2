@@ -1,5 +1,5 @@
 import { ActionIcon } from '@lobehub/ui';
-import { Compass, MessageSquare } from 'lucide-react';
+import { Compass, Gem, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -15,7 +15,7 @@ export interface TopActionProps {
 const TopActions = memo<TopActionProps>(({ tab }) => {
   const { t } = useTranslation('common');
   const switchBackToChat = useGlobalStore((s) => s.switchBackToChat);
-
+  // TODO: 这里可以增加tabBar
   return (
     <>
       <Link
@@ -41,6 +41,15 @@ const TopActions = memo<TopActionProps>(({ tab }) => {
           placement={'right'}
           size="large"
           title={t('tab.market')}
+        />
+      </Link>
+      <Link aria-label={t('tab.buy')} href={'/buy'}>
+        <ActionIcon
+          active={tab === SidebarTabKey.Buy}
+          icon={Gem}
+          placement={'right'}
+          size="large"
+          title={t('tab.buy')}
         />
       </Link>
     </>

@@ -11,7 +11,7 @@
     },
     "defaultMessage": "我是您的私人智能助理 FastChat ，请问现在能帮您做什么？\n如果需要获得更加专业或定制的助手，可以点击 `+` 创建自定义助手",
     "qa": {
-      "q01": "FastChat是什么？",
+      "q01": "FastChat 是什么？",
       "q02": "FastChat 是什么？",
       "q03": "FastChat 是否有社区支持？",
       "q04": "FastChat 支持哪些功能？",
