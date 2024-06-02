@@ -9,9 +9,9 @@
       "replaceBtn": "Zmień",
       "title": "Nowe zalecenia asystenta:"
     },
-    "defaultMessage": "Jestem Twoim prywatnym asystentem LobeChat. W czym mogę pomóc?\nJeśli potrzebujesz bardziej profesjonalnej lub spersonalizowanej pomocy, kliknij `+` aby stworzyć niestandardowego asystenta",
+    "defaultMessage": "Jestem Twoim prywatnym asystentem FastChat. W czym mogę pomóc?\nJeśli potrzebujesz bardziej profesjonalnej lub spersonalizowanej pomocy, kliknij `+` aby stworzyć niestandardowego asystenta",
     "qa": {
-      "q01": "Czym jest LobeHub?",
+      "q01": "Czym jest FastChat?",
       "q02": "Czym jest FastChat?",
       "q03": "Czy FastChat ma wsparcie społecznościowe?",
       "q04": "Jakie funkcje obsługuje FastChat?",

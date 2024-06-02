@@ -9,9 +9,9 @@
       "replaceBtn": "Ersetzen",
       "title": "Neue Assistentenempfehlung:"
     },
-    "defaultMessage": "Ich bin Ihr persönlicher intelligenter Assistent LobeChat. Wie kann ich Ihnen jetzt helfen?\nWenn Sie einen professionelleren oder maßgeschneiderten Assistenten benötigen, klicken Sie auf `+`, um einen benutzerdefinierten Assistenten zu erstellen.",
+    "defaultMessage": "Ich bin Ihr persönlicher intelligenter Assistent FastChat. Wie kann ich Ihnen jetzt helfen?\nWenn Sie einen professionelleren oder maßgeschneiderten Assistenten benötigen, klicken Sie auf `+`, um einen benutzerdefinierten Assistenten zu erstellen.",
     "qa": {
-      "q01": "Was ist LobeHub?",
+      "q01": "Was ist FastChat?",
       "q02": "Was ist FastChat?",
       "q03": "Hat FastChat Community-Support?",
       "q04": "Welche Funktionen unterstützt FastChat?",

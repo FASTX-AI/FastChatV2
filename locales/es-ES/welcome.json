@@ -9,9 +9,9 @@
       "replaceBtn": "Cambiar grupo",
       "title": "Recomendación de asistentes nuevos:"
     },
-    "defaultMessage": "Soy tu asistente de inteligencia artificial personal, LobeChat. ¿En qué puedo ayudarte ahora?\nSi necesitas un asistente más profesional o personalizado, puedes hacer clic en `+` para crear un asistente personalizado",
+    "defaultMessage": "Soy tu asistente de inteligencia artificial personal, FastChat. ¿En qué puedo ayudarte ahora?\nSi necesitas un asistente más profesional o personalizado, puedes hacer clic en `+` para crear un asistente personalizado",
     "qa": {
-      "q01": "¿Qué es LobeHub?",
+      "q01": "¿Qué es FastChat?",
       "q02": "¿Qué es FastChat?",
       "q03": "¿FastChat tiene soporte comunitario?",
       "q04": "¿Qué funciones admite FastChat?",

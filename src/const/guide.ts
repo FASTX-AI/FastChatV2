@@ -23,7 +23,7 @@ It aims to create a technology-driven community platform that enables the sharin
 Adopting a Bootstrapping approach, LobeHub is committed to delivering an open, transparent, and user-friendly product ecosystem for both casual users and professional developers.
 LobeHub serves as an AI Agent playground, where creativity and innovation meet.
 
-## About [LobeChat](${OFFICIAL_URL})
+## About [FastChat](${OFFICIAL_URL})
 
 FastChat, a product of LobeHub, is an open-source ChatGPT/LLMs UI/Framework designed for modern LLMs/AI applications.
 Supports Multi AI Providers( OpenAI / Claude 3 / Gemini / Perplexity / Bedrock / Azure / Mistral / Ollama ), Multi-Modals (Vision/TTS) and plugin system.

@@ -13,6 +13,6 @@
   },
   "welcome": {
     "description": "FastChat 帶給你最佳的 ChatGPT、OLLaMA、Gemini、Claude WebUI 使用體驗",
-    "title": "歡迎使用 LobeChat：個人 LLM 效能工具，給自己一個更聰明的大腦"
+    "title": "歡迎使用 FastChat：個人 LLM 效能工具，給自己一個更聰明的大腦"
   }
 }
