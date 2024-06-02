@@ -1,6 +1,6 @@
 'use client';
 
-import { ChatHeader, Image } from '@lobehub/ui';
+import { ChatHeader } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';
 
@@ -12,18 +12,11 @@ export const useStyles = createStyles(({ css, token }) => ({
 }));
 
 const Header = memo(() => {
-  const logoImageStyle = {
-    backgroundColor: '#00000000',
-    border: '0px solid #00000000 !important',
-    boxShadow: '0 0 0 0px #00000000 !important',
-    height: 'auto',
-    paddingTop: 10,
-    width: 150,
-  };
-
   return (
     <ChatHeader
-      left={<Image objectFit="contain" src="/images/text-logo.png" style={logoImageStyle} />}
+      left={
+        <h1 style={{ fontSize: 32, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>FastChat</h1>
+      }
     />
   );
 });

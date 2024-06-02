@@ -1,6 +1,6 @@
 'use client';
 
-import { ActionIcon, Image } from '@lobehub/ui';
+import { ActionIcon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { MessageSquarePlus } from 'lucide-react';
 import { memo } from 'react';
@@ -32,19 +32,14 @@ const Header = memo(() => {
   const { enableWebrtc, showCreateSession } = useServerConfigStore(featureFlagsSelectors);
 
   const { mutate, isValidating } = useActionSWR('session.createSession', () => createSession());
-  const logoImageStyle = {
-    backgroundColor: '#00000000',
-    border: '0px solid #00000000 !important',
-    boxShadow: '0 0 0 0px #00000000 !important',
-    height: 'auto',
-    width: 150,
-  };
 
   return (
     <Flexbox className={styles.top} gap={16} padding={16}>
       <Flexbox distribution={'space-between'} horizontal>
         <Flexbox align={'center'} gap={4} horizontal>
-          <Image objectFit="contain" src="/images/text-logo.png" style={logoImageStyle} />
+          <h1 style={{ fontSize: 32, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>
+            FastChat
+          </h1>
           {enableWebrtc && <SyncStatusTag />}
         </Flexbox>
         {showCreateSession && (
