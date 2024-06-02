@@ -1,7 +1,9 @@
+// import { GridShowcase, Logo } from '@lobehub/ui';
 import { GridShowcase } from '@lobehub/ui';
 import { PropsWithChildren } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
+// import Follow from '@/features/Follow';
 
 const COPYRIGHT = `© ${new Date().getFullYear()} FastChat, LLC`;
 
