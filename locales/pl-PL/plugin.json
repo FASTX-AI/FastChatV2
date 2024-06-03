@@ -70,7 +70,7 @@
         "pattenErrorMessage": "Dozwolone są tylko znaki alfanumeryczne, myślnik - i podkreślenie _"
       },
       "manifest": {
-        "desc": "FastChat zainstaluje wtyczkę za pomocą tego linku",
+        "desc": "FastGPT zainstaluje wtyczkę za pomocą tego linku",
         "label": "Opis wtyczki (Manifest) URL",
         "preview": "Podgląd",
         "refresh": "Odśwież"
@@ -103,7 +103,7 @@
       "edit": "Edytuj niestandardową wtyczkę"
     },
     "type": {
-      "lobe": "Wtyczka FastChat",
+      "lobe": "Wtyczka FastGPT",
       "openai": "Wtyczka OpenAI"
     },
     "update": "Aktualizuj",

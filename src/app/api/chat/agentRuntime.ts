@@ -2,8 +2,8 @@ import { getLLMConfig } from '@/config/llm';
 import { JWTPayload } from '@/const/auth';
 import { INBOX_SESSION_ID } from '@/const/session';
 import {
-  LOBE_CHAT_OBSERVATION_ID,
-  LOBE_CHAT_TRACE_ID,
+  FAST_GPT_OBSERVATION_ID,
+  FAST_GPT_TRACE_ID,
   TracePayload,
   TraceTagMap,
 } from '@/const/trace';
@@ -226,8 +226,8 @@ export const createTraceOptions = (
       },
     },
     headers: {
-      [LOBE_CHAT_OBSERVATION_ID]: generation?.id,
-      [LOBE_CHAT_TRACE_ID]: trace?.id,
+      [FAST_GPT_OBSERVATION_ID]: generation?.id,
+      [FAST_GPT_TRACE_ID]: trace?.id,
     },
   };
 };

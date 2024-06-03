@@ -26,7 +26,7 @@ const devtools = createDevtools('session');
 export const useSessionStore = createWithEqualityFn<SessionStore>()(
   subscribeWithSelector(
     devtools(createStore, {
-      name: 'FastChat_Session' + (isDev ? '_DEV' : ''),
+      name: 'FastGPT_Session' + (isDev ? '_DEV' : ''),
     }),
   ),
   shallow,

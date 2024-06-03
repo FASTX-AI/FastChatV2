@@ -5,7 +5,7 @@ import { Flexbox } from 'react-layout-kit';
 
 // import Follow from '@/features/Follow';
 
-const COPYRIGHT = `© ${new Date().getFullYear()} FastChat, LLC`;
+const COPYRIGHT = `© ${new Date().getFullYear()} FastGPT, LLC`;
 
 const DesktopLayout = ({ children }: PropsWithChildren) => {
   return (

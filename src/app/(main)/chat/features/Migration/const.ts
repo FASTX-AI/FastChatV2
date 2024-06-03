@@ -6,8 +6,8 @@ export enum UpgradeStatus {
   UPGRADE_FAILED,
 }
 
-export const V1DB_NAME = 'FastChat';
-export const V1DB_TABLE_NAME = 'LOBE_CHAT';
+export const V1DB_NAME = 'FastGPT';
+export const V1DB_TABLE_NAME = 'FAST_GPT';
 
 export interface MigrationError {
   message: string;

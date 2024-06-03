@@ -1,4 +1,4 @@
-import { JWTPayload, LOBE_CHAT_AUTH_HEADER } from '@/const/auth';
+import { FAST_GPT_AUTH_HEADER, JWTPayload } from '@/const/auth';
 import { ModelProvider } from '@/libs/agent-runtime';
 import { useUserStore } from '@/store/user';
 import { keyVaultsConfigSelectors, userProfileSelectors } from '@/store/user/selectors';
@@ -71,5 +71,5 @@ export const createHeaderWithAuth = async (params?: AuthParams): Promise<Headers
   const token = await createAuthTokenWithPayload(payload);
 
   // eslint-disable-next-line no-undef
-  return { ...params?.headers, [LOBE_CHAT_AUTH_HEADER]: token };
+  return { ...params?.headers, [FAST_GPT_AUTH_HEADER]: token };
 };

@@ -3,7 +3,7 @@ import { getAuth } from '@clerk/nextjs/server';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { checkAuthMethod, getJWTPayload } from '@/app/api/middleware/auth/utils';
-import { LOBE_CHAT_AUTH_HEADER, OAUTH_AUTHORIZED } from '@/const/auth';
+import { FAST_GPT_AUTH_HEADER, OAUTH_AUTHORIZED } from '@/const/auth';
 import { AgentRuntime, LobeRuntimeAI } from '@/libs/agent-runtime';
 import { ChatErrorType } from '@/types/fetch';
 
@@ -37,7 +37,7 @@ let request: Request;
 beforeEach(() => {
   request = new Request(new URL('https://test.com'), {
     headers: {
-      [LOBE_CHAT_AUTH_HEADER]: 'Bearer some-valid-token',
+      [FAST_GPT_AUTH_HEADER]: 'Bearer some-valid-token',
       [OAUTH_AUTHORIZED]: 'true',
     },
     method: 'POST',
@@ -78,7 +78,7 @@ describe('POST handler', () => {
       expect(spy).toHaveBeenCalledWith('test-provider', expect.anything());
     });
 
-    it('should return Unauthorized error when LOBE_CHAT_AUTH_HEADER is missing', async () => {
+    it('should return Unauthorized error when FAST_GPT_AUTH_HEADER is missing', async () => {
       const mockParams = { provider: 'test-provider' };
       const requestWithoutAuthHeader = new Request(new URL('https://test.com'), {
         method: 'POST',
@@ -121,7 +121,7 @@ describe('POST handler', () => {
         method: 'POST',
         body: JSON.stringify({ model: 'test-model' }),
         headers: {
-          [LOBE_CHAT_AUTH_HEADER]: 'some-valid-token',
+          [FAST_GPT_AUTH_HEADER]: 'some-valid-token',
           [OAUTH_AUTHORIZED]: '1',
         },
       });
@@ -165,7 +165,7 @@ describe('POST handler', () => {
       const mockParams = { provider: 'test-provider' };
       const mockChatPayload = { message: 'Hello, world!' };
       request = new Request(new URL('https://test.com'), {
-        headers: { [LOBE_CHAT_AUTH_HEADER]: 'Bearer some-valid-token' },
+        headers: { [FAST_GPT_AUTH_HEADER]: 'Bearer some-valid-token' },
         method: 'POST',
         body: JSON.stringify(mockChatPayload),
       });
@@ -191,7 +191,7 @@ describe('POST handler', () => {
       const mockParams = { provider: 'test-provider' };
       const mockChatPayload = { message: 'Hello, world!' };
       request = new Request(new URL('https://test.com'), {
-        headers: { [LOBE_CHAT_AUTH_HEADER]: 'Bearer some-valid-token' },
+        headers: { [FAST_GPT_AUTH_HEADER]: 'Bearer some-valid-token' },
         method: 'POST',
         body: JSON.stringify(mockChatPayload),
       });

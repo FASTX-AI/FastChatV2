@@ -1,7 +1,7 @@
 {
   "about": "Hakkında",
   "advanceSettings": "Gelişmiş Ayarlar",
-  "appInitializing": "FastChat başlatılıyor, lütfen bekleyin...",
+  "appInitializing": "FastGPT başlatılıyor, lütfen bekleyin...",
   "autoGenerate": "Otomatik Oluştur",
   "autoGenerateTooltip": "Auto-generate agent description based on prompts",
   "autoGenerateTooltipDisabled": "Otomatik tamamlama işlevini kullanmadan önce ipucu kelimesini girin",
@@ -169,9 +169,9 @@
   "telemetry": {
     "allow": "İzin ver",
     "deny": "Reddet",
-    "desc": "Anonim kullanım bilgilerinizi toplamamıza izin vererek FastChat'i geliştirmemize ve size daha iyi bir ürün deneyimi sunmamıza yardımcı olabilirsiniz. Dilediğiniz zaman 'Ayarlar' - 'Hakkında' bölümünden devre dışı bırakabilirsiniz.",
+    "desc": "Anonim kullanım bilgilerinizi toplamamıza izin vererek FastGPT'i geliştirmemize ve size daha iyi bir ürün deneyimi sunmamıza yardımcı olabilirsiniz. Dilediğiniz zaman 'Ayarlar' - 'Hakkında' bölümünden devre dışı bırakabilirsiniz.",
     "learnMore": "Daha Fazla Bilgi",
-    "title": "FastChat'i Geliştirmemize Yardımcı Olun"
+    "title": "FastGPT'i Geliştirmemize Yardımcı Olun"
   },
   "temp": "Geçici",
   "terms": "Hizmet Koşulları",

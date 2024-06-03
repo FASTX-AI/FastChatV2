@@ -70,7 +70,7 @@
         "pattenErrorMessage": "Sadece İngilizce karakterler, sayılar, - ve _ kullanılabilir"
       },
       "manifest": {
-        "desc": "FastChat, eklentiyi bu bağlantı üzerinden yükleyecek",
+        "desc": "FastGPT, eklentiyi bu bağlantı üzerinden yükleyecek",
         "label": "Eklenti Tanım Dosyası (Manifest) URL'si",
         "preview": "Manifesti Önizle",
         "refresh": "Yenile"
@@ -103,7 +103,7 @@
       "edit": "Özel Eklentiyi Düzenle"
     },
     "type": {
-      "lobe": "FastChat Eklentisi",
+      "lobe": "FastGPT Eklentisi",
       "openai": "OpenAI Eklentisi"
     },
     "update": "Güncelle",

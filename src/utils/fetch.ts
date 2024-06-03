@@ -2,7 +2,7 @@ import { fetchEventSource } from '@microsoft/fetch-event-source';
 import { t } from 'i18next';
 import { produce } from 'immer';
 
-import { LOBE_CHAT_OBSERVATION_ID, LOBE_CHAT_TRACE_ID } from '@/const/trace';
+import { FAST_GPT_OBSERVATION_ID, FAST_GPT_TRACE_ID } from '@/const/trace';
 import { ErrorResponse, ErrorType } from '@/types/fetch';
 import {
   ChatMessageError,
@@ -379,8 +379,8 @@ export const fetchSSE = async (url: string, options: RequestInit & FetchSSEOptio
         options.onMessageHandle?.({ text: output, type: 'text' });
       }
 
-      const traceId = response.headers.get(LOBE_CHAT_TRACE_ID);
-      const observationId = response.headers.get(LOBE_CHAT_OBSERVATION_ID);
+      const traceId = response.headers.get(FAST_GPT_TRACE_ID);
+      const observationId = response.headers.get(FAST_GPT_OBSERVATION_ID);
 
       if (textController.isTokenRemain()) {
         await textController.startAnimation(15);

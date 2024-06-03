@@ -23,7 +23,7 @@
     "url": "https://github.com/lobehub/lobe-chat.git"
   },
   "license": "MIT",
-  "author": "FastChat<i@lobehub.com>",
+  "author": "FastGPT",
   "sideEffects": false,
   "scripts": {
     "build": "next build",

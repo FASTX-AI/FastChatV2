@@ -1,7 +1,7 @@
 {
   "about": "About",
   "advanceSettings": "Advanced Settings",
-  "appInitializing": "FastChat is initializing, please wait...",
+  "appInitializing": "FastGPT is initializing, please wait...",
   "autoGenerate": "Auto Generate",
   "autoGenerateTooltip": "Auto-generate agent description based on prompts",
   "autoGenerateTooltipDisabled": "Please enter a tooltip before using the autocomplete feature",
@@ -169,9 +169,9 @@
   "telemetry": {
     "allow": "Allow",
     "deny": "Deny",
-    "desc": "We would like to anonymously collect usage information to help us improve FastChat and provide you with a better product experience. You can disable this at any time in Settings - About.",
+    "desc": "We would like to anonymously collect usage information to help us improve FastGPT and provide you with a better product experience. You can disable this at any time in Settings - About.",
     "learnMore": "Learn More",
-    "title": "Help FastChat be better"
+    "title": "Help FastGPT be better"
   },
   "temp": "Temporary",
   "terms": "Terms of Service",

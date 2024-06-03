@@ -70,7 +70,7 @@
         "pattenErrorMessage": "Es können nur Buchstaben, Zahlen, - und _ eingegeben werden"
       },
       "manifest": {
-        "desc": "FastChat wird das Plugin über diesen Link installieren",
+        "desc": "FastGPT wird das Plugin über diesen Link installieren",
         "label": "Plugin-Beschreibungsdatei (Manifest) URL",
         "preview": "Vorschau des Manifests",
         "refresh": "Aktualisieren"
@@ -103,7 +103,7 @@
       "edit": "Benutzerdefiniertes Plugin bearbeiten"
     },
     "type": {
-      "lobe": "FastChat-Plugin",
+      "lobe": "FastGPT-Plugin",
       "openai": "OpenAI-Plugin"
     },
     "update": "Aktualisieren",

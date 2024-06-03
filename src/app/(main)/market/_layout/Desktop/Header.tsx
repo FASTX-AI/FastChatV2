@@ -15,7 +15,7 @@ const Header = memo(() => {
   return (
     <ChatHeader
       left={
-        <h1 style={{ fontSize: 32, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>FastChat</h1>
+        <h1 style={{ fontSize: 32, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>FastGPT</h1>
       }
     />
   );

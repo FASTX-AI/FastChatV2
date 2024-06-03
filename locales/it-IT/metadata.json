@@ -1,7 +1,7 @@
 {
   "chat": {
-    "description": "FastChat offre la migliore esperienza di utilizzo di ChatGPT, OLLaMA, Gemini, Claude WebUI",
-    "title": "FastChat: strumento personale per la produttività LLM, per un cervello più intelligente"
+    "description": "FastGPT offre la migliore esperienza di utilizzo di ChatGPT, OLLaMA, Gemini, Claude WebUI",
+    "title": "FastGPT: strumento personale per la produttività LLM, per un cervello più intelligente"
   },
   "market": {
     "description": "Creazione di contenuti, copywriting, domande e risposte, generazione di immagini, generazione di video, generazione vocale, agente intelligente, flusso di lavoro automatizzato, personalizza il tuo assistente intelligente AI / GPTs / OLLaMA",
@@ -12,7 +12,7 @@
     "title": "Mercato dei plugin"
   },
   "welcome": {
-    "description": "FastChat offre la migliore esperienza di utilizzo di ChatGPT, OLLaMA, Gemini, Claude WebUI",
-    "title": "Benvenuto su FastChat: strumento personale per la produttività LLM, per un cervello più intelligente"
+    "description": "FastGPT offre la migliore esperienza di utilizzo di ChatGPT, OLLaMA, Gemini, Claude WebUI",
+    "title": "Benvenuto su FastGPT: strumento personale per la produttività LLM, per un cervello più intelligente"
   }
 }

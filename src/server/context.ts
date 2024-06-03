@@ -2,7 +2,7 @@
 import { getAuth } from '@clerk/nextjs/server';
 import { NextRequest } from 'next/server';
 
-import { JWTPayload, LOBE_CHAT_AUTH_HEADER, enableClerk } from '@/const/auth';
+import { FAST_GPT_AUTH_HEADER, JWTPayload, enableClerk } from '@/const/auth';
 
 type ClerkAuth = ReturnType<typeof getAuth>;
 
@@ -36,7 +36,7 @@ export type Context = Awaited<ReturnType<typeof createContextInner>>;
 export const createContext = async (request: NextRequest): Promise<Context> => {
   // for API-response caching see https://trpc.io/docs/v11/caching
 
-  const authorization = request.headers.get(LOBE_CHAT_AUTH_HEADER);
+  const authorization = request.headers.get(FAST_GPT_AUTH_HEADER);
 
   let userId;
   let auth;

@@ -3,7 +3,7 @@ import { getAuth } from '@clerk/nextjs/server';
 import { NextRequest } from 'next/server';
 
 import { createErrorResponse } from '@/app/api/errorResponse';
-import { JWTPayload, LOBE_CHAT_AUTH_HEADER, OAUTH_AUTHORIZED, enableClerk } from '@/const/auth';
+import { FAST_GPT_AUTH_HEADER, JWTPayload, OAUTH_AUTHORIZED, enableClerk } from '@/const/auth';
 import { AgentRuntimeError, ChatCompletionErrorPayload } from '@/libs/agent-runtime';
 import { ChatErrorType } from '@/types/fetch';
 
@@ -22,7 +22,7 @@ export const checkAuth =
 
     try {
       // get Authorization from header
-      const authorization = req.headers.get(LOBE_CHAT_AUTH_HEADER);
+      const authorization = req.headers.get(FAST_GPT_AUTH_HEADER);
       const oauthAuthorized = !!req.headers.get(OAUTH_AUTHORIZED);
 
       if (!authorization) throw AgentRuntimeError.createError(ChatErrorType.Unauthorized);

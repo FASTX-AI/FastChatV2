@@ -84,7 +84,7 @@ describe('userProfileSelectors', () => {
         enableAuth: () => false,
       } as unknown as UserStore;
 
-      expect(userProfileSelectors.username(store)).toBe('FastChat');
+      expect(userProfileSelectors.username(store)).toBe('FastGPT');
     });
 
     it('should return user username when signed in', () => {

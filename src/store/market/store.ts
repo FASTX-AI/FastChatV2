@@ -20,7 +20,7 @@ const persistOptions: PersistOptions<Store> = {
 
   storage: createHyperStorage({
     localStorage: {
-      dbName: 'FastChat',
+      dbName: 'FastGPT',
       selectors: ['agentMap'],
     },
     url: {

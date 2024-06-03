@@ -5,11 +5,11 @@ export const enableNextAuth = authEnv.NEXT_PUBLIC_ENABLE_NEXT_AUTH;
 export const enableAuth =
   authEnv.NEXT_PUBLIC_ENABLE_CLERK_AUTH || authEnv.NEXT_PUBLIC_ENABLE_NEXT_AUTH;
 
-export const LOBE_CHAT_AUTH_HEADER = 'X-lobe-chat-auth';
+export const FAST_GPT_AUTH_HEADER = 'X-lobe-chat-auth';
 
 export const OAUTH_AUTHORIZED = 'X-oauth-authorized';
 
-export const JWT_SECRET_KEY = 'FastChat · FastChat';
+export const JWT_SECRET_KEY = 'FastGPT · FastGPT';
 export const NON_HTTP_PREFIX = 'http_nosafe';
 
 /* eslint-disable typescript-sort-keys/interface */

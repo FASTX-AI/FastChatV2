@@ -70,7 +70,7 @@
         "pattenErrorMessage": "Seuls les caractères alphanumériques, - et _ sont autorisés"
       },
       "manifest": {
-        "desc": "Lien d'installation du plugin pour FastChat",
+        "desc": "Lien d'installation du plugin pour FastGPT",
         "label": "URL du fichier de description du plugin (Manifest)",
         "preview": "Aperçu du Manifest",
         "refresh": "Actualiser"
@@ -103,7 +103,7 @@
       "edit": "Modifier un plugin personnalisé"
     },
     "type": {
-      "lobe": "Plugin FastChat",
+      "lobe": "Plugin FastGPT",
       "openai": "Plugin OpenAI"
     },
     "update": "Mettre à jour",

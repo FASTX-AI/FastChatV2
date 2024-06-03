@@ -1,7 +1,7 @@
 {
   "about": "O nas",
   "advanceSettings": "Zaawansowane ustawienia",
-  "appInitializing": "FastChat inicjuje, proszę czekać...",
+  "appInitializing": "FastGPT inicjuje, proszę czekać...",
   "autoGenerate": "Automatyczne generowanie",
   "autoGenerateTooltip": "Automatyczne uzupełnianie opisu asystenta na podstawie sugestii",
   "autoGenerateTooltipDisabled": "Proszę wprowadzić słowo kluczowe przed użyciem funkcji automatycznego uzupełniania",
@@ -169,9 +169,9 @@
   "telemetry": {
     "allow": "Zezwalaj",
     "deny": "Odmów",
-    "desc": "Chcemy anonimowo zbierać informacje o twoim użytkowaniu, aby pomóc nam ulepszyć FastChat i zapewnić ci lepsze doświadczenia z naszym produktem. Możesz wyłączyć to w każdej chwili w „Ustawienia” - „O nas”.",
+    "desc": "Chcemy anonimowo zbierać informacje o twoim użytkowaniu, aby pomóc nam ulepszyć FastGPT i zapewnić ci lepsze doświadczenia z naszym produktem. Możesz wyłączyć to w każdej chwili w „Ustawienia” - „O nas”.",
     "learnMore": "Dowiedz się więcej",
-    "title": "Pomóż FastChat stawać się lepszym"
+    "title": "Pomóż FastGPT stawać się lepszym"
   },
   "temp": "Tymczasowy",
   "terms": "Warunki korzystania",

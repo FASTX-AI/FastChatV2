@@ -70,7 +70,7 @@
         "pattenErrorMessage": "Only alphanumeric characters, hyphen -, and underscore _ are allowed"
       },
       "manifest": {
-        "desc": "FastChat will install the plugin using this link",
+        "desc": "FastGPT will install the plugin using this link",
         "label": "Plugin Description (Manifest) URL",
         "preview": "Preview Manifest",
         "refresh": "Refresh"
@@ -103,7 +103,7 @@
       "edit": "Edit Custom Plugin"
     },
     "type": {
-      "lobe": "FastChat Plugin",
+      "lobe": "FastGPT Plugin",
       "openai": "OpenAI Plugin"
     },
     "update": "Update",

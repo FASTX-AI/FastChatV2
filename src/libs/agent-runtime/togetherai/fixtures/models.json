@@ -6811,8 +6811,8 @@
   {
     "modelInstanceConfig": { "appearsIn": [], "order": 0 },
     "_id": "64acf031227f790586239d44",
-    "name": "lmsys/fastchat-t5-3b-v1.0",
-    "display_name": "Vicuna-FastChat-T5 (3B)",
+    "name": "lmsys/FastGPT-t5-3b-v1.0",
+    "display_name": "Vicuna-FastGPT-T5 (3B)",
     "display_type": "chat",
     "description": "Chatbot trained by fine-tuning Flan-t5-xl on user-shared conversations collected from ShareGPT.",
     "license": "",

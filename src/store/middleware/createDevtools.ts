@@ -18,6 +18,6 @@ export const createDevtools =
     }
 
     return optionalDevtools(showDevtools)(initializer, {
-      name: `FastChat_${name}` + (isDev ? '_DEV' : ''),
+      name: `FastGPT_${name}` + (isDev ? '_DEV' : ''),
     });
   };

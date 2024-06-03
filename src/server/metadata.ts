@@ -5,7 +5,7 @@ import { formatDescLength, formatTitleLength } from '@/utils/genOG';
 
 export class Meta {
   public generate({
-    description = 'FastChat offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience',
+    description = 'FastGPT offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience',
     title,
     image = '/og/cover.png',
     url,
@@ -23,7 +23,7 @@ export class Meta {
     const formatedTitle = formatTitleLength(title, 21);
     // eslint-disable-next-line no-param-reassign
     const formatedDescription = formatDescLength(description, tags);
-    const siteTitle = title.includes('FastChat') ? title : title + ' · FastChat';
+    const siteTitle = title.includes('FastGPT') ? title : title + ' · FastGPT';
     return {
       alternates: { canonical: getCanonicalUrl(url) },
       description: formatedDescription,
@@ -85,7 +85,7 @@ export class Meta {
         },
       ],
       locale: 'en-US',
-      siteName: 'FastChat',
+      siteName: 'FastGPT',
       title,
       type,
       url,

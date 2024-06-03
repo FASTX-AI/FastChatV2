@@ -29,7 +29,7 @@ const BrandWatermark = memo<Omit<FlexboxProps, 'children'>>(({ style, ...rest })
       style={{ color: theme.colorTextDescription, fontSize: 12, ...style }}
       {...rest}
     >
-      <span>Powered by FastChat.</span>
+      <span>Powered by FastGPT.</span>
       {/* TODO: 隐藏LOGO */}
       {/* <Link className={styles.logoLink} href="/">
         <Image size={20} src="/images/logo.png" />

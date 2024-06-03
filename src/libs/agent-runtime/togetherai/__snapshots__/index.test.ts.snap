@@ -654,10 +654,10 @@ exports[`LobeTogetherAI > models > should get models 1`] = `
   },
   {
     "description": "Chatbot trained by fine-tuning Flan-t5-xl on user-shared conversations collected from ShareGPT.",
-    "displayName": "Vicuna-FastChat-T5 (3B)",
+    "displayName": "Vicuna-FastGPT-T5 (3B)",
     "enabled": false,
     "functionCall": false,
-    "id": "lmsys/fastchat-t5-3b-v1.0",
+    "id": "lmsys/FastGPT-t5-3b-v1.0",
     "maxOutput": 512,
     "tokens": 512,
     "vision": false,

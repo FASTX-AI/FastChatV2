@@ -12,7 +12,7 @@
   },
   "analytics": {
     "telemetry": {
-      "desc": "Durch das Senden von Telemetriedaten können Sie uns dabei helfen, die Gesamtnutzererfahrung von FastChat zu verbessern",
+      "desc": "Durch das Senden von Telemetriedaten können Sie uns dabei helfen, die Gesamtnutzererfahrung von FastGPT zu verbessern",
       "title": "Anonyme Nutzungsdaten senden"
     },
     "title": "Analytics"
@@ -64,11 +64,11 @@
           "title": "Modellanzeigename"
         },
         "files": {
-          "extra": "Die aktuelle Implementierung des Datei-Uploads in FastChat ist nur eine Hack-Lösung und nur für eigene Versuche gedacht. Die vollständige Datei-Upload-Funktion wird in zukünftigen Versionen implementiert.",
+          "extra": "Die aktuelle Implementierung des Datei-Uploads in FastGPT ist nur eine Hack-Lösung und nur für eigene Versuche gedacht. Die vollständige Datei-Upload-Funktion wird in zukünftigen Versionen implementiert.",
           "title": "Datei-Upload unterstützen"
         },
         "functionCall": {
-          "extra": "Diese Konfiguration aktiviert nur die Funktion zum Aufrufen von Funktionen in FastChat. Die Unterstützung von Funktionsaufrufen hängt vollständig von dem Modell selbst ab. Bitte testen Sie die Verfügbarkeit der Funktionsaufrufe des Modells selbst.",
+          "extra": "Diese Konfiguration aktiviert nur die Funktion zum Aufrufen von Funktionen in FastGPT. Die Unterstützung von Funktionsaufrufen hängt vollständig von dem Modell selbst ab. Bitte testen Sie die Verfügbarkeit der Funktionsaufrufe des Modells selbst.",
           "title": "Funktionsaufrufe unterstützen"
         },
         "id": {
@@ -82,7 +82,7 @@
           "unlimited": "unbegrenzt"
         },
         "vision": {
-          "extra": "Diese Konfiguration aktiviert nur die Bild-Upload-Konfiguration in FastChat. Die Unterstützung der Erkennung hängt vollständig von dem Modell selbst ab. Bitte testen Sie die Verfügbarkeit der visuellen Erkennungsfähigkeiten des Modells selbst.",
+          "extra": "Diese Konfiguration aktiviert nur die Bild-Upload-Konfiguration in FastGPT. Die Unterstützung der Erkennung hängt vollständig von dem Modell selbst ab. Bitte testen Sie die Verfügbarkeit der visuellen Erkennungsfähigkeiten des Modells selbst.",
           "title": "Visuelle Erkennung unterstützen"
         }
       }

@@ -37,9 +37,7 @@ const Header = memo(() => {
     <Flexbox className={styles.top} gap={16} padding={16}>
       <Flexbox distribution={'space-between'} horizontal>
         <Flexbox align={'center'} gap={4} horizontal>
-          <h1 style={{ fontSize: 32, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>
-            FastChat
-          </h1>
+          <h1 style={{ fontSize: 32, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>FastGPT</h1>
           {enableWebrtc && <SyncStatusTag />}
         </Flexbox>
         {showCreateSession && (

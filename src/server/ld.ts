@@ -23,7 +23,7 @@ export const AUTHOR_LIST = {
   lobehub: {
     avatar: 'https://avatars.githubusercontent.com/u/131470832?v=4',
     desc: 'Official Account',
-    name: 'FastChat',
+    name: 'FastGPT',
     url: 'https://github.com/lobehub',
   },
 };
@@ -72,7 +72,7 @@ class Ld {
     return {
       '@id': this.getId(SITE_URL, '#organization'),
       '@type': 'Organization',
-      'alternateName': 'FastChat',
+      'alternateName': 'FastGPT',
       'contactPoint': {
         '@type': 'ContactPoint',
         'contactType': 'customer support',
@@ -89,7 +89,7 @@ class Ld {
         'url': urlJoin(OFFICIAL_SITE, '/icon-512x512.png'),
         'width': 512,
       },
-      'name': 'FastChat',
+      'name': 'FastGPT',
       'sameAs': [
         X,
         'https://github.com/lobehub',
@@ -192,7 +192,7 @@ class Ld {
       '@type': 'WebSite',
       'description': pkg.description,
       'inLanguage': 'en-US',
-      'name': 'FastChat',
+      'name': 'FastGPT',
       'publisher': {
         '@id': this.getId(SITE_URL, '#organization'),
       },
@@ -207,7 +207,7 @@ class Ld {
   }
 
   private fixTitle(title: string) {
-    return title.includes('FastChat') ? title : `${title} · FastChat`;
+    return title.includes('FastGPT') ? title : `${title} · FastGPT`;
   }
 
   private fixUrl(url: string) {

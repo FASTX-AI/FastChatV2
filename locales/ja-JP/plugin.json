@@ -70,7 +70,7 @@
         "pattenErrorMessage": "英数字、-、_ のみ入力できます"
       },
       "manifest": {
-        "desc": "FastChatはこのリンクを使用してプラグインをインストールします",
+        "desc": "FastGPTはこのリンクを使用してプラグインをインストールします",
         "label": "プラグイン記述ファイル (Manifest) URL",
         "preview": "マニフェストのプレビュー",
         "refresh": "更新"
@@ -103,7 +103,7 @@
       "edit": "カスタムプラグインを編集"
     },
     "type": {
-      "lobe": "FastChatプラグイン",
+      "lobe": "FastGPTプラグイン",
       "openai": "OpenAIプラグイン"
     },
     "update": "更新",
