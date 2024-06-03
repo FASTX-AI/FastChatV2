@@ -2,7 +2,7 @@ import { IPluginErrorType, PluginErrorType } from '@lobehub/chat-plugin-sdk';
 import type { AlertProps } from '@lobehub/ui';
 import { Skeleton } from 'antd';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { Suspense, memo } from 'react';
 
 import { AgentRuntimeErrorType, ILobeAgentRuntimeErrorType } from '@/libs/agent-runtime';
@@ -75,12 +75,12 @@ const ErrorMessageExtra = memo<{ data: ChatMessage }>(({ data }) => {
     }
 
     case ChatErrorType.InvalidAccessCode: {
-      const router = useRouter();
+      // const router = useRouter();
       return (
         <InvalidAccessCode
           id={data.id}
           onBuyClick={() => {
-            router.push('/buy');
+            window.open('https://pay.fastgpt.com', '_blank');
           }}
           provider={data.error?.body?.provider}
         />
