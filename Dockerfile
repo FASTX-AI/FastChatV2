@@ -1,7 +1,5 @@
 FROM node:20-slim AS base
 
-RUN apt update && apt install -y python3 python3-dev python3-pip
-
 ## Sharp dependencies, copy all the files for production
 FROM base AS sharp
 ENV PNPM_HOME="/pnpm"
@@ -22,9 +20,10 @@ WORKDIR /app
 
 COPY package.json ./
 COPY .npmrc ./
+# COPY node_modules ./
 
 # If you want to build docker in China
-# RUN npm config set registry https://registry.npmmirror.com/
+RUN npm config set registry https://registry.npmmirror.com/
 RUN pnpm i
 
 COPY . .
@@ -50,7 +49,7 @@ ENV NEXT_PUBLIC_UMAMI_WEBSITE_ID ""
 ENV NODE_OPTIONS "--max-old-space-size=8192"
 
 # run build standalone for docker version
-RUN npm run build:docker
+RUN pnpm run build:docker
 
 ## Production image, copy all the files and run next
 FROM base AS runner
@@ -81,60 +80,28 @@ EXPOSE 3210
 ENV HOSTNAME "0.0.0.0"
 ENV PORT=3210
 
-# General Variables
-ENV ACCESS_CODE ""
-
 ENV API_KEY_SELECT_MODE ""
-
-# OpenAI
-ENV OPENAI_API_KEY ""
-ENV OPENAI_PROXY_URL ""
-ENV OPENAI_MODEL_LIST ""
-
-# Azure OpenAI
-ENV USE_AZURE_OPENAI ""
-ENV AZURE_API_KEY ""
-ENV AZURE_API_VERSION ""
-
 # Google
 ENV GOOGLE_API_KEY ""
 
-# Zhipu
-ENV ZHIPU_API_KEY ""
-
-# Moonshot
-ENV MOONSHOT_API_KEY ""
-
-# Ollama
-ENV OLLAMA_PROXY_URL ""
-ENV OLLAMA_MODEL_LIST ""
-
-# Perplexity
-ENV PERPLEXITY_API_KEY ""
-
-# Anthropic
-ENV ANTHROPIC_API_KEY ""
-
-# Mistral
-ENV MISTRAL_API_KEY ""
-
-# OpenRouter
-ENV OPENROUTER_API_KEY ""
-ENV OPENROUTER_MODEL_LIST ""
-
-# 01.AI
-ENV ZEROONE_API_KEY ""
-
-# TogetherAI
-ENV TOGETHERAI_API_KEY ""
-
-# Minimax
-ENV MINIMAX_API_KEY ""
-
-# DeepSeek
-ENV DEEPSEEK_API_KEY ""
-
 ENV FEATURE_FLAGS ""
+# SSO 单点登录认证 https://manage.auth0.com/welcome/
+ENV NEXT_AUTH_SSO_PROVIDERS ""
+ENV NEXT_AUTH_SECRET ""
+ENV ZITADEL_CLIENT_ID ""
+ENV ZITADEL_CLIENT_SECRET ""
+ENV ZITADEL_ISSUER ""
+# 防爆破密码:
+ENV ACCESS_CODE ""
+# 永久用户使用的 OpenAPI Key 信息
+ENV OPENAI_API_KEY ""
+ENV OPENAI_PROXY_URL ""
+# 支持的模型
+ENV OPENAI_MODEL_LIST ""
+# 默认给用户展示的模型
+ENV DEFAULT_AGENT_CONFIG ""
+# 关闭默认开启的这个模型
 ENV ENABLED_OLLAMA ""
+ENV PLUGIN_SETTINGS ""
 
 CMD ["node", "server.js"]
