@@ -1,7 +1,6 @@
 'use client';
 
 // import dynamic from 'next/dynamic';
-import { Image } from '@lobehub/ui';
 import { memo } from 'react';
 import { Center } from 'react-layout-kit';
 
@@ -19,14 +18,7 @@ const Logo = memo<{ mobile?: boolean }>(({ mobile }) => {
   return mobile ? (
     <Center height={240} width={240}>
       {/* <LogoThree size={240} /> */}
-      <Image
-        alt="fast-chat"
-        borderless
-        preview={false}
-        src="icons/icon-192x192.png"
-        style={imageStyle}
-        width={240}
-      />
+      <img alt="fast-chat" src="icons/icon-192x192.png" style={imageStyle} width={240} />
     </Center>
   ) : (
     <Center
@@ -39,14 +31,7 @@ const Logo = memo<{ mobile?: boolean }>(({ mobile }) => {
       }}
     >
       {/* <LogoSpline height={'min(482px, 40vw)'} width={'min(976px, 80vw)'} /> */}
-      <Image
-        alt="fast-chat"
-        borderless
-        preview={false}
-        src="icons/icon-512x512.png"
-        style={imageStyle}
-        width={482}
-      />
+      <img alt="fast-chat" src="icons/icon-512x512.png" style={imageStyle} width={482} />
     </Center>
   );
 });

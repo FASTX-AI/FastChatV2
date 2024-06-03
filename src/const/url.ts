@@ -53,3 +53,5 @@ export const EMAIL_BUSINESS = 'hello@lobehub.com';
 export const MEDIDUM = 'https://medium.com/@lobehub';
 export const X = 'https://x.com/lobehub';
 export const RELEASES_URL = urlJoin(GITHUB, 'releases');
+
+export const PAY_URL = 'https://pay.fastgpt.chat';
