@@ -1,25 +1,20 @@
 import { ActionIcon, Icon } from '@lobehub/ui';
 import { Badge } from 'antd';
 import {
-  Book,
   CircleUserRound,
   Download,
   HardDriveDownload,
   HardDriveUpload,
-  LifeBuoy,
   LogOut,
-  Mail,
   Maximize,
   Settings2,
 } from 'lucide-react';
-import Link from 'next/link';
 import { PropsWithChildren, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 import urlJoin from 'url-join';
 
 import type { MenuProps } from '@/components/Menu';
-import { DOCUMENTS, EMAIL_SUPPORT } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { useOpenSettings } from '@/hooks/useInterceptingRoutes';
 import { usePWAInstall } from '@/hooks/usePWAInstall';
@@ -152,36 +147,37 @@ export const useMenu = () => {
   ];
 
   // TODO: 更换为自己的email和文档地址
-  const helps: MenuProps['items'] = [
-    {
-      children: [
-        {
-          icon: <Icon icon={Book} />,
-          key: 'docs',
-          label: (
-            <Link href={DOCUMENTS} target={'_blank'}>
-              {t('userPanel.docs')}
-            </Link>
-          ),
-        },
-        {
-          icon: <Icon icon={Mail} />,
-          key: 'email',
-          label: (
-            <Link href={`mailto:${EMAIL_SUPPORT}`} target={'_blank'}>
-              {t('userPanel.email')}
-            </Link>
-          ),
-        },
-      ],
-      icon: <Icon icon={LifeBuoy} />,
-      key: 'help',
-      label: t('userPanel.help'),
-    },
-    {
-      type: 'divider',
-    },
-  ];
+  // const helps: MenuProps['items'] = [
+  //   {
+  //     children: [
+  //       {
+  //         icon: <Icon icon={Book} />,
+  //         key: 'docs',
+  //         label: (
+  //           <Link href={DOCUMENTS} target={'_blank'}>
+  //             {t('userPanel.docs')}
+  //           </Link>
+  //         ),
+  //       },
+  //       {
+  //         icon: <Icon icon={Mail} />,
+  //         key: 'email',
+  //         label: (
+  //           <Link href={`mailto:${EMAIL_SUPPORT}`} target={'_blank'}>
+  //             {t('userPanel.email')}
+  //           </Link>
+  //         ),
+  //       },
+  //     ],
+  //     icon: <Icon icon={LifeBuoy} />,
+  //     key: 'help',
+  //     label: t('userPanel.help'),
+  //   },
+  //   {
+  //     type: 'divider',
+  //   },
+  // ];
+  const helps: MenuProps['items'] = [];
 
   const mainItems = [
     {
