@@ -7,7 +7,7 @@ export const generateMetadata = async () => {
   const { t } = await translation('clerk');
   return metadataModule.generate({
     description: t('signIn.start.subtitle'),
-    title: t('signIn.start.title', { applicationName: 'FastChat' }),
+    title: t('signIn.start.title', { applicationName: 'LobeChat' }),
     url: '/login',
   });
 };

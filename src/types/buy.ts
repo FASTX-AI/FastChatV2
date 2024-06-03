@@ -1,5 +1,6 @@
 export type BuyItem = {
   description: string;
+  href: string;
   id: number;
   name: string;
   prize: number;

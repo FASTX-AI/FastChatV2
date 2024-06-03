@@ -12,6 +12,7 @@ export const useBuyStore = create<BuyState>((set) => ({
   itemList: [
     {
       description: '【热销】永久无限使用 FastChat，支持 GPT 以及100+ AI大模型无限对话',
+      href: '',
       id: 1,
       name: '永久权益',
       prize: 1666.66,
@@ -19,6 +20,7 @@ export const useBuyStore = create<BuyState>((set) => ({
     },
     {
       description: '【热销】永久无限使用 FastChat，支持 GPT 以及100+ AI大模型无限对话',
+      href: '',
       id: 2,
       name: '永久权益',
       prize: 1666.66,
@@ -26,6 +28,7 @@ export const useBuyStore = create<BuyState>((set) => ({
     },
     {
       description: '【热销】永久无限使用 FastChat，支持 GPT 以及100+ AI大模型无限对话',
+      href: '',
       id: 3,
       name: '永久权益',
       prize: 1666.66,
@@ -33,6 +36,7 @@ export const useBuyStore = create<BuyState>((set) => ({
     },
     {
       description: '【热销】永久无限使用 FastChat，支持 GPT 以及100+ AI大模型无限对话',
+      href: '',
       id: 4,
       name: '永久权益',
       prize: 1666.66,
@@ -40,6 +44,7 @@ export const useBuyStore = create<BuyState>((set) => ({
     },
     {
       description: '【热销】永久无限使用 FastChat，支持 GPT 以及100+ AI大模型无限对话',
+      href: '',
       id: 5,
       name: '永久权益',
       prize: 1666.66,

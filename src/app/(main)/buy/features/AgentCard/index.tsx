@@ -59,15 +59,16 @@ const useStyles = createStyles(({ css, token, isDarkMode }) => ({
   `,
 }));
 
-const AgentCard = memo<BuyItem>(({ id, name, prize, description, tagList }) => {
-  const onAgentCardClick = (cid: number) => {
-    console.log('click: ' + cid);
+const AgentCard = memo<BuyItem>(({ id, name, prize, description, tagList, href }) => {
+  const onAgentCardClick = (chref: string) => {
+    console.log('click: ' + chref);
+    window.open(chref, '_blank');
   };
 
   const { styles } = useStyles();
 
   return (
-    <Flexbox className={styles.container} gap={24} key={id} onClick={() => onAgentCardClick(id)}>
+    <Flexbox className={styles.container} gap={24} key={id} onClick={() => onAgentCardClick(href)}>
       <Flexbox className={styles.inner} gap={12}>
         <Flexbox align={'flex-end'} gap={16} horizontal justify={'space-between'} width={'100%'}>
           <Title className={styles.title} ellipsis={{ rows: 1, tooltip: name }} level={3}>

@@ -11,8 +11,8 @@ import { useUserStore } from '@/store/user';
 import { authSelectors } from '@/store/user/selectors';
 import { SessionDefaultGroup } from '@/types/session';
 
-import Actions from '../SessionListContent/CollapseGroup/Actions';
 import CollapseGroup from './CollapseGroup';
+import Actions from './CollapseGroup/Actions';
 import Inbox from './Inbox';
 import SessionList from './List';
 import ConfigGroupModal from './Modals/ConfigGroupModal';

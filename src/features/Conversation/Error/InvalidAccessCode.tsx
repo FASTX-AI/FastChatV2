@@ -39,6 +39,12 @@ const InvalidAccessCode = memo<InvalidAccessCodeProps>(({ id, provider, onBuyCli
         onChange={(value) => setMode(value as Tab)}
         options={
           [
+            {
+              icon: <Icon icon={AsteriskSquare} />,
+              label: t('unlock.tabs.password'),
+              value: Tab.Password,
+            },
+            { icon: <Icon icon={KeySquare} />, label: t('unlock.tabs.apiKey'), value: Tab.Api },
             isEnabledOAuth
               ? {
                   icon: <Icon icon={ScanFace} />,
@@ -46,12 +52,6 @@ const InvalidAccessCode = memo<InvalidAccessCodeProps>(({ id, provider, onBuyCli
                   value: Tab.Oauth,
                 }
               : undefined,
-            {
-              icon: <Icon icon={AsteriskSquare} />,
-              label: t('unlock.tabs.password'),
-              value: Tab.Password,
-            },
-            { icon: <Icon icon={KeySquare} />, label: t('unlock.tabs.apiKey'), value: Tab.Api },
           ].filter(Boolean) as SegmentedLabeledOption[]
         }
         style={{ width: '100%' }}

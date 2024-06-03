@@ -135,8 +135,8 @@
     },
     "tabs": {
       "apiKey": "自定义 API Key",
-      "password": "密码",
-      "buy": "购买"
+      "buy": "购买",
+      "password": "购买"
     }
   },
   "upload": {
