@@ -1,0 +1,31 @@
+# All possible options and their defaults: https://github.com/zitadel/zitadel/blob/main/cmd/defaults.yaml
+Log:
+  Level: 'info'
+
+# Make ZITADEL accessible over HTTP, not HTTPS
+ExternalDomain: 'sso.fastgpt.chat'
+ExternalPort: 443
+ExternalSecure: true
+
+TLS:
+  Enabled: true
+  KeyPath: '/etc/letsencrypt/live/sso.fastgpt.chat/privkey.pem'
+  CertPath: '/etc/letsencrypt/live/sso.fastgpt.chat/fullchain.pem'
+
+
+# If not using the docker compose example, adjust these values for connecting ZITADEL to your PostgreSQL
+Database:
+  postgres:
+    MaxOpenConns: 25
+    MaxIdleConns: 10
+    MaxConnLifetime: 1h
+    MaxConnIdleTime: 5m
+    Host: localhost
+    Port: 5432
+    Database: zitadel
+    User:
+      SSL:
+        Mode: disable
+    Admin:
+      SSL:
+        Mode: disable
