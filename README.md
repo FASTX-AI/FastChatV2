@@ -1,14 +1,42 @@
-#### 项目部署 
+#### 项目部署
 
 `bun i && bun run dev`
 
 this steps will be auto run when push to this repo:
 
-`docker buildx build -t fast-chat:v1.0.0 .`
-`docker tag fast-chat:v1.0.0 starkdylan/fast-chat:v1.0.0`
-`docker push starkdylan/fast-chat:v1.0.0`
+```shell
+docker buildx build -t fast-chat:v1.0.0 .
+docker tag fast-chat:v1.0.0 starkdylan/fast-chat:v1.0.0
+docker push starkdylan/fast-chat:v1.0.0
+```
 
-#### SSO 
+example compose file:
+
+```shell
+version: '3.8'
+services:
+fast-gpt:
+image: "starkdylan/fast-chat:v1.0.0"
+container_name: "fast-gpt"
+restart: always
+ports:
+- '3210:3210'
+environment:
+OPENAI_API_KEY: "xxx"
+NEXTAUTH_URL: "https://xxx/api/auth"
+FEATURE_FLAGS: "-webrtc_sync,-check_updates"
+NEXT_AUTH_SSO_PROVIDERS: "zitadel"
+NEXT_AUTH_SECRET: "xxx"
+ZITADEL_CLIENT_ID: "xxx"
+ZITADEL_CLIENT_SECRET: "xxx"
+ZITADEL_ISSUER: "xxx"
+ACCESS_CODE: "xxx"
+OPENAI_PROXY_URL: "xxx"
+OPENAI_MODEL_LIST: "gpt-4o=fastgpt-4o,gpt-4=fastgpt-4,gpt-3.5-turbo=fastgpt-3.5-turbo,gpt-4-turbo=fastgpt-4-turbo"
+ENABLED_OLLAMA: 0
+```
+
+#### SSO
 
 env file:
 
@@ -19,13 +47,13 @@ ZITADEL_CLIENT_ID= your zitadel admin panel
 ZITADEL_CLIENT_SECRET= generate in your zitadel admin panel
 ZITADEL_ISSUER= sso endpoint
 # 防爆破密码:
-ACCESS_CODE= generate 
+ACCESS_CODE= generate
 ```
 
 postgres use docker:
 
 ```shell
-cd sso && sudo docker compose up --detach 
+cd sso && sudo docker compose up --detach
 ```
 
 zitadel admin panel (replase $LATEST with latest version, script failed get version sometimes):
@@ -37,17 +65,17 @@ LATEST=$(curl -i https://github.com/zitadel/zitadel/releases/latest | grep locat
 run (config files: examples in sso folder):
 
 ```shell
-ZITADEL_MASTERKEY="$(tr -dc A-Za-z0-9 </dev/urandom | head -c 32)"
+ZITADEL_MASTERKEY="$(tr -dc A-Za-z0-9 < /dev/urandom | head -c 32)"
 zitadel start-from-init \
-    --config ./zitadel-config.yaml \
-    --config ./zitadel-secrets.yaml \
-    --steps ./zitadel-init-steps.yaml \
-    --masterkey "${ZITADEL_MASTERKEY}"
+  --config ./zitadel-config.yaml \
+  --config ./zitadel-secrets.yaml \
+  --steps ./zitadel-init-steps.yaml \
+  --masterkey "${ZITADEL_MASTERKEY}"
 ```
 
 #### TLS
 
-before you do scripts use `sudo`, make sure `/usr/share/nginx/www/` in your nginx folder and allow all options.
+before you run scripts use `sudo`, make sure `/usr/share/nginx/www/` in your nginx folder and allow all options.
 certbot need generate some files(domain check).
 
 nginx config looks like:
