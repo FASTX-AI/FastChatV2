@@ -59,7 +59,7 @@ const useStyles = createStyles(({ css, token, isDarkMode }) => ({
   `,
 }));
 
-const AgentCard = memo<BuyItem>(({ id, name, prize, description, tagList, href }) => {
+const AgentCard = memo<BuyItem>(({ id, name, description, tagList, href }) => {
   const onAgentCardClick = (chref: string) => {
     console.log('click: ' + chref);
     window.open(chref, '_blank');
@@ -84,9 +84,6 @@ const AgentCard = memo<BuyItem>(({ id, name, prize, description, tagList, href }
         </Flexbox>
         <Paragraph className={styles.desc} ellipsis={{ rows: 2 }}>
           {description}
-        </Paragraph>
-        <Paragraph className={styles.prize} ellipsis={{ rows: 1 }}>
-          {prize}
         </Paragraph>
         <Flexbox gap={6} horizontal style={{ flexWrap: 'wrap' }}>
           {tagList.map((tag: string, index) => (
