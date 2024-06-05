@@ -10,7 +10,8 @@ import { useGreeting } from '@/hooks/useGreeting';
 import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
 
 import AgentsSuggest from './AgentsSuggest';
-import QuestionSuggest from './QuestionSuggest';
+
+// import QuestionSuggest from './QuestionSuggest';
 
 const useStyles = createStyles(({ css, responsive }) => ({
   container: css`
@@ -56,12 +57,12 @@ const InboxWelcome = memo(() => {
         <Markdown className={styles.desc} variant={'chat'}>
           {t('guide.defaultMessage')}
         </Markdown>
-        {
-          showWelcomeSuggest && <>
+        {showWelcomeSuggest && (
+          <>
             <AgentsSuggest mobile={mobile} />
-            <QuestionSuggest mobile={mobile} />
+            {/* <QuestionSuggest mobile={mobile} /> */}
           </>
-        }
+        )}
       </Flexbox>
     </Center>
   );
