@@ -14,7 +14,7 @@ import { Flexbox } from 'react-layout-kit';
 // import Ollama from './Ollama';
 import OpenAI from './OpenAI';
 // import OpenRouter from './OpenRouter';
-import Perplexity from './Perplexity';
+// import Perplexity from './Perplexity';
 // import TogetherAI from './TogetherAI';
 // import ZeroOne from './ZeroOne';
 // import Zhipu from './Zhipu';
@@ -33,7 +33,7 @@ const Page = () => {
       <OpenRouter />
       <TogetherAI />
       <Groq /> */}
-      <Perplexity />
+      {/* <Perplexity /> */}
       {/* <Minimax />
       <Mistral /> */}
       {/* <Moonshot />

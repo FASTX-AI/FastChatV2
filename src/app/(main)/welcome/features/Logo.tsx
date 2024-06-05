@@ -18,7 +18,7 @@ const Logo = memo<{ mobile?: boolean }>(({ mobile }) => {
   return mobile ? (
     <Center height={240} width={240}>
       {/* <LogoThree size={240} /> */}
-      <img alt="fast-chat" src="icons/icon-192x192.png" style={imageStyle} width={240} />
+      <img alt="fast-chat" src="/chatgpt-tran.png" style={imageStyle} width={150} />
     </Center>
   ) : (
     <Center
@@ -31,7 +31,7 @@ const Logo = memo<{ mobile?: boolean }>(({ mobile }) => {
       }}
     >
       {/* <LogoSpline height={'min(482px, 40vw)'} width={'min(976px, 80vw)'} /> */}
-      <img alt="fast-chat" src="icons/icon-512x512.png" style={imageStyle} width={482} />
+      <img alt="fast-chat" src="/chatgpt-tran.png" style={imageStyle} width={300} />
     </Center>
   );
 });
