@@ -267,7 +267,7 @@ export default {
   settingTTS: {
     openai: {
       sttModel: 'OpenAI 语音识别模型',
-      title: 'OpenAI',
+      title: 'FastGPT-专用模型',
       ttsModel: 'OpenAI 语音合成模型',
     },
     showAllLocaleVoice: {
