@@ -26,7 +26,7 @@ const ttsSchema = z.object({
 export const AgentSchema = z.object({
   chatConfig: AgentChatConfigSchema,
   fewShots: fewShotsSchema.optional(),
-  model: z.string().default('gpt-3.5-turbo'),
+  model: z.string().default('gpt-4o'),
   params: z.object({
     frequency_penalty: z.number().default(0).optional(),
     max_tokens: z.number().optional(),
