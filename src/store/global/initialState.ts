@@ -8,7 +8,7 @@ export enum SidebarTabKey {
   Chat = 'chat',
   Market = 'market',
   Me = 'me',
-  Setting = 'settings'
+  Setting = 'settings',
 }
 
 export enum ChatSettingsTabs {
@@ -59,8 +59,8 @@ export const INITIAL_STATUS = {
   inputHeight: 200,
   mobileShowTopic: false,
   sessionsWidth: 320,
-  showChatSideBar: true,
-  showSessionPanel: true,
+  showChatSideBar: false,
+  showSessionPanel: false,
   showSystemRole: false,
 } satisfies SystemStatus;
 

@@ -1,15 +1,15 @@
 'use client';
 
-import { ActionIcon } from '@lobehub/ui';
+// import { ActionIcon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { shuffle } from 'lodash-es';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+// import { ArrowRight } from 'lucide-react';
+// import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { USAGE_DOCUMENTS } from '@/const/url';
+// import { USAGE_DOCUMENTS } from '@/const/url';
 import { useSendMessage } from '@/features/ChatInput/useSend';
 import { useChatStore } from '@/store/chat';
 
@@ -67,7 +67,7 @@ const QuestionSuggest = memo<{ mobile?: boolean }>(({ mobile }) => {
 
   return (
     <Flexbox gap={8} width={'100%'}>
-      <Flexbox align={'center'} horizontal justify={'space-between'}>
+      {/* <Flexbox align={'center'} horizontal justify={'space-between'}>
         <div className={styles.title}>{t('guide.questions.title')}</div>
         <Link href={USAGE_DOCUMENTS} target={'_blank'}>
           <ActionIcon
@@ -76,7 +76,7 @@ const QuestionSuggest = memo<{ mobile?: boolean }>(({ mobile }) => {
             title={t('guide.questions.moreBtn')}
           />
         </Link>
-      </Flexbox>
+      </Flexbox> */}
       <Flexbox gap={8} horizontal wrap={'wrap'}>
         {qa.slice(0, mobile ? 2 : 5).map((item) => {
           const text = t(`guide.qa.${item}` as any);
