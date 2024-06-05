@@ -56,7 +56,7 @@ const Nav = memo(() => {
         icon: (active) => <Icon className={active ? styles.active : undefined} icon={Gem} />,
         key: SidebarTabKey.Buy,
         onClick: () => {
-          window.open('https://pay.fastgpt.com', '_blank');
+          window.open('https://pay.fastgpt.chat', '_blank');
         },
         title: t('tab.buy'),
       },

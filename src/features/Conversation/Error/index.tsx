@@ -80,7 +80,7 @@ const ErrorMessageExtra = memo<{ data: ChatMessage }>(({ data }) => {
         <InvalidAccessCode
           id={data.id}
           onBuyClick={() => {
-            window.open('https://pay.fastgpt.com', '_blank');
+            window.open('https://pay.fastgpt.chat', '_blank');
           }}
           provider={data.error?.body?.provider}
         />

@@ -43,7 +43,7 @@ const TopActions = memo<TopActionProps>(({ tab }) => {
           title={t('tab.market')}
         />
       </Link>
-      <Link aria-label={t('tab.buy')} href={'https://pay.fastgpt.com'}>
+      <Link aria-label={t('tab.buy')} href={'https://pay.fastgpt.chat'}>
         <ActionIcon icon={Gem} placement={'right'} size="large" title={t('tab.buy')} />
       </Link>
     </>
