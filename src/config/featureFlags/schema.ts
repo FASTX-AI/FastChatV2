@@ -51,7 +51,7 @@ export const mapFeatureFlagsEnvToState = (config: IFeatureFlags) => {
 
     showDalle: config.dalle,
 
-    enableCheckUpdates: config.check_updates,
+    enableCheckUpdates: false,
     showWelcomeSuggest: config.welcome_suggest,
   };
 };
