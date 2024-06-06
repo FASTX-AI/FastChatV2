@@ -5,7 +5,7 @@ import { cookies } from 'next/headers';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-import { DEFAULT_LANG, LOBE_LOCALE_COOKIE } from '@/const/locale';
+import { DEFAULT_LANG, FAST_GPT_LOCALE_COOKIE } from '@/const/locale';
 import { NS, normalizeLocale } from '@/locales/resources';
 import { isDev } from '@/utils/env';
 
@@ -13,7 +13,7 @@ export const translation = async (ns: NS = 'common') => {
   let i18ns = {};
   try {
     const cookieStore = cookies();
-    const defaultLang = cookieStore.get(LOBE_LOCALE_COOKIE);
+    const defaultLang = cookieStore.get(FAST_GPT_LOCALE_COOKIE);
     const lng = defaultLang?.value || DEFAULT_LANG;
     let filepath = join(process.cwd(), `locales/${normalizeLocale(lng)}/${ns}.json`);
     const isExist = existsSync(filepath);

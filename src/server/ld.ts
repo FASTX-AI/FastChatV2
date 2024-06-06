@@ -1,7 +1,7 @@
 import urlJoin from 'url-join';
 
 import { getAppConfig } from '@/config/app';
-import { EMAIL_BUSINESS, EMAIL_SUPPORT, OFFICIAL_SITE, OFFICIAL_URL, X } from '@/const/url';
+import { OFFICIAL_SITE, OFFICIAL_URL, X } from '@/const/url';
 
 import pkg from '../../package.json';
 
@@ -9,22 +9,22 @@ const { SITE_URL = OFFICIAL_URL } = getAppConfig();
 const LAST_MODIFIED = new Date().toISOString();
 export const AUTHOR_LIST = {
   arvinxx: {
-    avatar: 'https://avatars.githubusercontent.com/u/28616219?v=4',
-    desc: 'Founder, Design Engineer',
-    name: 'Arvin Xu',
-    url: 'https://github.com/arvinxx',
+    avatar: '',
+    desc: '',
+    name: '',
+    url: '/',
   },
   canisminor: {
-    avatar: 'https://avatars.githubusercontent.com/u/17870709?v=4',
-    desc: 'Founder, Design Engineer',
-    name: 'CanisMinor',
-    url: 'https://github.com/arvinxx',
+    avatar: '',
+    desc: '',
+    name: '',
+    url: '/',
   },
   lobehub: {
-    avatar: 'https://avatars.githubusercontent.com/u/131470832?v=4',
-    desc: 'Official Account',
+    avatar: '',
+    desc: '',
     name: 'FastGPT',
-    url: 'https://github.com/lobehub',
+    url: '/',
   },
 };
 
@@ -76,26 +76,21 @@ class Ld {
       'contactPoint': {
         '@type': 'ContactPoint',
         'contactType': 'customer support',
-        'email': EMAIL_SUPPORT,
+        'email': 'support@fastgpt.chat',
       },
       'description':
         'We are a group of e/acc design-engineers, hoping to provide modern design components and tools for AIGC, and creating a technology-driven forum, fostering knowledge interaction and the exchange of ideas that may culminate in mutual inspiration and collaborative innovation.',
-      'email': EMAIL_BUSINESS,
-      'founders': [this.getAuthors(['arvinxx']), this.getAuthors(['canisminor'])],
-      'image': urlJoin(OFFICIAL_SITE, '/icon-512x512.png'),
+      'email': 'support@fastgpt.chat',
+      'founders': '',
+      'image': '/chatgpt.png',
       'logo': {
         '@type': 'ImageObject',
         'height': 512,
-        'url': urlJoin(OFFICIAL_SITE, '/icon-512x512.png'),
+        'url': '/chatgpt.png',
         'width': 512,
       },
       'name': 'FastGPT',
-      'sameAs': [
-        X,
-        'https://github.com/lobehub',
-        'https://medium.com/@lobehub',
-        'https://www.youtube.com/@lobehub',
-      ],
+      'sameAs': [X, 'https://fastgpt.chat', 'https://fastgpt.chat', 'https://fastgpt.chat'],
       'url': OFFICIAL_SITE,
     };
   }

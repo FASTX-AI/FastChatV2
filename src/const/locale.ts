@@ -1,7 +1,7 @@
 import { normalizeLocale, supportLocales } from '@/locales/resources';
 
 export const DEFAULT_LANG = 'en-US';
-export const LOBE_LOCALE_COOKIE = 'LOBE_LOCALE';
+export const FAST_GPT_LOCALE_COOKIE = 'FAST_GPT_LOCALE_COOKIE';
 
 /**
  * Check if the language is supported

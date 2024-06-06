@@ -48,7 +48,7 @@ const ProviderApiKeyForm = memo<ProviderApiKeyFormProps>(
           (showProxy ? (
             <Input
               onChange={(e) => {
-                setConfig(provider, { endpoint: e.target.value });
+                setConfig(provider, { baseURL: e.target.value, endpoint: e.target.value });
               }}
               placeholder={'https://api.openai.com/v1'}
               type={'block'}

@@ -27,22 +27,10 @@ const ThemeButton = memo(() => {
   const items: MenuProps['items'] = useMemo(
     () => [
       {
-        icon: <Icon icon={themeIcons.auto} />,
-        key: 'auto',
-        label: t('settingTheme.themeMode.auto'),
-        onClick: () => switchThemeMode('auto'),
-      },
-      {
         icon: <Icon icon={themeIcons.light} />,
         key: 'light',
         label: t('settingTheme.themeMode.light'),
         onClick: () => switchThemeMode('light'),
-      },
-      {
-        icon: <Icon icon={themeIcons.dark} />,
-        key: 'dark',
-        label: t('settingTheme.themeMode.dark'),
-        onClick: () => switchThemeMode('dark'),
       },
     ],
     [t],

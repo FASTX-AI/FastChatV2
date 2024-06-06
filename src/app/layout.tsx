@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 import { isRtlLang } from 'rtl-detect';
 
 import Analytics from '@/components/Analytics';
-import { DEFAULT_LANG, LOBE_LOCALE_COOKIE } from '@/const/locale';
+import { DEFAULT_LANG, FAST_GPT_LOCALE_COOKIE } from '@/const/locale';
 import PWAInstall from '@/features/PWAInstall';
 import AuthProvider from '@/layout/AuthProvider';
 import GlobalProvider from '@/layout/GlobalProvider';
@@ -21,7 +21,7 @@ type RootLayoutProps = {
 const RootLayout = async ({ children, modal }: RootLayoutProps) => {
   const cookieStore = cookies();
 
-  const lang = cookieStore.get(LOBE_LOCALE_COOKIE);
+  const lang = cookieStore.get(FAST_GPT_LOCALE_COOKIE);
   const direction = isRtlLang(lang?.value || DEFAULT_LANG) ? 'rtl' : 'ltr';
 
   return (

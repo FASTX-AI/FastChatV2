@@ -57,7 +57,7 @@ export class Meta {
       card: 'summary_large_image',
       description,
       images: [image],
-      site: '@lobehub',
+      site: '@FastGPT',
       title,
       url,
     };

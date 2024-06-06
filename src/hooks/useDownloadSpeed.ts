@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { formatSpeed } from '@/utils/speed';
 
 // 用于测试的文件路径和尺寸
-const targetFile = { size: 15.4, url: '/favicon-32x32.ico' };
+const targetFile = { size: 15.4, url: '/chatgpt.png' };
 
 const testDownloadSpeed = (url: string, size: number) =>
   new Promise<{ costTime: number; speed: number }>((resolve, reject) => {

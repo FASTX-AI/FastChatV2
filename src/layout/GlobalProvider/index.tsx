@@ -5,7 +5,7 @@ import { resolveAcceptLanguage } from 'resolve-accept-language';
 
 import { getDebugConfig } from '@/config/debug';
 import { getServerFeatureFlagsValue } from '@/config/featureFlags';
-import { LOBE_LOCALE_COOKIE } from '@/const/locale';
+import { FAST_GPT_LOCALE_COOKIE } from '@/const/locale';
 import {
   LOBE_THEME_APPEARANCE,
   LOBE_THEME_NEUTRAL_COLOR,
@@ -61,7 +61,7 @@ const GlobalLayout = async ({ children }: PropsWithChildren) => {
   const primaryColor = cookieStore.get(LOBE_THEME_PRIMARY_COLOR);
 
   // get default locale config to use with ssr
-  const defaultLang = cookieStore.get(LOBE_LOCALE_COOKIE);
+  const defaultLang = cookieStore.get(FAST_GPT_LOCALE_COOKIE);
   const fallbackLang = parserFallbackLang();
 
   // if it's a new user, there's no cookie

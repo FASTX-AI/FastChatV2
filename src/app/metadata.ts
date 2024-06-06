@@ -21,9 +21,9 @@ export const generateMetadata = async (): Promise<Metadata> => {
     },
     description: t('chat.description'),
     icons: {
-      apple: '/apple-touch-icon.png',
-      icon: '/favicon.ico',
-      shortcut: '/favicon-32x32.ico',
+      apple: '/chatgpt.png',
+      icon: '/chatgpt.png',
+      shortcut: '/chatgpt.png',
     },
     manifest: noManifest ? undefined : '/manifest.json',
     metadataBase: new URL(SITE_URL),
@@ -33,8 +33,8 @@ export const generateMetadata = async (): Promise<Metadata> => {
         {
           alt: t('chat.title'),
           height: 640,
-          url: '/og/cover.png',
-          width: 1200,
+          url: '/chatgpt.png',
+          width: 640,
         },
       ],
       locale: 'en-US',
@@ -50,7 +50,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
     twitter: {
       card: 'summary_large_image',
       description: t('chat.description'),
-      images: ['/og/cover.png'],
+      images: ['/chatgpt.png'],
       site: '@lobehub',
       title: t('chat.title'),
     },

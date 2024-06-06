@@ -1,20 +1,18 @@
 'use client';
 
-import { Form, type ItemGroup, SelectWithImg, SliderWithInput } from '@lobehub/ui';
+import { Form, type ItemGroup, SliderWithInput } from '@lobehub/ui';
 import { Select } from 'antd';
 import isEqual from 'fast-deep-equal';
-import { Monitor, Moon, Sun } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useSyncSettings } from '@/app/(main)/settings/hooks/useSyncSettings';
 import { enableAuth } from '@/const/auth';
 import { FORM_STYLE } from '@/const/layoutTokens';
-import { imageUrl } from '@/const/url';
 import AvatarWithUpload from '@/features/AvatarWithUpload';
 import { localeOptions } from '@/locales/resources';
 import { useUserStore } from '@/store/user';
-import { settingsSelectors, userGeneralSettingsSelectors } from '@/store/user/selectors';
+import { settingsSelectors } from '@/store/user/selectors';
 import { switchLang } from '@/utils/client/switchLang';
 
 import { ThemeSwatchesNeutral, ThemeSwatchesPrimary } from './ThemeSwatches';
@@ -25,8 +23,7 @@ const Theme = memo(() => {
   const { t } = useTranslation('setting');
   const [form] = Form.useForm();
   const settings = useUserStore(settingsSelectors.currentSettings, isEqual);
-  const themeMode = useUserStore(userGeneralSettingsSelectors.currentThemeMode);
-  const [setThemeMode, setSettings] = useUserStore((s) => [s.switchThemeMode, s.setSettings]);
+  const [setSettings] = useUserStore((s) => [s.switchThemeMode, s.setSettings]);
 
   useSyncSettings(form);
 
@@ -36,39 +33,6 @@ const Theme = memo(() => {
         children: <AvatarWithUpload />,
         hidden: enableAuth,
         label: t('settingTheme.avatar.title'),
-        minWidth: undefined,
-      },
-      {
-        children: (
-          <SelectWithImg
-            height={60}
-            onChange={setThemeMode}
-            options={[
-              {
-                icon: Sun,
-                img: imageUrl('theme_light.webp'),
-                label: t('settingTheme.themeMode.light'),
-                value: 'light',
-              },
-              {
-                icon: Moon,
-                img: imageUrl('theme_dark.webp'),
-                label: t('settingTheme.themeMode.dark'),
-                value: 'dark',
-              },
-              {
-                icon: Monitor,
-                img: imageUrl('theme_auto.webp'),
-                label: t('settingTheme.themeMode.auto'),
-                value: 'auto',
-              },
-            ]}
-            unoptimized={false}
-            value={themeMode}
-            width={100}
-          />
-        ),
-        label: t('settingTheme.themeMode.title'),
         minWidth: undefined,
       },
       {

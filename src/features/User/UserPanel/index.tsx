@@ -6,7 +6,8 @@ import { PropsWithChildren, memo, useState } from 'react';
 
 import PanelContent from './PanelContent';
 import UpgradeBadge from './UpgradeBadge';
-import { useNewVersion } from './useNewVersion';
+
+// import { useNewVersion } from './useNewVersion';
 
 const useStyles = createStyles(({ css }) => ({
   popover: css`
@@ -16,12 +17,12 @@ const useStyles = createStyles(({ css }) => ({
 }));
 
 const UserPanel = memo<PropsWithChildren>(({ children }) => {
-  const hasNewVersion = useNewVersion();
+  // const hasNewVersion = useNewVersion();
   const [open, setOpen] = useState(false);
   const { styles } = useStyles();
 
   return (
-    <UpgradeBadge showBadge={hasNewVersion}>
+    <UpgradeBadge showBadge={false}>
       <Popover
         arrow={false}
         content={<PanelContent closePopover={() => setOpen(false)} />}
