@@ -1,18 +1,18 @@
 {
   "chat": {
-    "description": "FastGPT offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience",
-    "title": "FastGPT: Personal LLM Productivity Tool, Give Yourself a Smarter Brain"
+    "description": "FastGPT brings you the best ChatGPT, OLLaMA, Gemini, and Claude WebUI experience",
+    "title": "FastGPT: Personal LLM productivity tool, giving your brain a smarter boost"
   },
   "market": {
-    "description": "Content creation, copywriting, Q&A, image generation, video generation, voice generation, smart agents, automation workflows, customize your own AI / GPTs / OLLaMA intelligent agent",
-    "title": "Agent Market"
+    "description": "Content creation, copywriting, Q&A, image generation, video generation, voice generation, smart agents, automated workflows - customize your own AI / GPTs / OLLaMA assistants",
+    "title": "Assistant Market"
   },
   "plugins": {
-    "description": "Search, chart generation, academic, image generation, video generation, voice generation, automation workflows, customize ChatGPT / OLLaMA exclusive ToolCall plugin capabilities",
+    "description": "Search, chart generation, academic, image generation, video generation, voice generation, automated workflows - customize ChatGPT / OLLaMA with exclusive ToolCall plugin capabilities",
     "title": "Plugin Market"
   },
   "welcome": {
-    "description": "FastGPT offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience",
-    "title": "Welcome to FastGPT: Personal LLM Productivity Tool, Give Yourself a Smarter Brain"
+    "description": "FastGPT brings you the best ChatGPT, OLLaMA, Gemini, and Claude WebUI experience",
+    "title": "Welcome to FastGPT: Personal LLM productivity tool, giving your brain a smarter boost"
   }
 }

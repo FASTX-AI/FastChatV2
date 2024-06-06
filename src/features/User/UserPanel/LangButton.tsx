@@ -20,18 +20,13 @@ const LangButton = memo(() => {
   const { t } = useTranslation('setting');
 
   const items: MenuProps['items'] = useMemo(
-    () => [
-      {
-        key: 'auto',
-        label: t('settingTheme.lang.autoMode'),
-        onClick: () => switchLocale('auto'),
-      },
-      ...localeOptions.map((item) => ({
+    () => 
+      localeOptions.map((item) => ({
         key: item.value,
         label: item.label,
         onClick: () => switchLocale(item.value),
-      })),
-    ],
+      }))
+    ,
     [t],
   );
 

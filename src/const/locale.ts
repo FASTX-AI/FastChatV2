@@ -1,6 +1,6 @@
 import { normalizeLocale, supportLocales } from '@/locales/resources';
 
-export const DEFAULT_LANG = 'en-US';
+export const DEFAULT_LANG = 'zh-CN';
 export const FAST_GPT_LOCALE_COOKIE = 'FAST_GPT_LOCALE_COOKIE';
 
 /**

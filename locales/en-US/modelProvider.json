@@ -2,36 +2,36 @@
   "anthropic": {
     "title": "Anthropic",
     "token": {
-      "desc": "Enter the API Key from Anthropic",
+      "desc": "Enter your API Key from Anthropic",
       "placeholder": "Anthropic API Key",
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Anthropic API Key to start the session. The app will not store your API Key",
+      "description": "Enter your Anthropic API Key to start the session. The application will not store your API Key",
       "title": "Use Custom Anthropic API Key"
     }
   },
   "azure": {
     "azureApiVersion": {
-      "desc": "Azure API version, follow the format YYYY-MM-DD, check the [latest version](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions)",
+      "desc": "Azure API version, following the format YYYY-MM-DD, check the [latest version](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions)",
       "fetch": "Fetch List",
       "title": "Azure API Version"
     },
-    "empty": "Please enter a model ID to add the first model",
+    "empty": "Please enter a Model ID to add the first model",
     "endpoint": {
-      "desc": "When checking resources from the Azure portal, you can find this value in the 'Keys and Endpoints' section",
+      "desc": "When checking resources in Azure portal, you can find this value in the 'Keys and Endpoint' section",
       "placeholder": "https://docs-test-001.openai.azure.com",
       "title": "Azure API Address"
     },
     "modelListPlaceholder": "Select or add the OpenAI model you deployed",
     "title": "Azure OpenAI",
     "token": {
-      "desc": "When checking resources from the Azure portal, you can find this value in the 'Keys and Endpoints' section. You can use KEY1 or KEY2",
+      "desc": "When checking resources in Azure portal, you can find this value in the 'Keys and Endpoint' section. You can use KEY1 or KEY2",
       "placeholder": "Azure API Key",
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Azure OpenAI API Key to start the session",
+      "description": "Enter your Azure OpenAI API Key to start the session. The application will not store your authentication information",
       "title": "Use Custom Azure OpenAI API Key"
     }
   },
@@ -42,7 +42,7 @@
       "title": "AWS Access Key Id"
     },
     "checker": {
-      "desc": "Test if AccessKeyId / SecretAccessKey are filled in correctly"
+      "desc": "Test if the AccessKeyId / SecretAccessKey is filled in correctly"
     },
     "region": {
       "desc": "Enter AWS Region",
@@ -57,7 +57,7 @@
     "title": "Bedrock",
     "unlock": {
       "customRegion": "Custom Service Region",
-      "description": "Enter your AWS AccessKeyId / SecretAccessKey to start the session. The app will not store your authentication configuration",
+      "description": "Enter your AWS AccessKeyId / SecretAccessKey to start the session. The application will not store your authentication configuration",
       "title": "Use Custom Bedrock Authentication Information"
     }
   },
@@ -69,31 +69,31 @@
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your DeepSeek API Key to start the session. The app will not store your API Key.",
+      "description": "Enter your DeepSeek API Key to start the session. The application will not store your API Key",
       "title": "Use Custom DeepSeek API Key"
     }
   },
   "google": {
     "title": "Google",
     "token": {
-      "desc": "Enter the API Key from Google",
+      "desc": "Enter your API Key from Google",
       "placeholder": "Google API Key",
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Google API Key to start the session. The app will not store your API Key",
+      "description": "Enter your Google API Key to start the session. The application will not store your API Key",
       "title": "Use Custom Google API Key"
     }
   },
   "groq": {
     "title": "Groq",
     "token": {
-      "desc": "Enter the API Key from Groq",
+      "desc": "Enter your API Key from Groq",
       "placeholder": "Groq API Key",
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Groq API Key to start the session. The app will not store your API Key",
+      "description": "Enter your Groq API Key to start the session. The application will not store your API Key",
       "title": "Use Custom Groq API Key"
     }
   },
@@ -105,19 +105,19 @@
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Minimax API Key to start the session. The app will not store your API Key.",
+      "description": "Enter your Minimax API Key to start the session. The application will not store your API Key",
       "title": "Use Custom Minimax API Key"
     }
   },
   "mistral": {
     "title": "Mistral AI",
     "token": {
-      "desc": "Enter the API Key from Mistral AI",
+      "desc": "Enter your API Key from Mistral AI",
       "placeholder": "Mistral AI API Key",
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Mistral AI API Key to start the session. The app will not store your API Key",
+      "description": "Enter your Mistral AI API Key to start the session. The application will not store your API Key",
       "title": "Use Custom Mistral AI API Key"
     }
   },
@@ -129,43 +129,43 @@
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Moonshot AI API Key to start the session. The app will not store your API Key",
-      "title": "Use custom Moonshot AI API Key"
+      "description": "Enter your Moonshot AI API Key to start the session. The application will not store your API Key",
+      "title": "Use Custom Moonshot AI API Key"
     }
   },
   "ollama": {
     "checker": {
-      "desc": "Test if the proxy address is correctly filled in",
+      "desc": "Test if the proxy address is filled in correctly",
       "title": "Connectivity Check"
     },
     "customModelName": {
-      "desc": "Add custom models, separate multiple models with commas",
-      "placeholder": "vicuna, llava, codellama, llama2:13b-text",
-      "title": "Custom model name"
+      "desc": "Add custom models, separate multiple models with commas (,)",
+      "placeholder": "vicuna,llama,codellama,llama2:13b-text",
+      "title": "Custom Model Name"
     },
     "endpoint": {
       "desc": "Enter the Ollama interface proxy address, leave blank if not specified locally",
-      "title": "Interface proxy address"
+      "title": "Ollama Service Address"
     },
     "setup": {
       "cors": {
-        "description": "Due to browser security restrictions, you need to configure cross-origin settings for Ollama to function properly.",
+        "description": "Due to browser security restrictions, you need to configure Ollama for cross-origin access to work properly.",
         "linux": {
-          "env": "Add `Environment` under [Service] section, and set the OLLAMA_ORIGINS environment variable:",
-          "reboot": "Reload systemd and restart Ollama.",
+          "env": "Under the [Service] section, add `Environment` and add the OLLAMA_ORIGINS environment variable:",
+          "reboot": "Reload systemd and restart Ollama",
           "systemd": "Invoke systemd to edit the ollama service:"
         },
-        "macos": "Open the 'Terminal' application, paste the following command, and press Enter to run it.",
-        "reboot": "Please restart the Ollama service after completion.",
-        "title": "Configure Ollama for Cross-Origin Access",
-        "windows": "On Windows, go to 'Control Panel' and edit system environment variables. Create a new environment variable named 'OLLAMA_ORIGINS' for your user account, set the value to '*', and click 'OK/Apply' to save."
+        "macos": "Open the 'Terminal' application and paste the following command, then press enter to run",
+        "reboot": "Please restart the Ollama service after completing the execution",
+        "title": "Configure Ollama to Allow Cross-Origin Access",
+        "windows": "On Windows, click 'Control Panel', enter the 'Edit system environment variables' section. Create a new environment variable for your user account named 'OLLAMA_ORIGINS' with a value of '*', and click 'OK/Apply' to save"
       },
       "install": {
-        "description": "Please make sure you have enabled Ollama. If you haven't downloaded Ollama yet, please visit the official website <1>to download</1>.",
-        "docker": "If you prefer using Docker, Ollama also provides an official Docker image. You can pull it using the following command:",
+        "description": "Make sure you have Ollama running. If you haven't downloaded Ollama, please visit the official website <1>download</1>",
+        "docker": "If you prefer to use Docker, Ollama also provides official Docker images which you can pull with the following command:",
         "linux": {
           "command": "Install using the following command:",
-          "manual": "Alternatively, you can refer to the <1>Linux Manual Installation Guide</1> for manual installation."
+          "manual": "Alternatively, you can refer to the <1>Linux manual installation guide</1> for self-installation"
         },
         "title": "Install and Start Ollama Locally",
         "windowsTab": "Windows (Preview)"
@@ -181,8 +181,8 @@
       "title": "OpenAI API Key"
     },
     "unlock": {
-      "description": "Enter your OpenAI API Key to start the session. The app will not store your API Key",
-      "title": "Use custom OpenAI API Key"
+      "description": "Enter your OpenAI API Key to start the session. The application will not store your API Key",
+      "title": "Use Custom OpenAI API Key"
     }
   },
   "openrouter": {
@@ -190,31 +190,31 @@
       "desc": "Test if the proxy address is correctly filled in"
     },
     "customModelName": {
-      "desc": "Add custom models, separate multiple models with commas",
-      "placeholder": "mistralai/mistral-7b-instruct:free, openchat/openchat-7b:free",
-      "title": "Custom model name"
+      "desc": "Add custom models, separate multiple models with a comma (,)",
+      "placeholder": "mistralai/mistral-7b-instruct:free,openchat/openchat-7b:free",
+      "title": "Custom Model Name"
     },
     "title": "OpenRouter",
     "token": {
-      "desc": "Enter your API Key from OpenRouter AI",
+      "desc": "Enter the API Key from OpenRouter AI",
       "placeholder": "OpenRouter AI API Key",
       "title": "API Key"
     },
     "unlock": {
       "description": "Enter your OpenRouter API Key to start the session. The app will not store your API Key",
-      "title": "Use custom OpenRouter API Key"
+      "title": "Use Custom OpenRouter API Key"
     }
   },
   "perplexity": {
     "title": "Perplexity",
     "token": {
-      "desc": "Enter your API Key from Perplexity AI",
+      "desc": "Enter the API Key from Perplexity AI",
       "placeholder": "Perplexity AI API Key",
       "title": "API Key"
     },
     "unlock": {
       "description": "Enter your Perplexity API Key to start the session. The app will not store your API Key",
-      "title": "Use custom Perplexity API Key"
+      "title": "Use Custom Perplexity API Key"
     }
   },
   "togetherai": {
@@ -222,31 +222,31 @@
       "desc": "Test if the proxy address is correctly filled in"
     },
     "customModelName": {
-      "desc": "Add custom models, separate multiple models with commas",
-      "placeholder": "togethercomputer/Llama-2-7B-32K-Instruct, teknium/OpenHermes-2-Mistral-7B",
-      "title": "Custom model name"
+      "desc": "Add custom models, separate multiple models with a comma (,)",
+      "placeholder": "togethercomputer/Llama-2-7B-32K-Instruct,teknium/OpenHermes-2-Mistral-7B",
+      "title": "Custom Model Name"
     },
     "title": "TogetherAI",
     "token": {
-      "desc": "Enter your API Key from TogetherAI AI",
+      "desc": "Enter the API Key from TogetherAI AI",
       "placeholder": "TogetherAI AI API Key",
       "title": "API Key"
     },
     "unlock": {
       "description": "Enter your TogetherAI API Key to start the session. The app will not store your API Key",
-      "title": "Use custom TogetherAI API Key"
+      "title": "Use Custom TogetherAI API Key"
     }
   },
   "zeroone": {
-    "title": "01.AI Zero One Everything",
+    "title": "01.AI Zero One",
     "token": {
-      "desc": "Enter the API Key from 01.AI Zero One Everything",
-      "placeholder": "01.AI Zero One Everything API Key",
+      "desc": "Enter the API Key from 01.AI Zero One",
+      "placeholder": "01.AI Zero One API Key",
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your 01.AI Zero One Everything API Key to start the session. The app will not store your API Key.",
-      "title": "Use Custom 01.AI Zero One Everything API Key"
+      "description": "Enter your 01.AI Zero One API Key to start the session. The app will not store your API Key",
+      "title": "Use Custom 01.AI Zero One API Key"
     }
   },
   "zhipu": {
@@ -257,7 +257,7 @@
       "title": "API Key"
     },
     "unlock": {
-      "description": "Enter your Zhipu API Key to start the session. The app will not store your API Key.",
+      "description": "Enter your Zhipu API Key to start the session. The app will not store your API Key",
       "title": "Use Custom Zhipu API Key"
     }
   }

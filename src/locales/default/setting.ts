@@ -107,7 +107,7 @@ export default {
       total: '共 {{count}} 个模型可用',
     },
     proxyUrl: {
-      desc: '除默认地址外，必须包含 http(s)://',
+      desc: '除默认地址外，必须包含 https://',
       title: 'API 代理地址',
     },
     waitingForMore: '更多模型正在 <1>计划接入</1> 中，敬请期待 ✨',
@@ -253,7 +253,7 @@ export default {
       },
       signin: {
         action: '登录',
-        desc: '使用 SSO 登录以解锁应用',
+        desc: '使用永久账号登录以解锁应用',
         title: '登录账号',
       },
       signout: {

@@ -1,30 +1,30 @@
 {
   "button": {
     "import": "Import Configuration",
-    "market": "Visit Market",
-    "start": "Start Now"
+    "market": "Buy Now",
+    "start": "Already purchased? Start Chatting"
   },
   "guide": {
     "agents": {
-      "replaceBtn": "Replace Batch",
+      "replaceBtn": "Replace",
       "title": "New Assistant Recommendations:"
     },
-    "defaultMessage": "I am your personal intelligent assistant FastGPT, how can I help you now?\nIf you need a more professional or customized assistant, you can click on `+` to create a custom assistant",
+    "defaultMessage": "I am your personal AI assistant FastGPT, what can I help you with now?\nIf you need a more professional or customized assistant, open the left panel on the desktop version, or click on 'New Assistant' on the mobile version.",
     "qa": {
       "q01": "What is FastGPT?",
       "q02": "What is FastGPT?",
       "q03": "Does FastGPT have community support?",
-      "q04": "What functions does FastGPT support?",
+      "q04": "What features does FastGPT support?",
       "q05": "How to deploy and use FastGPT?",
       "q06": "What is the pricing of FastGPT?",
       "q07": "Is FastGPT free?",
       "q08": "Is there a cloud service version?",
-      "q09": "Does FastGPT support local language models?",
-      "q10": "Does FastGPT support image recognition and generation?",
-      "q11": "Does FastGPT support speech synthesis and speech recognition?",
-      "q12": "Does FastGPT support a plugin system?",
-      "q13": "Is there a marketplace to obtain GPTs?",
-      "q14": "Does FastGPT support multiple AI service providers?",
+      "q09": "Does it support local language models?",
+      "q10": "Does it support image recognition and generation?",
+      "q11": "Does it support voice synthesis and recognition?",
+      "q12": "Does it support a plugin system?",
+      "q13": "Does it have its own market to get GPTs?",
+      "q14": "Does it support multiple AI service providers?",
       "q15": "What should I do if I encounter problems while using it?"
     },
     "questions": {
@@ -34,16 +34,17 @@
     "welcome": {
       "afternoon": "Good Afternoon",
       "morning": "Good Morning",
-      "night": "Good Evening",
+      "night": "Good Night",
       "noon": "Good Noon"
     }
   },
-  "header": "Welcome",
-  "pickAgent": "Or choose from the following agent templates",
+  "header": "Welcome to use",
+  "pickAgent": "Or choose from the following assistant templates",
   "skip": "Skip Creation",
   "slogan": {
-    "desc1": "Pioneering the new age of thinking and creating. Built for you, the Super Individual.",
-    "desc2": "Create your first agent and let's get started~",
-    "title": "Unlock the superpower of your brain"
+    "desc1": "Activate your brain cluster, ignite the spark of thought. Your intelligent assistant, always there.",
+    "desc2": "Create your first assistant, let's get started~",
+    "title": "Give Yourself a Smarter Brain",
+    "titleTest": "Give Yourself a Smarter Brain"
   }
 }

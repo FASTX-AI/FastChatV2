@@ -37,7 +37,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
           width: 640,
         },
       ],
-      locale: 'en-US',
+      locale: 'zh-CN',
       siteName: title,
       title: title,
       type: 'website',

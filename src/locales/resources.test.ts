@@ -43,7 +43,7 @@ describe('normalizeLocale', () => {
   });
 
   it('should return the input locale for unknown locales', () => {
-    expect(normalizeLocale('unknown')).toBe('en-US');
+    expect(normalizeLocale('unknown')).toBe('zh-CN');
     expect(normalizeLocale('fr')).toBe('fr-FR');
   });
 });

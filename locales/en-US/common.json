@@ -1,77 +1,77 @@
 {
   "about": "About",
   "advanceSettings": "Advanced Settings",
-  "appInitializing": "FastGPT is initializing, please wait...",
+  "appInitializing": "FastGPT is starting, please be patient...",
   "autoGenerate": "Auto Generate",
-  "autoGenerateTooltip": "Auto-generate agent description based on prompts",
-  "autoGenerateTooltipDisabled": "Please enter a tooltip before using the autocomplete feature",
+  "autoGenerateTooltip": "Auto complete based on assistant description",
+  "autoGenerateTooltipDisabled": "Please fill in the prompts before using the autocomplete function",
   "blog": "Product Blog",
   "buy": {
-    "desc": "Become a premium member"
+    "desc": "Become a VIP member"
   },
   "cancel": "Cancel",
   "changelog": "Changelog",
   "close": "Close",
   "copy": "Copy",
   "copyFail": "Copy failed",
-  "copySuccess": "Copied successfully",
+  "copySuccess": "Copy succeeded",
   "dataStatistics": {
     "messages": "Messages",
-    "sessions": "Agents",
-    "today": "Today's New",
+    "sessions": "Assistants",
+    "today": "New today",
     "topics": "Topics"
   },
-  "defaultAgent": "Default Agent",
-  "defaultSession": "Default Agent",
+  "defaultAgent": "Custom Assistant",
+  "defaultSession": "Custom Assistant",
   "delete": "Delete",
-  "document": "User Manual",
-  "duplicate": "Create Duplicate",
+  "document": "Documentation",
+  "duplicate": "Duplicate",
   "edit": "Edit",
   "export": "Export Configuration",
   "exportType": {
-    "agent": "Export Agent Settings",
-    "agentWithMessage": "Export Agent and Messages",
-    "all": "Export Global Settings and All Agent Data",
-    "allAgent": "Export All Agent Settings",
-    "allAgentWithMessage": "Export All Agents and Messages",
+    "agent": "Export Assistant Setting",
+    "agentWithMessage": "Export Assistants and Messages",
+    "all": "Export Global Settings and all Assistant Data",
+    "allAgent": "Export all Assistant Settings",
+    "allAgentWithMessage": "Export all Assistants and Messages",
     "globalSetting": "Export Global Settings"
   },
   "feedback": "Feedback",
   "follow": "Follow us on {{name}}",
-  "fullscreen": "Full Screen Mode",
+  "fullscreen": "Full Screen",
   "historyRange": "History Range",
   "import": "Import Configuration",
   "importModal": {
     "error": {
-      "desc": "Sorry, an error occurred during the data import process. Please try importing again, or <1>submit a request</1>, and we will help you troubleshoot the issue as soon as possible.",
-      "title": "Data Import Failed"
+      "desc": "We're sorry, something went wrong during the import process. Please try to import again or <1>submit a ticket</1> and we'll help you resolve the issue.",
+      "title": "Import Data Failed"
     },
     "finish": {
       "onlySettings": "System settings imported successfully",
-      "start": "Start using",
-      "subTitle": "Data imported successfully, took {{duration}} seconds. Import details are as follows:",
-      "title": "Data import completed"
+      "start": "Get Started",
+      "subTitle": "Data imported successfully, took {{duration}} seconds. Import details are shown below:",
+      "title": "Data Import Complete"
     },
-    "loading": "Data importing, please wait...",
-    "preparing": "Data import module is preparing...",
+    "loading": "Importing data, please wait...",
+    "preparing": "Preparing for data import...",
     "result": {
-      "added": "Imported successfully",
+      "added": "Import succeeded",
       "errors": "Import errors",
       "messages": "Messages",
       "sessionGroups": "Groups",
-      "sessions": "Agents",
+      "sessions": "Assistants",
       "skips": "Duplicates skipped",
       "topics": "Topics",
       "type": "Data Type"
     },
     "title": "Import Data",
     "uploading": {
-      "desc": "The current file is large, and is being uploaded...",
+      "desc": "The file you are trying to upload is large. Uploading, please wait...",
       "restTime": "Time remaining",
       "speed": "Upload speed"
     }
   },
-  "installPWA": "Install browser app",
+  "installPWA": "Install Browser App(PWA)",
   "lang": {
     "ar": "Arabic",
     "bg-BG": "Bulgarian",
@@ -94,8 +94,8 @@
     "nl-NL": "Dutch",
     "no-NO": "Norwegian",
     "pl-PL": "Polish",
-    "pt-BR": "Portuguese",
-    "pt-PT": "Portuguese",
+    "pt-BR": "Portuguese (Brazil)",
+    "pt-PT": "Portuguese (Portugal)",
     "ro-RO": "Romanian",
     "ru-RU": "Russian",
     "sk-SK": "Slovak",
@@ -105,17 +105,17 @@
     "tr-TR": "Turkish",
     "uk-UA": "Ukrainian",
     "vi-VN": "Vietnamese",
-    "zh": "Simplified Chinese",
-    "zh-CN": "Simplified Chinese",
-    "zh-TW": "Traditional Chinese"
+    "zh": "Chinese Simplified",
+    "zh-CN": "Chinese Simplified",
+    "zh-TW": "Chinese Traditional"
   },
-  "layoutInitializing": "Initializing layout...",
-  "noDescription": "No description available",
-  "oauth": "SSO Login",
+  "layoutInitializing": "Loading layout...",
+  "noDescription": "No description",
+  "oauth": "Permanent user login",
   "officialSite": "Official Website",
   "ok": "OK",
   "password": "Password",
-  "pin": "Pin",
+  "pin": "Pin to Top",
   "pinOff": "Unpin",
   "privacy": "Privacy Policy",
   "regenerate": "Regenerate",
@@ -138,52 +138,52 @@
     "disabled": {
       "actions": {
         "enable": "Enable Cloud Sync",
-        "settings": "Sync Settings"
+        "settings": "Configure Sync Settings"
       },
-      "desc": "Current session data is only stored in this browser. If you need to sync data across multiple devices, please configure and enable cloud sync.",
-      "title": "Data Sync Disabled"
+      "desc": "Current session data is only stored on this browser. If you need to sync data across multiple devices, please configure and enable cloud sync.",
+      "title": "Data Sync is Disabled"
     },
     "enabled": {
-      "title": "Data Sync Enabled"
+      "title": "Data Sync"
     },
     "status": {
       "connecting": "Connecting",
-      "disabled": "Sync Disabled",
-      "ready": "Connected",
+      "disabled": "Sync is disabled",
+      "ready": "Ready",
       "synced": "Synced",
       "syncing": "Syncing",
-      "unconnected": "Connection Failed"
+      "unconnected": "Connection failed"
     },
     "title": "Sync Status",
     "unconnected": {
-      "tip": "Signaling server connection failed, and peer-to-peer communication channel cannot be established. Please check the network and try again."
+      "tip": "Signaling server connection failed. P2P communication channel cannot be established. Please check your network and try again."
     }
   },
   "tab": {
-    "buy": "Member",
+    "buy": "Buy",
     "chat": "Chat",
-    "market": "Discover",
+    "market": "Market",
     "me": "Me",
     "setting": "Settings"
   },
   "telemetry": {
     "allow": "Allow",
     "deny": "Deny",
-    "desc": "We would like to anonymously collect usage information to help us improve FastGPT and provide you with a better product experience. You can disable this at any time in Settings - About.",
-    "learnMore": "Learn More",
-    "title": "Help FastGPT be better"
+    "desc": "We hope to anonymously collect your usage information to help us improve FastGPT and provide you with better product experience. You can turn it off anytime in \"Settings\"-\"About\".",
+    "learnMore": "Learn more",
+    "title": "Help Us Improve FastGPT"
   },
-  "temp": "Temporary",
+  "temp": "Temp",
   "terms": "Terms of Service",
-  "updateAgent": "Update Agent Information",
+  "updateAgent": "Update Assistant Information",
   "upgradeVersion": {
     "action": "Upgrade",
-    "hasNew": "New update available",
+    "hasNew": "New Updates Available",
     "newVersion": "New version available: {{version}}"
   },
   "userPanel": {
     "anonymousNickName": "Anonymous User",
-    "billing": "Billing Management",
+    "billing": "Billing",
     "data": "Data Storage",
     "defaultNickname": "Community User",
     "discord": "Community Support",
@@ -191,12 +191,12 @@
     "email": "Email Support",
     "feedback": "Feedback and Suggestions",
     "help": "Help Center",
-    "moveGuide": "The settings button has been moved here",
+    "moveGuide": "The Settings Button has Moved Here",
     "plans": "Subscription Plans",
     "preview": "Preview",
     "profile": "Account Management",
     "setting": "App Settings",
-    "stable": "Stable Version",
+    "stable": "Stable",
     "usages": "Usage Statistics"
   }
 }

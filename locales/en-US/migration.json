@@ -5,30 +5,30 @@
       "downloadBackup": "Download Data Backup",
       "reUpgrade": "Re-upgrade",
       "start": "Get Started",
-      "upgrade": "Upgrade"
+      "upgrade": "Upgrade Now"
     },
     "clear": {
-      "confirm": "You are about to clear local data (global settings will not be affected). Please confirm that you have downloaded a data backup."
+      "confirm": "Local data will be cleared (global settings will not be affected). Please confirm that you have downloaded the data backup."
     },
     "description": "In the new version, FastGPT's data storage has made a huge leap. Therefore, we need to upgrade the old version data to bring you a better user experience.",
     "features": {
       "capability": {
-        "desc": "Based on IndexedDB technology, it can store a lifetime of conversation messages.",
+        "desc": "Based on IndexedDB technology, it is capable of storing your lifetime of conversation messages.",
         "title": "High Capacity"
       },
       "performance": {
-        "desc": "Millions of messages are automatically indexed, and retrieval queries respond in milliseconds.",
+        "desc": "Automatic indexing of millions of messages, with millisecond response times for retrieval queries.",
         "title": "High Performance"
       },
       "use": {
         "desc": "Supports searching for titles, descriptions, tags, message content, and even translated text, greatly improving daily search efficiency.",
-        "title": "More User-Friendly"
+        "title": "More User-friendly"
       }
     },
     "title": "FastGPT Data Evolution",
     "upgrade": {
       "error": {
-        "subTitle": "We are sorry, an error occurred during the database upgrade process. Please try the following solutions: A. Clear local data and re-import backup data; B. Click the 'Retry Upgrade' button.<br><br> If the issue persists, please <1>submit a request</1>, and we will assist you as soon as possible.",
+        "subTitle": "We apologize for the database upgrade process encountering an exception. Please try the following solutions: A. After clearing local data, re-import the backup data; B. Click the 'Re-upgrade' button.<br><br>If the issue persists, please <1>submit a request</1>, and we will help troubleshoot immediately.",
         "title": "Database Upgrade Failed"
       },
       "success": {
@@ -36,7 +36,7 @@
         "title": "Database Upgrade Successful"
       }
     },
-    "upgradeTip": "The upgrade process will take approximately 10 to 20 seconds. Please do not close FastGPT during the upgrade."
+    "upgradeTip": "The upgrade process will take approximately 10-20 seconds. Please do not close FastGPT during the upgrade."
   },
   "migrateError": {
     "missVersion": "Imported data is missing a version number. Please check the file and try again.",

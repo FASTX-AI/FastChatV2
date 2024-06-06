@@ -148,7 +148,7 @@ class Ld {
       'image': {
         '@id': this.getId(fixedUrl, '#primaryimage'),
       },
-      'inLanguage': 'en-US',
+      'inLanguage': 'zh-CN',
       'isPartOf': {
         '@id': this.getId(SITE_URL, '#website'),
       },
@@ -176,7 +176,7 @@ class Ld {
       '@id': this.getId(fixedUrl, '#primaryimage'),
       '@type': 'ImageObject',
       'contentUrl': image,
-      'inLanguage': 'en-US',
+      'inLanguage': 'zh-CN',
       'url': image,
     };
   }
@@ -186,7 +186,7 @@ class Ld {
       '@id': this.getId(SITE_URL, '#website'),
       '@type': 'WebSite',
       'description': pkg.description,
-      'inLanguage': 'en-US',
+      'inLanguage': 'zh-CN',
       'name': 'FastGPT',
       'publisher': {
         '@id': this.getId(SITE_URL, '#organization'),
