@@ -69,9 +69,6 @@ export const useActionsClick = (): OnActionsClick => {
     }
 
     if (action.keyPath.at(-1) === 'translate') {
-      // click the menu item with translate item, the result is:
-      // key: 'en-US'
-      // keyPath: ['en-US','translate']
       const lang = action.keyPath[0];
       translateMessage(id, lang);
     }

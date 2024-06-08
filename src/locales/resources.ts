@@ -25,13 +25,13 @@ type LocaleOptions = {
 
 export const localeOptions: LocaleOptions = [
   {
-    label: 'English',
-    value: 'en-US',
-  },
-  {
     label: '简体中文',
     value: 'zh-CN',
   },
+  {
+    label: 'English',
+    value: 'en-US',
+  },
 ] as LocaleOptions;
 
-export const supportLocales: string[] = [...locales, 'en', 'zh'];
+export const supportLocales: string[] = [...locales, 'zh', 'en'];
