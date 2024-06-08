@@ -5,7 +5,6 @@ import { API_ENDPOINTS } from './_url';
 class MarketService {
   getAgentList = async (locale: string): Promise<LobeChatAgentsMarketIndex> => {
     const res = await fetch(`${API_ENDPOINTS.market}?locale=${locale}`);
-
     return res.json();
   };
 

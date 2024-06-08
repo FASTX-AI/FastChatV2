@@ -8,5 +8,5 @@ export const FAST_GPT_LOCALE_COOKIE = 'FAST_GPT_LOCALE_COOKIE';
  * @param locale
  */
 export const isLocaleNotSupport = (locale: string) => {
-  return normalizeLocale(locale) === DEFAULT_LANG || !supportLocales.includes(locale);
+  return normalizeLocale(locale) !== DEFAULT_LANG || !supportLocales.includes(locale);
 };

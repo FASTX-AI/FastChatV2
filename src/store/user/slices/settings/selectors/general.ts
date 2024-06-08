@@ -1,22 +1,13 @@
-import { DEFAULT_LANG } from '@/const/locale';
-import { Locales } from '@/locales/resources';
-import { isOnServerSide } from '@/utils/env';
-
+// import { DEFAULT_LANG } from '@/const/locale';
+// import { Locales } from '@/locales/resources';
+// import { isOnServerSide } from '@/utils/env';
 import { UserStore } from '../../../store';
 import { currentSettings } from './settings';
 
 const generalConfig = (s: UserStore) => currentSettings(s).general || {};
 
 const currentLanguage = (s: UserStore) => {
-  const locale = generalConfig(s).language;
-
-  if (locale === 'auto') {
-    if (isOnServerSide) return DEFAULT_LANG;
-
-    return navigator.language as Locales;
-  }
-
-  return locale;
+  return generalConfig(s).language;
 };
 
 const currentThemeMode = (s: UserStore) => {
