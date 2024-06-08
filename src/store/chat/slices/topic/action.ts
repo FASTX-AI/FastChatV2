@@ -166,6 +166,7 @@ export const chatTopic: StateCreator<
 
         internal_updateTopicTitleInSummary(topicId, output);
       },
+      // TODO：额外请求
       params: merge(topicConfig, chainSummaryTitle(messages)),
       trace: get().getCurrentTracePayload({ traceName: TraceNameMap.SummaryTopicTitle, topicId }),
     });

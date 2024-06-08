@@ -1,36 +1,27 @@
 'use client';
 
-import { Form, type FormItemProps, Icon, type ItemGroup, Tooltip } from '@lobehub/ui';
-import { Button } from 'antd';
+import { Form, type FormItemProps, type ItemGroup, Tooltip } from '@lobehub/ui';
 import isEqual from 'fast-deep-equal';
 import { isString } from 'lodash-es';
-import { Wand2 } from 'lucide-react';
-import dynamic from 'next/dynamic';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { FORM_STYLE } from '@/const/layoutTokens';
-import { useUserStore } from '@/store/user';
-import { userGeneralSettingsSelectors } from '@/store/user/selectors';
 
 import { useStore } from '../store';
 import { SessionLoadingState } from '../store/initialState';
 import AutoGenerateInput from './AutoGenerateInput';
 import AutoGenerateSelect from './AutoGenerateSelect';
-import BackgroundSwatches from './BackgroundSwatches';
-
-const EmojiPicker = dynamic(() => import('@lobehub/ui/es/EmojiPicker'), { ssr: false });
 
 const AgentMeta = memo(() => {
   const { t } = useTranslation('setting');
 
-  const [hasSystemRole, updateMeta, autocompleteMeta, autocompleteAllMeta] = useStore((s) => [
+  const [hasSystemRole, updateMeta, autocompleteMeta] = useStore((s) => [
     !!s.config.systemRole,
     s.setAgentMeta,
     s.autocompleteMeta,
-    s.autocompleteAllMeta,
   ]);
-  const locale = useUserStore(userGeneralSettingsSelectors.currentLanguage);
+
   const loading = useStore((s) => s.autocompleteLoading);
   const meta = useStore((s) => s.meta, isEqual);
 
@@ -78,31 +69,7 @@ const AgentMeta = memo(() => {
   });
 
   const metaData: ItemGroup = {
-    children: [
-      {
-        children: (
-          <EmojiPicker
-            backgroundColor={meta.backgroundColor}
-            locale={locale}
-            onChange={(avatar) => updateMeta({ avatar })}
-            value={meta.avatar}
-          />
-        ),
-        label: t('settingAgent.avatar.title'),
-        minWidth: undefined,
-      },
-      {
-        children: (
-          <BackgroundSwatches
-            backgroundColor={meta.backgroundColor}
-            onChange={(backgroundColor) => updateMeta({ backgroundColor })}
-          />
-        ),
-        label: t('settingAgent.backgroundColor.title'),
-        minWidth: undefined,
-      },
-      ...autocompleteItems,
-    ],
+    children: [...autocompleteItems],
     extra: (
       <Tooltip
         title={
@@ -110,21 +77,7 @@ const AgentMeta = memo(() => {
             ? t('autoGenerateTooltipDisabled', { ns: 'common' })
             : t('autoGenerateTooltip', { ns: 'common' })
         }
-      >
-        <Button
-          disabled={!hasSystemRole}
-          icon={<Icon icon={Wand2} />}
-          loading={Object.values(loading).some((i) => !!i)}
-          onClick={(e: any) => {
-            e.stopPropagation();
-
-            autocompleteAllMeta(true);
-          }}
-          size={'small'}
-        >
-          {t('autoGenerate', { ns: 'common' })}
-        </Button>
-      </Tooltip>
+      ></Tooltip>
     ),
     title: t('settingAgent.title'),
   };

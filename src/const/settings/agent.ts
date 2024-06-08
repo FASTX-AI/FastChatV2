@@ -15,7 +15,8 @@ export const DEFAUTT_AGENT_TTS_CONFIG: LobeAgentTTSConfig = {
 export const DEFAULT_AGENT_CHAT_CONFIG: LobeAgentChatConfig = {
   autoCreateTopicThreshold: 2,
   displayMode: 'chat',
-  enableAutoCreateTopic: true,
+  // 自动创建话题
+  enableAutoCreateTopic: false,
   historyCount: 1,
 };
 
@@ -26,7 +27,7 @@ export const DEFAULT_AGENT_CONFIG: LobeAgentConfig = {
   params: {
     frequency_penalty: 0,
     presence_penalty: 0,
-    temperature: 0.6,
+    temperature: 0.7,
     top_p: 1,
   },
   plugins: [],
