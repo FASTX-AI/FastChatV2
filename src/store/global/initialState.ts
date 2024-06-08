@@ -56,7 +56,7 @@ export interface GlobalState {
 export const INITIAL_STATUS = {
   expandSessionGroupKeys: [SessionDefaultGroup.Pinned, SessionDefaultGroup.Default],
   hidePWAInstaller: false,
-  inputHeight: 200,
+  inputHeight: 150,
   mobileShowTopic: false,
   sessionsWidth: 320,
   showChatSideBar: false,

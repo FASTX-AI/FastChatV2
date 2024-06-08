@@ -3,7 +3,6 @@
 import { Icon } from '@lobehub/ui';
 import { Button } from 'antd';
 import { SendHorizonal } from 'lucide-react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -12,15 +11,22 @@ import { Flexbox } from 'react-layout-kit';
 const Actions = memo<{ mobile?: boolean }>(({ mobile }) => {
   const { t } = useTranslation('welcome');
   const router = useRouter();
+  const toBuy = () => {
+    window.open('https://pay.fastgpt.chat', '_blank');
+  };
 
   return (
     <Flexbox gap={16} horizontal={!mobile} justify={'center'} width={'100%'} wrap={'wrap'}>
       {/* TODO: 切换到购买页面 */}
-      <Link href={'/buy'}>
-        <Button block={mobile} size={'large'} style={{ minWidth: 160 }} type={'default'}>
-          {t('button.market')}
-        </Button>
-      </Link>
+      <Button
+        block={mobile}
+        onClick={toBuy}
+        size={'large'}
+        style={{ minWidth: 160 }}
+        type={'default'}
+      >
+        {t('button.market')}
+      </Button>
       <Button
         block={mobile}
         onClick={() => router.push('/chat')}

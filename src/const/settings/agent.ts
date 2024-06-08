@@ -19,6 +19,7 @@ export const DEFAULT_AGENT_CHAT_CONFIG: LobeAgentChatConfig = {
   historyCount: 1,
 };
 
+// TODO: 默认插件设置在这里
 export const DEFAULT_AGENT_CONFIG: LobeAgentConfig = {
   chatConfig: DEFAULT_AGENT_CHAT_CONFIG,
   model: 'gpt-4o',
@@ -28,7 +29,7 @@ export const DEFAULT_AGENT_CONFIG: LobeAgentConfig = {
     temperature: 0.6,
     top_p: 1,
   },
-  plugins: ['lobe-image-designer'],
+  plugins: [],
   provider: ModelProvider.OpenAI,
   systemRole: '',
   tts: DEFAUTT_AGENT_TTS_CONFIG,

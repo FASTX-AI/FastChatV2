@@ -43,9 +43,8 @@ const parserFallbackLang = () => {
    */
   let fallbackLang: string = resolveAcceptLanguage(
     headers().get('accept-language') || '',
-    //  Invalid locale identifier 'ar'. A valid locale should follow the BCP 47 'language-country' format.
     locales,
-    'zh-CN',
+    'en-US',
   );
 
   return fallbackLang;

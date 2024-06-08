@@ -1,36 +1,32 @@
 // import { GridShowcase, Logo } from '@lobehub/ui';
-import { GridShowcase } from '@lobehub/ui';
 import { PropsWithChildren } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
 // import Follow from '@/features/Follow';
 
-const COPYRIGHT = `© ${new Date().getFullYear()} FastGPT, LLC`;
+// const COPYRIGHT = `© ${new Date().getFullYear()} FastGPT, LLC`;
 
 const DesktopLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Flexbox
         align={'center'}
+        gap={24}
         height={'100%'}
-        justify={'space-between'}
+        justify={'center'}
         padding={16}
         style={{ overflow: 'hidden', position: 'relative' }}
         width={'100%'}
       >
         {/* TODO: logo 取消 */}
         {/* <Logo size={36} style={{ alignSelf: 'flex-start' }} type={'text'} /> */}
-        <GridShowcase innerProps={{ gap: 24 }} style={{ maxWidth: 1024 }} width={'100%'}>
-          {children}
-        </GridShowcase>
-        <Flexbox align={'center'} horizontal justify={'space-between'}>
+        {children}
+        {/* <Flexbox align={'center'} horizontal justify={'space-between'}>
           <span style={{ opacity: 0.5 }}>{COPYRIGHT}</span>
-          {/* TODO: 去掉follow的按钮 */}
-          {/* <Follow /> */}
-        </Flexbox>
+          <Follow />
+        </Flexbox> */}
       </Flexbox>
       {/* ↓ cloud slot ↓ */}
-
       {/* ↑ cloud slot ↑ */}
     </>
   );

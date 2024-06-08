@@ -49,6 +49,10 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
     return ['empty', ...ids];
   }, isEqual);
 
+  const showInboxWelcome = useChatStore((s) => {
+    return chatSelectors.showInboxWelcome(s);
+  }, isEqual);
+
   useEffect(() => {
     if (virtuosoRef.current) {
       virtuosoRef.current.scrollToIndex({ align: 'end', behavior: 'auto', index: 'LAST' });
@@ -69,8 +73,6 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
 
   const itemContent = useCallback(
     (index: number, id: string) => {
-      if (id === WELCOME_GUIDE_CHAT_ID) return <InboxWelcome />;
-
       return index === 0 ? (
         <div style={{ height: 24 + (mobile ? 0 : 64) }} />
       ) : (
@@ -99,7 +101,7 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
       </Center>
     );
 
-  return (
+  return !showInboxWelcome ? (
     <Flexbox height={'100%'}>
       <Virtuoso
         atBottomStateChange={setAtBottom}
@@ -131,6 +133,10 @@ const VirtualizedList = memo<VirtualizedListProps>(({ mobile }) => {
           }
         }}
       />
+    </Flexbox>
+  ) : (
+    <Flexbox height={'100%'}>
+      <InboxWelcome />
     </Flexbox>
   );
 });

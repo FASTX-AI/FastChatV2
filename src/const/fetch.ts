@@ -5,7 +5,7 @@ export const USE_AZURE_OPENAI = 'X-use-azure-openai';
 
 export const AZURE_OPENAI_API_VERSION = 'X-azure-openai-api-version';
 
-export const FAST_GPT_ACCESS_CODE = 'X-lobe-chat-access-code';
+export const FAST_GPT_ACCESS_CODE = 'X-fastgpt-chat-access-code';
 
 export const OAUTH_AUTHORIZED = 'X-oauth-authorized';
 

@@ -216,12 +216,11 @@
         "calloutSuggestionCountLabel": "Pending suggestions sent to users: {{count}}",
         "manualInvitationOption__description": "Users can only be invited to join the organization manually.",
         "manualInvitationOption__label": "No Automatic Registration",
-        "start": {
-          "headerTitle__danger": "Danger",
-          "headerTitle__enrollment": "Registration Options"
-        },
-        "subtitle": "Select how users from this domain will join the organization.",
-        "title": "Update {{domain}} Enrollment"
+        "subtitle": "Select how users from this domain will join the organization."
+      },
+      "start": {
+        "headerTitle__danger": "Danger",
+        "headerTitle__enrollment": "Registration Options"
       },
       "subtitle": "{{domain}} has been verified. Please select a registration mode to continue.",
       "title": "Update {{domain}} Enrollment"
@@ -558,16 +557,14 @@
         "formSubtitle": "Enter the verification code sent to {{identifier}}.",
         "formTitle": "Verification Code",
         "resendButton": "Didn't receive the verification code? Resend",
-        "successMessage": "Email {{identifier}} has been added to your account.",
-        "verifyTitle": "Verify Email Address"
+        "successMessage": "Email {{identifier}} has been added to your account."
       },
       "emailLink": {
         "formHint": "An email containing the verification link will be sent to this email address.",
         "formSubtitle": "Click the verification link in the email sent to {{identifier}}.",
         "formTitle": "Verification Link",
         "resendButton": "Didn't receive the verification link? Resend",
-        "successMessage": "Email {{identifier}} has been added to your account.",
-        "verifyTitle": "Verify Email Address"
+        "successMessage": "Email {{identifier}} has been added to your account."
       },
       "removeResource": {
         "messageLine1": "{{identifier}} will be removed from this account.",
@@ -576,7 +573,6 @@
         "title": "Remove Email Address"
       },
       "title": "Add Email Address",
-      "verifySubtitle": "Enter the verification code sent to {{identifier}}",
       "verifyTitle": "Verify Email Address"
     },
     "formButtonPrimary__add": "Add",
@@ -612,8 +608,7 @@
         "infoText__ableToScan": "Set a new login method in your authenticator app and scan the following QR code to link it to your account.",
         "infoText__unableToScan": "Set a new login method in your authenticator and enter the key provided below.",
         "inputLabel__unableToScan1": "Ensure that time-based or one-time password is enabled, then complete linking your account.",
-        "inputLabel__unableToScan2": "Alternatively, if your authenticator supports TOTP URI, you can also copy the full URI.",
-        "title": "Authenticator App"
+        "inputLabel__unableToScan2": "Alternatively, if your authenticator supports TOTP URI, you can also copy the full URI."
       },
       "removeResource": {
         "messageLine1": "You will no longer need verification codes from this authenticator during login.",

@@ -1,6 +1,7 @@
-import { TokenTag, Tooltip } from '@lobehub/ui';
+import { Icon, Tooltip } from '@lobehub/ui';
 import { Popover } from 'antd';
 import { useTheme } from 'antd-style';
+import { Activity } from 'lucide-react';
 import numeral from 'numeral';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -129,9 +130,18 @@ const Token = memo(() => {
     </Flexbox>
   );
 
+  let useColor = theme.colorSuccess;
+  if (maxTokens / 2 < totalToken) {
+    useColor = theme.colorWarning;
+  }
+  if (maxTokens / 3 < totalToken) {
+    useColor = theme.colorError;
+  }
+
   return (
     <Popover arrow={false} content={content} placement={'top'} trigger={['hover', 'click']}>
-      <TokenTag
+      <Icon color={useColor} icon={Activity} size={'normal'} style={{ marginLeft: 8 }} />
+      {/* <TokenTag
         displayMode={'used'}
         maxValue={maxTokens}
         style={{ marginLeft: 8 }}
@@ -141,7 +151,7 @@ const Token = memo(() => {
           used: t('tokenTag.used'),
         }}
         value={totalToken}
-      />
+      /> */}
     </Popover>
   );
 });

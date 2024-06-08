@@ -1,6 +1,6 @@
-export const FAST_GPT_TRACE_HEADER = 'X-lobe-trace';
-export const FAST_GPT_TRACE_ID = 'X-lobe-chat-trace-id';
-export const FAST_GPT_OBSERVATION_ID = 'X-lobe-observation-id';
+export const FAST_GPT_TRACE_HEADER = 'X-fastgpt-trace';
+export const FAST_GPT_TRACE_ID = 'X-fastgpt-chat-trace-id';
+export const FAST_GPT_OBSERVATION_ID = 'X-fastgpt-observation-id';
 
 export enum TraceNameMap {
   ConnectivityChecker = 'Connectivity Checker',

@@ -87,7 +87,7 @@ export default {
     systemRole: '角色设定',
     title: '上下文明细',
     tools: '插件设定',
-    total: '总共可用',
+    total: '上下文限额',
     used: '总计使用',
   },
   tokenTag: {
