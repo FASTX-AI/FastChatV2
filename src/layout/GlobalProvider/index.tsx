@@ -44,7 +44,7 @@ const parserFallbackLang = () => {
   let fallbackLang: string = resolveAcceptLanguage(
     headers().get('accept-language') || '',
     locales,
-    'en-US',
+    'zh-CN',
   );
 
   return fallbackLang;
