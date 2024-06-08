@@ -8,11 +8,13 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
+import { PAY_SITE } from '@/const/url';
+
 const Actions = memo<{ mobile?: boolean }>(({ mobile }) => {
   const { t } = useTranslation('welcome');
   const router = useRouter();
   const toBuy = () => {
-    window.open('https://pay.fastgpt.chat', '_blank');
+    window.open(PAY_SITE, '_blank');
   };
 
   return (

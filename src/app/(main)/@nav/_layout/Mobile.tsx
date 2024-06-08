@@ -8,6 +8,7 @@ import { rgba } from 'polished';
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { PAY_SITE } from '@/const/url';
 import { useActiveTabKey } from '@/hooks/useActiveTabKey';
 import { SidebarTabKey } from '@/store/global/initialState';
 
@@ -56,7 +57,7 @@ const Nav = memo(() => {
         icon: (active) => <Icon className={active ? styles.active : undefined} icon={Gem} />,
         key: SidebarTabKey.Buy,
         onClick: () => {
-          window.open('https://pay.fastgpt.chat', '_blank');
+          window.open(PAY_SITE, '_blank');
         },
         title: t('tab.buy'),
       },

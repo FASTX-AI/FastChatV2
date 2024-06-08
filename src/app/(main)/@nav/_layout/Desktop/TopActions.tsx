@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { PAY_SITE } from '@/const/url';
 import { useGlobalStore } from '@/store/global';
 import { SidebarTabKey } from '@/store/global/initialState';
 import { useSessionStore } from '@/store/session';
@@ -43,7 +44,7 @@ const TopActions = memo<TopActionProps>(({ tab }) => {
           title={t('tab.market')}
         />
       </Link>
-      <Link aria-label={t('tab.buy')} href={'https://pay.fastgpt.chat'}>
+      <Link aria-label={t('tab.buy')} href={PAY_SITE}>
         <ActionIcon icon={Gem} placement={'right'} size="large" title={t('tab.buy')} />
       </Link>
     </>

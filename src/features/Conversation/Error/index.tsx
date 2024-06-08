@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 // import { useRouter } from 'next/navigation';
 import { Suspense, memo } from 'react';
 
+import { PAY_SITE } from '@/const/url';
 import { AgentRuntimeErrorType, ILobeAgentRuntimeErrorType } from '@/libs/agent-runtime';
 import { ChatErrorType, ErrorType } from '@/types/fetch';
 import { ChatMessage, ChatMessageError } from '@/types/message';
@@ -80,7 +81,7 @@ const ErrorMessageExtra = memo<{ data: ChatMessage }>(({ data }) => {
         <InvalidAccessCode
           id={data.id}
           onBuyClick={() => {
-            window.open('https://pay.fastgpt.chat', '_blank');
+            window.open(PAY_SITE, '_blank');
           }}
           provider={data.error?.body?.provider}
         />

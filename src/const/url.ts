@@ -8,6 +8,7 @@ import { INBOX_SESSION_ID } from './session';
 
 export const OFFICIAL_URL = 'https://fastgpt.chat';
 export const OFFICIAL_SITE = 'https://fastgpt.chat/';
+export const PAY_SITE = 'https://pay.fastgpt.chat/';
 
 export const getCanonicalUrl = (path: string) => urlJoin(OFFICIAL_URL, path);
 
@@ -53,5 +54,3 @@ export const EMAIL_BUSINESS = 'support@fastgpt.chat';
 export const MEDIDUM = 'https://medium.com/@lobehub';
 export const X = 'https://x.com/lobehub';
 export const RELEASES_URL = urlJoin(GITHUB, 'releases');
-
-export const PAY_URL = 'https://pay.fastgpt.chat';
