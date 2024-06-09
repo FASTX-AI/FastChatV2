@@ -13,7 +13,7 @@ export class ClientService implements IUserService {
   private preferenceStorage: AsyncLocalStorage<UserPreference>;
 
   constructor() {
-    this.preferenceStorage = new AsyncLocalStorage('LOBE_PREFERENCE');
+    this.preferenceStorage = new AsyncLocalStorage('FASTGPT_PREFERENCE');
   }
 
   async getUserState(): Promise<UserInitializationState> {

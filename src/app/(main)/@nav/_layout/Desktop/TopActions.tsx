@@ -1,5 +1,5 @@
 import { ActionIcon } from '@lobehub/ui';
-import { Compass, Gem, MessageSquare } from 'lucide-react';
+import { Gem, LucideMusic4, LucideScanSearch, MessageSquare, Palette } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -35,10 +35,28 @@ const TopActions = memo<TopActionProps>(({ tab }) => {
           title={t('tab.chat')}
         />
       </Link>
+      <Link aria-label={t('tab.music')} href={'/music'}>
+        <ActionIcon
+          active={tab === SidebarTabKey.Music}
+          icon={LucideMusic4}
+          placement={'right'}
+          size="large"
+          title={t('tab.music')}
+        />
+      </Link>
+      <Link aria-label={t('tab.draw')} href={'/draw'}>
+        <ActionIcon
+          active={tab === SidebarTabKey.Draw}
+          icon={Palette}
+          placement={'right'}
+          size="large"
+          title={t('tab.draw')}
+        />
+      </Link>
       <Link aria-label={t('tab.market')} href={'/market'}>
         <ActionIcon
           active={tab === SidebarTabKey.Market}
-          icon={Compass}
+          icon={LucideScanSearch}
           placement={'right'}
           size="large"
           title={t('tab.market')}

@@ -155,8 +155,10 @@ export default {
   tab: {
     buy: '会员',
     chat: '会话',
+    draw: '画图',
     market: '发现',
     me: '我',
+    music: 'SUNO 音乐',
     setting: '设置',
   },
   telemetry: {

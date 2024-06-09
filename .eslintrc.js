@@ -20,6 +20,10 @@ config.rules['unicorn/prefer-number-properties'] = 0;
 config.rules['unicorn/consistent-function-scoping'] = 0;
 config.rules['react-hooks/rules-of-hooks'] = 0;
 config.rules['react/jsx-no-useless-fragment'] = 0;
+config.rules['sort-keys-fix/sort-keys-fix'] = 0;
+config.rules['react/jsx-sort-props'] = 0;
+config.rules['unused-imports/no-unused-vars'] = 0;
+config.rules['@typescript-eslint/no-unused-vars'] = 0;
 
 config.overrides = [
   {

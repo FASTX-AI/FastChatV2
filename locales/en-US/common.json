@@ -162,8 +162,10 @@
   "tab": {
     "buy": "Buy",
     "chat": "Chat",
+    "draw": "Drawing",
     "market": "Market",
     "me": "Me",
+    "music": "SUNO Music",
     "setting": "Settings"
   },
   "telemetry": {

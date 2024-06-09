@@ -6,8 +6,10 @@ import { AsyncLocalStorage } from '@/utils/localStorage';
 export enum SidebarTabKey {
   Buy = 'buy',
   Chat = 'chat',
+  Draw = 'draw',
   Market = 'market',
   Me = 'me',
+  Music = 'music',
   Setting = 'settings',
 }
 
@@ -69,5 +71,5 @@ export const initialState: GlobalState = {
   isStatusInit: false,
   sidebarKey: SidebarTabKey.Chat,
   status: INITIAL_STATUS,
-  statusStorage: new AsyncLocalStorage('LOBE_SYSTEM_STATUS'),
+  statusStorage: new AsyncLocalStorage('FASTGPT_SYSTEM_STATUS'),
 };
