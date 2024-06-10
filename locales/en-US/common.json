@@ -71,6 +71,10 @@
       "speed": "Upload speed"
     }
   },
+  "input": {
+    "placeholder": "Enter your spell to start drawing!",
+    "uploadImage": "Upload Image"
+  },
   "installPWA": "Install Browser App(PWA)",
   "lang": {
     "ar": "Arabic",
@@ -167,6 +171,21 @@
     "me": "Me",
     "music": "SUNO Music",
     "setting": "Settings"
+  },
+  "task": {
+    "actionInfo": "Image Details",
+    "actionReroll": "Reroll",
+    "actionUpscale": "Upscale",
+    "actionVariant": "Variety",
+    "delete": "Delete",
+    "deleteAll": "Delete All Images",
+    "deleteAllConfirm": "Are you sure you want to delete all images?",
+    "deleteConfirm": "Are you sure you want to delete this image?",
+    "deleteCurrent": "Delete Current Image",
+    "desc": "Trial version, using MidJourney V6 service",
+    "setKey": "Set Key",
+    "starting": "Task Starting",
+    "step": "Enter your spell in the input box above to start drawing. You can upload a reference image with the small icon on the left. If you encounter any errors, please contact customer service for feedback."
   },
   "telemetry": {
     "allow": "Allow",

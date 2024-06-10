@@ -71,6 +71,10 @@
       "speed": "上传速度"
     }
   },
+  "input": {
+    "uploadImage": "上传图片",
+    "placeholder": "输入你的咒语开始作图吧！"
+  },
   "installPWA": "安装浏览器应用 (PWA)",
   "lang": {
     "ar": "阿拉伯语",
@@ -162,11 +166,26 @@
   "tab": {
     "buy": "会员",
     "chat": "会话",
-    "draw": "画图",
+    "draw": "画图 [永久会员体验版]",
     "market": "发现",
     "me": "我",
     "music": "SUNO 音乐",
     "setting": "设置"
+  },
+  "task": {
+    "desc": "体验版，使用 MidJourney V6 服务",
+    "starting": "任务启动中",
+    "step": "在上方输入框输入咒语即可开始作图。左边的图片小标可以上传参考图哦。\n 如果你遇到了错误，请联系客服进行反馈哦 ~",
+    "actionReroll": "重新生成",
+    "actionUpscale": "高清放大",
+    "actionVariant": "多样化",
+    "actionInfo": "图片详情",
+    "deleteCurrent": "删除当前图片",
+    "deleteAll": "删除全部图片",
+    "delete": "删除",
+    "deleteConfirm": "确定要删除这张图片吗？",
+    "deleteAllConfirm": "确定要删除全部图片吗？",
+    "setKey": "设置密钥"
   },
   "telemetry": {
     "allow": "允许",
