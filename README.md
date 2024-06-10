@@ -7,8 +7,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/FASTX-AI/FastChatV2.svg?style=for-the-badge&label=Issues&color=yellow)](https://github.com/FASTX-AI/FastChatV2/issues)
 [![GitHub license](https://img.shields.io/github/license/FASTX-AI/FastChatV2.svg?style=for-the-badge&label=License&color=blue)](https://github.com/FASTX-AI/FastChatV2/blob/main/LICENSE)
 
-![FastChatV2](https://user-images.githubusercontent.com/yourusername/your-repo/image.png)
-
 Welcome to **FastChatV2** – the next-generation real-time communication platform leveraging cutting-edge AI technologies to deliver an unparalleled user experience. With FastChatV2, you can enjoy seamless conversations, intelligent responses, and advanced features that elevate your communication to the next level.
 
 ## 🌟 Features
