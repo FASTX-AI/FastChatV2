@@ -186,7 +186,7 @@ export const useMenu = () => {
     ...(isLoginWithClerk ? profile : []),
     ...(isLogin ? settings : []),
     ...(canInstall ? pwa : []),
-    ...(isLogin ? data : []),
+    // ...(isLogin ? data : []),
     ...helps,
   ].filter(Boolean) as MenuProps['items'];
 

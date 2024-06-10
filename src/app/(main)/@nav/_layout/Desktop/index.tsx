@@ -6,7 +6,7 @@ import { memo } from 'react';
 import { useActiveTabKey } from '@/hooks/useActiveTabKey';
 
 import Avatar from './Avatar';
-// import BottomActions from './BottomActions';
+import BottomActions from './BottomActions';
 import TopActions from './TopActions';
 
 const Nav = memo(() => {
@@ -14,7 +14,7 @@ const Nav = memo(() => {
   return (
     <SideNav
       avatar={<Avatar />}
-      bottomActions={<></>}
+      bottomActions={<BottomActions />}
       style={{ height: '100%', zIndex: 100 }}
       topActions={<TopActions tab={sidebarKey} />}
     />
