@@ -20,7 +20,7 @@ export const POST = async (req: Request) => {
 
   console.log(urlJoin(baseUrl, path), body, aipKey);
 
-  const res = await fetch(urlJoin(baseUrl, path), {
+  return fetch(urlJoin(baseUrl, path), {
     body,
     headers: {
       'Content-Type': 'application/json',
@@ -28,10 +28,6 @@ export const POST = async (req: Request) => {
     },
     method: 'POST',
   });
-
-  console.log(await res.json());
-
-  return res;
 };
 
 export const GET = async (req: Request) => {
