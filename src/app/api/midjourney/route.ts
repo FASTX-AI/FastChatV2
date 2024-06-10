@@ -18,6 +18,8 @@ export const POST = async (req: Request) => {
   const aipKey = req.headers.get('mj-api-secret') ?? req.headers.get('Mj-Api-Secret');
   const body = await req.text();
 
+  console.log(urlJoin(baseUrl, path), body, aipKey);
+
   return fetch(urlJoin(baseUrl, path), {
     body,
     headers: {
@@ -35,6 +37,8 @@ export const GET = async (req: Request) => {
 
   const path = new URL(req.url).searchParams.get('path')!;
   const aipKey = req.headers.get('mj-api-secret') ?? req.headers.get('Mj-Api-Secret');
+
+  console.log(urlJoin(baseUrl, path), aipKey);
 
   return fetch(urlJoin(baseUrl, path), {
     headers: {

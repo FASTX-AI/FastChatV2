@@ -51,7 +51,7 @@ export const checkAuth =
       //   message: '设置地址已更换为当前设备，设备切换过多可能导致封号处理，请不要分享 KEY 给他人使用。',
       //   data: 1
       // }
-      console.log(jwtPayload.apiKey, req.headers.get('user-agent'));
+      // console.log(jwtPayload.apiKey, req.headers.get('user-agent'));
       // const response = await fetch(jwtPayload.apiKey, req.headers.get('user-agent'));
 
       checkAuthMethod({

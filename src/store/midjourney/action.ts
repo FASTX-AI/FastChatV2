@@ -191,8 +191,6 @@ export const actions: StateCreator<
       size: file.size,
     });
 
-    console.log(file, result);
-
     if (!result.url) return;
 
     get().updateAppState({ referenceImageUrl: result.url });
