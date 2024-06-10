@@ -5,7 +5,7 @@ export interface MidjourneyState {
   appInited?: boolean;
   createTaskLoading?: boolean;
   inLobeChat?: boolean;
-  isMidjourneySettingsModalOpen: boolean;
+  isAPIKeySettingsModalOpen: boolean;
   prompts: string;
   referenceImageUrl?: string;
   requestError?: { body: string | { type: string }; message: string; status: number };
@@ -16,7 +16,7 @@ export interface MidjourneyState {
 export const initialState: MidjourneyState = {
   appInited: false,
   inLobeChat: false,
-  isMidjourneySettingsModalOpen: false,
+  isAPIKeySettingsModalOpen: false,
   prompts: '',
   runningTaskIds: [],
   tasks: [],

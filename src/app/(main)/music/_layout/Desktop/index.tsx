@@ -14,6 +14,9 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
+import SetKeyModal from '@/features/KeyModal';
+import { useSunoStore } from '@/store/suno';
+
 import { LayoutProps } from '../type';
 
 const { TextArea } = Input;
@@ -149,26 +152,17 @@ const Layout = ({ children }: LayoutProps) => {
   // tags: "1" 曲风
   // title: "sadas" 标题
 
+  const [createTask] = useSunoStore((s) => [s.createTask]);
+
   const handleChange = (value: string[]) => {
     console.log(`selected ${value}`);
 
-    const body = JSON.stringify({
-      gpt_description_prompt: 'ddddsadad',
-      make_instrumental: false,
-      mv: 'suno-v3',
-      prompt: 'sadas',
-    });
-    fetch('https://apikey.fastgpt.chat/generate/description-mode', { body })
-      .then((res) => {
-        console.log(res);
-        console.log(res.json);
-      })
-      .catch((e) => {
-        console.log(e);
-      })
-      .finally(() => {
-        console.log('finish');
-      });
+    // createTask({
+    //   gpt_description_prompt: 'ddddsadad',
+    //   make_instrumental: false,
+    //   mv: 'suno-v3.5',
+    //   prompt: 'sadas',
+    // });
   };
 
   return (
@@ -360,6 +354,7 @@ const Layout = ({ children }: LayoutProps) => {
           )}
         </Flexbox>
       </Flexbox>
+      <SetKeyModal />
     </>
   );
 };

@@ -46,7 +46,7 @@ export interface SystemStatus {
 
 export interface GlobalState {
   hasNewVersion?: boolean;
-  isMidjourneySettingsModalOpen: boolean;
+  isAPIKeySettingsModalOpen: boolean;
   isMobile?: boolean;
   isStatusInit?: boolean;
   latestVersion?: string;
@@ -78,5 +78,5 @@ export const initialState: GlobalState = {
   sidebarKey: SidebarTabKey.Chat,
   status: INITIAL_STATUS,
   statusStorage: new AsyncLocalStorage('FASTGPT_SYSTEM_STATUS'),
-  isMidjourneySettingsModalOpen: false,
+  isAPIKeySettingsModalOpen: false,
 };

@@ -69,7 +69,7 @@ class MidjourneyService {
 
     if (!openAIKey || openAIKey.length === 0) {
       useGlobalStore.setState({
-        isMidjourneySettingsModalOpen: true,
+        isAPIKeySettingsModalOpen: true,
       });
       return {};
     }

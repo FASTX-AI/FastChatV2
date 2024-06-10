@@ -62,7 +62,7 @@ export const globalActionSlice: StateCreator<
   },
   toggleMidjourneySetting: (newValue) => {
     set({
-      isMidjourneySettingsModalOpen: newValue,
+      isAPIKeySettingsModalOpen: newValue,
     });
   },
   toggleMobileTopic: (newValue) => {
