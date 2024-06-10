@@ -284,6 +284,10 @@ const Layout = ({ children }: LayoutProps) => {
               >
                 仅针对终身会员开放此功能，请联系客服咨询！
               </h2>
+              <p>
+                This feature is only available to lifelong members, please contact customer service
+                for consultation!
+              </p>
             </Flexbox>
           ) : (
             <List
