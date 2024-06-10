@@ -18,6 +18,22 @@ import { LayoutProps } from '../type';
 
 const { TextArea } = Input;
 
+// simple mode (no lrc)
+// https://apikey.fastgpt.chat/generate/description-mode
+// gpt_description_prompt: "ddddsadad"
+// make_instrumental: false
+// mv: "chirp-v3-5"
+// prompt: "sadas"
+
+// https://apikey.fastgpt.chat/generate
+
+// continue_at: 120 继续创作的时间
+// continue_clip_id: "" 继续创作
+// mv: "chirp-v3-5" 版本
+// prompt: "2dsadsa" 歌词
+// tags: "1" 曲风
+// title: "sadas" 标题
+
 const Layout = ({ children }: LayoutProps) => {
   const { t } = useTranslation('common');
   const [value, setValue] = useState('');
