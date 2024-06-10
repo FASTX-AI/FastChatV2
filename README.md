@@ -1,4 +1,60 @@
-#### 项目部署
+## FastChatV2
+
+### ScreenShots
+
+#### en-US
+
+<img width="1380" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/45ea1bd8-4de3-4d14-ac9a-9db6a60b4fc0">
+
+<img width="1379" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/8ef040fa-9c8f-45f8-901c-e67ca94ddd73">
+
+<img width="1380" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/43d09609-819d-4a65-807a-f93b0e0042c6">
+
+
+#### zh-CN
+
+<img width="1379" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/9e225300-8ea8-40ee-9e99-566e9ee5585d">
+
+<img width="1381" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/3c7fe75f-6514-4117-ba75-e8b2d88ed3c2">
+
+<img width="1380" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/a90edbd3-8219-4fdf-9e31-8b5002d65ebf">
+
+<img width="1380" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/ad6f2feb-026e-43a2-96cf-00df156a279c">
+
+<img width="1379" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/85d27897-2384-4e76-ae24-c57c1d58d66f">
+
+<img width="1380" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/2024210b-b093-469d-ba15-60f44a554105">
+
+#### For sale
+
+user side:
+
+<img width="1379" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/37190a4c-6a5f-4c91-ae13-175c5e1b9115">
+
+admin panel:
+
+<img width="1376" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/82dd5c05-4f74-4a99-ac0a-3fc2d12fa89e">
+
+#### For key manager
+
+based on: new-api
+
+<img width="1379" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/49c8aea1-7243-4380-99e6-dde9312e0c69">
+
+for user sk quota query:
+
+<img width="1379" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/3a1f98a1-016f-40eb-9664-6de1951599e2">
+
+#### For sso login
+
+<img width="1372" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/3cfd4084-303e-4a8f-aef1-610d58ecc2b0">
+
+sso admin panel:
+
+<img width="1378" alt="image" src="https://github.com/FASTX-AI/FastChatV2/assets/165481157/e2a83654-513c-413f-900c-79e1410047cb">
+
+
+### Self Hosting commands
 
 `bun i && bun run dev`
 
@@ -36,7 +92,7 @@ OPENAI_MODEL_LIST: "gpt-4o=fastgpt-4o,gpt-4=fastgpt-4,gpt-3.5-turbo=fastgpt-3.5-
 ENABLED_OLLAMA: 0
 ```
 
-#### SSO
+### SSO Login
 
 env file:
 
@@ -73,7 +129,11 @@ zitadel start-from-init \
   --masterkey "${ZITADEL_MASTERKEY}"
 ```
 
-#### TLS
+### API/Key Manage
+
+[docker hub](https://hub.docker.com/repositories/starkdylan)
+
+### TLS
 
 before you run scripts use `sudo`, make sure `/usr/share/nginx/www/` in your nginx folder and allow all options.
 certbot need generate some files(domain check).
@@ -104,3 +164,5 @@ sudo certbot certonly --webroot -w /usr/share/nginx/www/  -d xxx.xxx (your domai
 crontab:
 sudo certbot renew
 ```
+
+#### Based on `LobeChat`
