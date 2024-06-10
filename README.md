@@ -88,8 +88,6 @@ For any inquiries, please contact us at [fastgptchat@hotmail.com](mailto:fastgpt
 
 ---
 
-This README header provides a comprehensive overview of the project while being visually appealing. Be sure to replace the placeholder image URLs with actual images from your repository.
-
 ### Self Hosting commands
 
 `bun i && bun run dev`
@@ -177,14 +175,14 @@ certbot need generate some files(domain check).
 nginx config looks like:
 
 ```shell
-server {
-        listen       80;
-        listen       [::]:80;
-        server_name  _;
+        server {
+          listen       80;
+          listen       [::]:80;
+          server_name  _;
 
-	      location ^~ /.well-known {
-		    allow all;
-        	root /usr/share/nginx/www/;
+          location ^~ /.well-known {
+          allow all;
+            root /usr/share/nginx/www/;
     	  }
 ```
 
