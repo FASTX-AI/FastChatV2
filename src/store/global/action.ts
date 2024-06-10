@@ -24,6 +24,7 @@ export interface GlobalStoreAction {
   switchBackToChat: (sessionId?: string) => void;
   toggleChatSideBar: (visible?: boolean) => void;
   toggleExpandSessionGroup: (id: string, expand: boolean) => void;
+  toggleMidjourneySetting: (visible?: boolean) => void;
   toggleMobileTopic: (visible?: boolean) => void;
   toggleSystemRole: (visible?: boolean) => void;
   updateSystemStatus: (status: Partial<SystemStatus>, action?: any) => void;
@@ -58,6 +59,11 @@ export const globalActionSlice: StateCreator<
       }
     });
     get().updateSystemStatus({ expandSessionGroupKeys: nextExpandSessionGroup });
+  },
+  toggleMidjourneySetting: (newValue) => {
+    set({
+      isMidjourneySettingsModalOpen: newValue,
+    });
   },
   toggleMobileTopic: (newValue) => {
     const mobileShowTopic =

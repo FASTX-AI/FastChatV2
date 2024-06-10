@@ -71,7 +71,7 @@ export default {
     PluginGatewayError: '很抱歉，插件网关出现错误，请检查插件网关配置是否正确',
     PluginOpenApiInitError: '很抱歉，OpenAPI 客户端初始化失败，请检查 OpenAPI 的配置信息是否正确',
 
-    InvalidAccessCode: '密码不正确或为空，请输入正确的访问密码，或者添加自定义 API Key',
+    InvalidAccessCode: '请访问购买页购买密钥，然后点击自定义 API Key进行添加',
     InvalidClerkUser: '很抱歉，你当前尚未登录，请先登录或注册账号后继续操作',
     LocationNotSupportError:
       '很抱歉，你的所在地区不支持此模型服务，可能是由于区域限制或服务未开通。请确认当前地区是否支持使用此服务，或尝试使用切换到其他地区后重试。',
@@ -138,7 +138,7 @@ export default {
   unlock: {
     addProxyUrl: '添加 OpenAI 代理地址（可选）',
     closeMessage: '关闭提示',
-    confirm: '确认并重试',
+    confirm: '确认',
 
     oauth: {
       description: '管理员已开启统一登录认证，点击下方按钮登录，即可解锁应用',

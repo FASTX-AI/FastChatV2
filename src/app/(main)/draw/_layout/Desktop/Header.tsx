@@ -17,6 +17,7 @@ const Header = memo(() => {
 
   return (
     <ChatHeader
+      style={{ position: 'relative', zIndex: 0 }}
       left={
         <h2 style={{ fontSize: 24, fontWeight: 900, lineHeight: 1, marginBottom: 0 }}>
           {t('tab.draw')}

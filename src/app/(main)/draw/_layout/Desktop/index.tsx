@@ -1,10 +1,21 @@
+'use client';
+
 import { Flexbox } from 'react-layout-kit';
 
+import ImagePreview from '@/features/Preview';
+import PromptInput from '@/features/PromptEditor';
+import TaskList from '@/features/TaskList';
+import { useMidjourneyStore } from '@/store/midjourney';
 
 import { LayoutProps } from '../type';
 import Header from './Header';
+import SetKeyModal from './SetKeyModal';
 
 const Layout = ({ children }: LayoutProps) => {
+  const [useInitApp] = useMidjourneyStore((s) => [s.useInitApp]);
+
+  useInitApp();
+
   return (
     <>
       <Flexbox
@@ -15,18 +26,17 @@ const Layout = ({ children }: LayoutProps) => {
       >
         <Header />
         <Flexbox
-          align="center"
-          justify="center"
+          gap={12}
           height={'100%'}
-          horizontal
-          style={{ position: 'relative' }}
+          style={{ maxHeight: 'var(--vh)', overflow: 'hidden', padding: '15px' }}
           width={'100%'}
         >
-          <h2 style={{ fontSize: 24, fontWeight: 600, lineHeight: 1, margin: 0, color: '#333333' }}>
-            仅针对终身会员开放此功能，请联系客服咨询！
-          </h2>
+          <PromptInput />
+          <ImagePreview />
+          <TaskList />
         </Flexbox>
       </Flexbox>
+      <SetKeyModal />
       {/* ↓ cloud slot ↓ */}
       {/* ↑ cloud slot ↑ */}
     </>

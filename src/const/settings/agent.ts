@@ -30,7 +30,7 @@ export const DEFAULT_AGENT_CONFIG: LobeAgentConfig = {
     temperature: 0.7,
     top_p: 1,
   },
-  plugins: [],
+  plugins: ['lobe-image-designer'],
   provider: ModelProvider.OpenAI,
   systemRole: '',
   tts: DEFAUTT_AGENT_TTS_CONFIG,

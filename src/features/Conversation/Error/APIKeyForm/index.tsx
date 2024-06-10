@@ -5,6 +5,7 @@ import { Center, Flexbox } from 'react-layout-kit';
 
 import { ModelProvider } from '@/libs/agent-runtime';
 import { useChatStore } from '@/store/chat';
+import { useGlobalStore } from '@/store/global';
 import { GlobalLLMProviderKey } from '@/types/user/settings';
 
 import BedrockForm from './Bedrock';
@@ -20,6 +21,7 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
   const { t } = useTranslation('error');
 
   const [resend, deleteMessage] = useChatStore((s) => [s.regenerateMessage, s.deleteMessage]);
+  const [toggleMidjourneySetting] = useGlobalStore((s) => [s.toggleMidjourneySetting]);
 
   const apiKeyPlaceholder = useMemo(() => {
     switch (provider) {
@@ -71,6 +73,7 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
           onClick={() => {
             resend(id);
             deleteMessage(id);
+            toggleMidjourneySetting(false);
           }}
           style={{ marginTop: 8 }}
           type={'primary'}
@@ -80,6 +83,7 @@ const APIKeyForm = memo<APIKeyFormProps>(({ id, provider }) => {
         <Button
           onClick={() => {
             deleteMessage(id);
+            toggleMidjourneySetting(false);
           }}
         >
           {t('unlock.closeMessage')}
