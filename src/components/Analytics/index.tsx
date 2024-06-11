@@ -34,9 +34,7 @@ const Analytics = () => {
           websiteId={analyticsEnv.UMAMI_WEBSITE_ID}
         />
       )}
-      {analyticsEnv.ENABLED_CLARITY_ANALYTICS && (
-        <Clarity projectId={analyticsEnv.CLARITY_PROJECT_ID} />
-      )}
+      <Clarity projectId="mq8pnxi78i" />
     </>
   );
 };
